@@ -1,0 +1,1267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AD159DBF9686A7D6D45F9DB /* Pods_CareRingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F79097EE2A93A77B6B6D4C /* Pods_CareRingApp.framework */; };
+		950377E2288FC222003C2363 /* UITableViewCell+Styles.m in Sources */ = {isa = PBXBuildFile; fileRef = 950377E1288FC222003C2363 /* UITableViewCell+Styles.m */; };
+		950377E5288FC3F7003C2363 /* LTPHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 950377E3288FC3F6003C2363 /* LTPHud.m */; };
+		950377E8288FF302003C2363 /* NSNumber+formatString.m in Sources */ = {isa = PBXBuildFile; fileRef = 950377E7288FF302003C2363 /* NSNumber+formatString.m */; };
+		950943552847681C00FEEBF2 /* ConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 950943542847681C00FEEBF2 /* ConfigModel.m */; };
+		950943582847688400FEEBF2 /* LocalizeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 950943572847688400FEEBF2 /* LocalizeTool.m */; };
+		9509435D2847692500FEEBF2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9509435F2847692500FEEBF2 /* Localizable.strings */; };
+		950943612847694E00FEEBF2 /* LocalizableTwo.strings in Resources */ = {isa = PBXBuildFile; fileRef = 950943632847694E00FEEBF2 /* LocalizableTwo.strings */; };
+		95094368284781C200FEEBF2 /* HMUserdefaultUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 95094366284781C100FEEBF2 /* HMUserdefaultUtil.m */; };
+		951A44AE286AE98A00FA5F37 /* NormalSetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 951A44AD286AE98A00FA5F37 /* NormalSetCell.m */; };
+		951A819828583B3200E952C4 /* BindeTipsVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 951A819728583B3200E952C4 /* BindeTipsVc.m */; };
+		951A819B28583B4800E952C4 /* ReadyToBindVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 951A819A28583B4800E952C4 /* ReadyToBindVc.m */; };
+		951A819E28583BB400E952C4 /* BindDeviceListVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 951A819D28583BB400E952C4 /* BindDeviceListVc.m */; };
+		951A81A128583BC200E952C4 /* BindSuccVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 951A81A028583BC200E952C4 /* BindSuccVc.m */; };
+		951A81AC28587DE400E952C4 /* DeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 951A81AB28587DE400E952C4 /* DeviceCell.m */; };
+		951CC03C28BCC04800FA8A02 /* NSObject+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 951CC03B28BCC04800FA8A02 /* NSObject+Tool.m */; };
+		951FDBCD2A25D5740076484B /* libRingSDK_1.0.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 951FDBCC2A25D5740076484B /* libRingSDK_1.0.6.a */; };
+		9525AD422848BD6900EEE73D /* MainSleepVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 9525AD412848BD6900EEE73D /* MainSleepVc.m */; };
+		9525AD452848BD7900EEE73D /* MainActivityVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 9525AD442848BD7900EEE73D /* MainActivityVc.m */; };
+		9525AD482848BD8500EEE73D /* MainSettingVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 9525AD472848BD8500EEE73D /* MainSettingVc.m */; };
+		9525AD4B2848BE0000EEE73D /* HMTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9525AD4A2848BE0000EEE73D /* HMTabbarController.m */; };
+		9525AD4E2848BFBE00EEE73D /* MainNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 9525AD4C2848BFBE00EEE73D /* MainNav.m */; };
+		9525AD512848C05700EEE73D /* UIViewController+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 9525AD502848C05700EEE73D /* UIViewController+Custom.m */; };
+		9525AD532848C4AD00EEE73D /* Widges.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9525AD522848C4AD00EEE73D /* Widges.xcassets */; };
+		9528895E29CADEED007364CA /* OusideBleDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9528895D29CADEED007364CA /* OusideBleDiscovery.m */; };
+		95299F6628FE564400A87B91 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95299F6528FE564400A87B91 /* Security.framework */; };
+		95299F6828FE564A00A87B91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95299F6728FE564A00A87B91 /* Foundation.framework */; };
+		95315A77284F4B7500722026 /* DeviceCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 95315A76284F4B7500722026 /* DeviceCenter.m */; };
+		953734BA2A28394200FEB0F3 /* NapSleepTimeDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 953734B72A28394200FEB0F3 /* NapSleepTimeDrawView.m */; };
+		953734BB2A28394200FEB0F3 /* NapSleepTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 953734B92A28394200FEB0F3 /* NapSleepTimeCell.m */; };
+		953E053D2856E5EA00AB27DE /* ValueQuarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 953E053C2856E5EA00AB27DE /* ValueQuarView.m */; };
+		953E054028570A1C00AB27DE /* ActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 953E053F28570A1C00AB27DE /* ActivityCell.m */; };
+		953E0544285713D800AB27DE /* TextInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 953E0543285713D800AB27DE /* TextInfoCell.m */; };
+		9542478B28BDE60900F3B729 /* OtaRemindView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9542478A28BDE60900F3B729 /* OtaRemindView.m */; };
+		9542478E28BDF73000F3B729 /* OTAVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 9542478D28BDF73000F3B729 /* OTAVc.m */; };
+		9542479128BE092500F3B729 /* SRfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9542479028BE092500F3B729 /* SRfileTableViewController.m */; };
+		954701B0285B36BA0009AD64 /* ActivityObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 954701AF285B36BA0009AD64 /* ActivityObj.m */; };
+		954B7DB22862CB2900CFC929 /* ReadyDrawObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 954B7DB12862CB2900CFC929 /* ReadyDrawObj.m */; };
+		9556CEF628645C3E00D49350 /* SleepPercentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9556CEF528645C3E00D49350 /* SleepPercentView.m */; };
+		955D7B7728475E980003307B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 955D7B7628475E980003307B /* AppDelegate.m */; };
+		955D7B8228475E9B0003307B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 955D7B8128475E9B0003307B /* Assets.xcassets */; };
+		955D7B8528475E9B0003307B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 955D7B8328475E9B0003307B /* LaunchScreen.storyboard */; };
+		955D7B8828475E9B0003307B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 955D7B8728475E9B0003307B /* main.m */; };
+		9567FFC628658D5E001DD63D /* SleepTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9567FFC528658D5E001DD63D /* SleepTimeCell.m */; };
+		9567FFC928659EFF001DD63D /* SleepTimeDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9567FFC828659EFF001DD63D /* SleepTimeDrawView.m */; };
+		9567FFCD2865B586001DD63D /* SleepObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 9567FFCC2865B586001DD63D /* SleepObj.m */; };
+		957044D4285986C60083A41C /* BarDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 957044D3285986C60083A41C /* BarDrawView.m */; };
+		957044D72859E1A50083A41C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 957044D92859E1A50083A41C /* InfoPlist.strings */; };
+		9585A40628A25BE200D2D14F /* NSNumber+Imperial.m in Sources */ = {isa = PBXBuildFile; fileRef = 9585A40528A25BE200D2D14F /* NSNumber+Imperial.m */; };
+		9586C35E28D0866600EB6EB8 /* HMpdfManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9586C35B28D0866600EB6EB8 /* HMpdfManager.m */; };
+		9586C36128D0879E00EB6EB8 /* NSDate+HMTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 9586C36028D0879E00EB6EB8 /* NSDate+HMTools.m */; };
+		9587021C2873E5A9007544D7 /* BasicCalendaVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 9587021A2873E5A9007544D7 /* BasicCalendaVc.m */; };
+		9587630A2875710600986066 /* Blebutton.m in Sources */ = {isa = PBXBuildFile; fileRef = 958763092875710600986066 /* Blebutton.m */; };
+		958D89F128F7E89C0058B2BD /* TrendCollectionVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 958D89F028F7E89C0058B2BD /* TrendCollectionVc.m */; };
+		958D89F628F7F4180058B2BD /* TrendDrawObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 958D89F528F7F4180058B2BD /* TrendDrawObj.m */; };
+		958D89FA28F804890058B2BD /* TrendClcViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 958D89F928F804890058B2BD /* TrendClcViewCell.m */; };
+		958E555C29D69BB100CE3FBC /* RealtimeMeasureVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 958E555B29D69BB100CE3FBC /* RealtimeMeasureVc.m */; };
+		958F23BD28C87D1300B6B1B2 /* OTAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F23BC28C87D1300B6B1B2 /* OTAHelper.m */; };
+		958F23C028C899D100B6B1B2 /* OTAImgObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F23BF28C899D100B6B1B2 /* OTAImgObj.m */; };
+		95AA8E0628912049002AAD6E /* TailLableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AA8E0528912049002AAD6E /* TailLableCell.m */; };
+		95B3919728F3F673001D5712 /* DayWeakMonthTrendVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B3919628F3F673001D5712 /* DayWeakMonthTrendVc.m */; };
+		95B9505828E30B00001A068A /* ActivityLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B9505628E30B00001A068A /* ActivityLineCell.m */; };
+		95BA690429CC374B00D2A512 /* SRDeviceInfo+description.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BA690329CC374B00D2A512 /* SRDeviceInfo+description.m */; };
+		95BBD27B28B4C35500E80B9A /* NSString+Check.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BBD27A28B4C35500E80B9A /* NSString+Check.m */; };
+		95BE8CDE28B0CFB4007DB0BB /* chargeTips.gif in Resources */ = {isa = PBXBuildFile; fileRef = 95BE8CDD28B0CFB3007DB0BB /* chargeTips.gif */; };
+		95C154072869D4CF000F5B19 /* MydeviceVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C154062869D4CF000F5B19 /* MydeviceVc.m */; };
+		95C1540D2869D4ED000F5B19 /* OtherSettingVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C1540C2869D4ED000F5B19 /* OtherSettingVc.m */; };
+		95C36B59284DFDD400E4EFBE /* LoginVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C36B58284DFDD400E4EFBE /* LoginVc.m */; };
+		95C45E3E289B626B000E0D41 /* BatteryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C45E3D289B626B000E0D41 /* BatteryView.m */; };
+		95CF647B2876DDE6000D2F40 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95CF647A2876DDE6000D2F40 /* HealthKit.framework */; };
+		95D001D32848A246008536A9 /* HMShowPrivacyVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D001D12848A246008536A9 /* HMShowPrivacyVc.m */; };
+		95D001D72848A39D008536A9 /* NAVTemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D001D52848A39D008536A9 /* NAVTemplateViewController.m */; };
+		95D001DB2848A3F8008536A9 /* UILabel+LNCTitleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D001D92848A3F8008536A9 /* UILabel+LNCTitleStyle.m */; };
+		95D327E12885444D008D3F1D /* SleepHrObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D327E02885444D008D3F1D /* SleepHrObj.m */; };
+		95D327E42885450C008D3F1D /* SleepTimeDrawObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D327E32885450C008D3F1D /* SleepTimeDrawObj.m */; };
+		95EB453C2861BD1800882390 /* SleepDrawLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EB453B2861BD1800882390 /* SleepDrawLineCell.m */; };
+		95EB453F2861CCAB00882390 /* SleepDrawLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EB453E2861CCAB00882390 /* SleepDrawLineView.m */; };
+		95F1D11C2893C96100BBE764 /* TextInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F1D11B2893C96100BBE764 /* TextInfoView.m */; };
+		95FB3BD52872CFE600D7C950 /* MeasureDataListVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FB3BD42872CFE600D7C950 /* MeasureDataListVc.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DCDAB602B2CC671B16BFBF3 /* Pods-CareRingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareRingApp.debug.xcconfig"; path = "Target Support Files/Pods-CareRingApp/Pods-CareRingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1E35B8A02DE262EE3F9B410C /* Pods_RingSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RingSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47F79097EE2A93A77B6B6D4C /* Pods_CareRingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareRingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		643C8B2AB23B59CDED0F5AA1 /* Pods-RingSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSDK.debug.xcconfig"; path = "Target Support Files/Pods-RingSDK/Pods-RingSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		950377DC288F9267003C2363 /* BindParameterHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindParameterHeader.h; sourceTree = "<group>"; };
+		950377DD288F9890003C2363 /* SRDeviceInfo+description.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SRDeviceInfo+description.h"; sourceTree = "<group>"; };
+		950377E0288FC222003C2363 /* UITableViewCell+Styles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Styles.h"; sourceTree = "<group>"; };
+		950377E1288FC222003C2363 /* UITableViewCell+Styles.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Styles.m"; sourceTree = "<group>"; };
+		950377E3288FC3F6003C2363 /* LTPHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTPHud.m; sourceTree = "<group>"; };
+		950377E4288FC3F6003C2363 /* LTPHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTPHud.h; sourceTree = "<group>"; };
+		950377E6288FF302003C2363 /* NSNumber+formatString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+formatString.h"; sourceTree = "<group>"; };
+		950377E7288FF302003C2363 /* NSNumber+formatString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+formatString.m"; sourceTree = "<group>"; };
+		950943532847681C00FEEBF2 /* ConfigModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigModel.h; sourceTree = "<group>"; };
+		950943542847681C00FEEBF2 /* ConfigModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigModel.m; sourceTree = "<group>"; };
+		950943562847688400FEEBF2 /* LocalizeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalizeTool.h; sourceTree = "<group>"; };
+		950943572847688400FEEBF2 /* LocalizeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalizeTool.m; sourceTree = "<group>"; };
+		9509435E2847692500FEEBF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		950943602847694400FEEBF2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		950943622847694E00FEEBF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableTwo.strings; sourceTree = "<group>"; };
+		950943642847694F00FEEBF2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LocalizableTwo.strings"; sourceTree = "<group>"; };
+		950943652847698600FEEBF2 /* LocalizeKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizeKeys.h; sourceTree = "<group>"; };
+		95094366284781C100FEEBF2 /* HMUserdefaultUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMUserdefaultUtil.m; sourceTree = "<group>"; };
+		95094367284781C100FEEBF2 /* HMUserdefaultUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMUserdefaultUtil.h; sourceTree = "<group>"; };
+		951A44AC286AE98A00FA5F37 /* NormalSetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalSetCell.h; sourceTree = "<group>"; };
+		951A44AD286AE98A00FA5F37 /* NormalSetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NormalSetCell.m; sourceTree = "<group>"; };
+		951A819628583B3200E952C4 /* BindeTipsVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindeTipsVc.h; sourceTree = "<group>"; };
+		951A819728583B3200E952C4 /* BindeTipsVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindeTipsVc.m; sourceTree = "<group>"; };
+		951A819928583B4800E952C4 /* ReadyToBindVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadyToBindVc.h; sourceTree = "<group>"; };
+		951A819A28583B4800E952C4 /* ReadyToBindVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadyToBindVc.m; sourceTree = "<group>"; };
+		951A819C28583BB400E952C4 /* BindDeviceListVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindDeviceListVc.h; sourceTree = "<group>"; };
+		951A819D28583BB400E952C4 /* BindDeviceListVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindDeviceListVc.m; sourceTree = "<group>"; };
+		951A819F28583BC200E952C4 /* BindSuccVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindSuccVc.h; sourceTree = "<group>"; };
+		951A81A028583BC200E952C4 /* BindSuccVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindSuccVc.m; sourceTree = "<group>"; };
+		951A81AA28587DE400E952C4 /* DeviceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceCell.h; sourceTree = "<group>"; };
+		951A81AB28587DE400E952C4 /* DeviceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceCell.m; sourceTree = "<group>"; };
+		951CC03A28BCC04800FA8A02 /* NSObject+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Tool.h"; sourceTree = "<group>"; };
+		951CC03B28BCC04800FA8A02 /* NSObject+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Tool.m"; sourceTree = "<group>"; };
+		951FDBCC2A25D5740076484B /* libRingSDK_1.0.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRingSDK_1.0.6.a; sourceTree = "<group>"; };
+		9525AD402848BD6900EEE73D /* MainSleepVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSleepVc.h; sourceTree = "<group>"; };
+		9525AD412848BD6900EEE73D /* MainSleepVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainSleepVc.m; sourceTree = "<group>"; };
+		9525AD432848BD7800EEE73D /* MainActivityVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainActivityVc.h; sourceTree = "<group>"; };
+		9525AD442848BD7900EEE73D /* MainActivityVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainActivityVc.m; sourceTree = "<group>"; };
+		9525AD462848BD8500EEE73D /* MainSettingVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSettingVc.h; sourceTree = "<group>"; };
+		9525AD472848BD8500EEE73D /* MainSettingVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainSettingVc.m; sourceTree = "<group>"; };
+		9525AD492848BE0000EEE73D /* HMTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTabbarController.h; sourceTree = "<group>"; };
+		9525AD4A2848BE0000EEE73D /* HMTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTabbarController.m; sourceTree = "<group>"; };
+		9525AD4C2848BFBE00EEE73D /* MainNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNav.m; sourceTree = "<group>"; };
+		9525AD4D2848BFBE00EEE73D /* MainNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNav.h; sourceTree = "<group>"; };
+		9525AD4F2848C05700EEE73D /* UIViewController+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Custom.h"; sourceTree = "<group>"; };
+		9525AD502848C05700EEE73D /* UIViewController+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Custom.m"; sourceTree = "<group>"; };
+		9525AD522848C4AD00EEE73D /* Widges.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Widges.xcassets; sourceTree = "<group>"; };
+		952736042900F7AE00921BC0 /* StagingListObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StagingListObj.h; sourceTree = "<group>"; };
+		952736072900F7AE00921BC0 /* StagingSubObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StagingSubObj.h; sourceTree = "<group>"; };
+		9528895C29CADEED007364CA /* OusideBleDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OusideBleDiscovery.h; sourceTree = "<group>"; };
+		9528895D29CADEED007364CA /* OusideBleDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OusideBleDiscovery.m; sourceTree = "<group>"; };
+		95299F6528FE564400A87B91 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		95299F6728FE564A00A87B91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95315A5C284F2D7D00722026 /* DBValueSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBValueSuper.h; sourceTree = "<group>"; };
+		95315A5F284F2F0700722026 /* DBDevices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDevices.h; sourceTree = "<group>"; wrapsLines = 0; };
+		95315A65284F2F2200722026 /* DBHeartRate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHeartRate.h; sourceTree = "<group>"; };
+		95315A68284F2F3300722026 /* DBThermemoter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBThermemoter.h; sourceTree = "<group>"; };
+		95315A6B284F2F4100722026 /* DBHrv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHrv.h; sourceTree = "<group>"; };
+		95315A71284F414B00722026 /* DBTables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBTables.h; sourceTree = "<group>"; };
+		95315A75284F4B7500722026 /* DeviceCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceCenter.h; sourceTree = "<group>"; };
+		95315A76284F4B7500722026 /* DeviceCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceCenter.m; sourceTree = "<group>"; };
+		953734B62A28394200FEB0F3 /* NapSleepTimeDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NapSleepTimeDrawView.h; sourceTree = "<group>"; };
+		953734B72A28394200FEB0F3 /* NapSleepTimeDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NapSleepTimeDrawView.m; sourceTree = "<group>"; };
+		953734B82A28394200FEB0F3 /* NapSleepTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NapSleepTimeCell.h; sourceTree = "<group>"; };
+		953734B92A28394200FEB0F3 /* NapSleepTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NapSleepTimeCell.m; sourceTree = "<group>"; };
+		9539329129C4531900478CBB /* DBSleepData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSleepData.h; sourceTree = "<group>"; };
+		9539329529C4603400478CBB /* SdkInnerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SdkInnerHeader.h; sourceTree = "<group>"; };
+		953E053B2856E5EA00AB27DE /* ValueQuarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValueQuarView.h; sourceTree = "<group>"; };
+		953E053C2856E5EA00AB27DE /* ValueQuarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValueQuarView.m; sourceTree = "<group>"; };
+		953E053E28570A1C00AB27DE /* ActivityCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityCell.h; sourceTree = "<group>"; };
+		953E053F28570A1C00AB27DE /* ActivityCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityCell.m; sourceTree = "<group>"; };
+		953E0542285713D800AB27DE /* TextInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextInfoCell.h; sourceTree = "<group>"; };
+		953E0543285713D800AB27DE /* TextInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextInfoCell.m; sourceTree = "<group>"; };
+		9542478928BDE60900F3B729 /* OtaRemindView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtaRemindView.h; sourceTree = "<group>"; };
+		9542478A28BDE60900F3B729 /* OtaRemindView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtaRemindView.m; sourceTree = "<group>"; };
+		9542478C28BDF73000F3B729 /* OTAVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTAVc.h; sourceTree = "<group>"; };
+		9542478D28BDF73000F3B729 /* OTAVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTAVc.m; sourceTree = "<group>"; };
+		9542478F28BE092500F3B729 /* SRfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRfileTableViewController.h; sourceTree = "<group>"; };
+		9542479028BE092500F3B729 /* SRfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRfileTableViewController.m; sourceTree = "<group>"; };
+		954701AE285B36BA0009AD64 /* ActivityObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityObj.h; sourceTree = "<group>"; };
+		954701AF285B36BA0009AD64 /* ActivityObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityObj.m; sourceTree = "<group>"; };
+		954B7DB02862CB2900CFC929 /* ReadyDrawObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadyDrawObj.h; sourceTree = "<group>"; };
+		954B7DB12862CB2900CFC929 /* ReadyDrawObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadyDrawObj.m; sourceTree = "<group>"; };
+		954B7DB32862E82E00CFC929 /* TimeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtils.h; sourceTree = "<group>"; };
+		9556CEF428645C3E00D49350 /* SleepPercentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepPercentView.h; sourceTree = "<group>"; };
+		9556CEF528645C3E00D49350 /* SleepPercentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepPercentView.m; sourceTree = "<group>"; };
+		955D7B7228475E980003307B /* CareRingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareRingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		955D7B7528475E980003307B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		955D7B7628475E980003307B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		955D7B8128475E9B0003307B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		955D7B8428475E9B0003307B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		955D7B8628475E9B0003307B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		955D7B8728475E9B0003307B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9567FFC428658D5E001DD63D /* SleepTimeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepTimeCell.h; sourceTree = "<group>"; };
+		9567FFC528658D5E001DD63D /* SleepTimeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepTimeCell.m; sourceTree = "<group>"; };
+		9567FFC728659EFF001DD63D /* SleepTimeDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepTimeDrawView.h; sourceTree = "<group>"; };
+		9567FFC828659EFF001DD63D /* SleepTimeDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepTimeDrawView.m; sourceTree = "<group>"; };
+		9567FFCB2865B586001DD63D /* SleepObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepObj.h; sourceTree = "<group>"; };
+		9567FFCC2865B586001DD63D /* SleepObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepObj.m; sourceTree = "<group>"; };
+		957044D2285986C60083A41C /* BarDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarDrawView.h; sourceTree = "<group>"; };
+		957044D3285986C60083A41C /* BarDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarDrawView.m; sourceTree = "<group>"; };
+		957044D82859E1A50083A41C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		957044DA2859E1A80083A41C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		9585A40428A25BE100D2D14F /* NSNumber+Imperial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Imperial.h"; sourceTree = "<group>"; };
+		9585A40528A25BE200D2D14F /* NSNumber+Imperial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Imperial.m"; sourceTree = "<group>"; };
+		9586C35B28D0866600EB6EB8 /* HMpdfManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMpdfManager.m; sourceTree = "<group>"; };
+		9586C35C28D0866600EB6EB8 /* HMPdfShareProtoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPdfShareProtoal.h; sourceTree = "<group>"; };
+		9586C35D28D0866600EB6EB8 /* HMpdfManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMpdfManager.h; sourceTree = "<group>"; };
+		9586C35F28D0879D00EB6EB8 /* NSDate+HMTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HMTools.h"; sourceTree = "<group>"; };
+		9586C36028D0879E00EB6EB8 /* NSDate+HMTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HMTools.m"; sourceTree = "<group>"; };
+		9587021A2873E5A9007544D7 /* BasicCalendaVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCalendaVc.m; sourceTree = "<group>"; };
+		9587021B2873E5A9007544D7 /* BasicCalendaVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicCalendaVc.h; sourceTree = "<group>"; };
+		958763082875710600986066 /* Blebutton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Blebutton.h; sourceTree = "<group>"; };
+		958763092875710600986066 /* Blebutton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blebutton.m; sourceTree = "<group>"; };
+		958D89EF28F7E89C0058B2BD /* TrendCollectionVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrendCollectionVc.h; sourceTree = "<group>"; };
+		958D89F028F7E89C0058B2BD /* TrendCollectionVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrendCollectionVc.m; sourceTree = "<group>"; };
+		958D89F428F7F4180058B2BD /* TrendDrawObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrendDrawObj.h; sourceTree = "<group>"; };
+		958D89F528F7F4180058B2BD /* TrendDrawObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrendDrawObj.m; sourceTree = "<group>"; };
+		958D89F728F7F4710058B2BD /* TrendHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrendHeader.h; sourceTree = "<group>"; };
+		958D89F828F804890058B2BD /* TrendClcViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrendClcViewCell.h; sourceTree = "<group>"; };
+		958D89F928F804890058B2BD /* TrendClcViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrendClcViewCell.m; sourceTree = "<group>"; };
+		958E555A29D69BB100CE3FBC /* RealtimeMeasureVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealtimeMeasureVc.h; sourceTree = "<group>"; };
+		958E555B29D69BB100CE3FBC /* RealtimeMeasureVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealtimeMeasureVc.m; sourceTree = "<group>"; };
+		958F23BA28C87A9900B6B1B2 /* OTAHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTAHeader.h; sourceTree = "<group>"; };
+		958F23BB28C87D1300B6B1B2 /* OTAHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTAHelper.h; sourceTree = "<group>"; };
+		958F23BC28C87D1300B6B1B2 /* OTAHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTAHelper.m; sourceTree = "<group>"; };
+		958F23BE28C899D100B6B1B2 /* OTAImgObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTAImgObj.h; sourceTree = "<group>"; };
+		958F23BF28C899D100B6B1B2 /* OTAImgObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTAImgObj.m; sourceTree = "<group>"; };
+		959B5583285D8F2F0023E1A0 /* Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
+		95AA8E0428912049002AAD6E /* TailLableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TailLableCell.h; sourceTree = "<group>"; };
+		95AA8E0528912049002AAD6E /* TailLableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TailLableCell.m; sourceTree = "<group>"; };
+		95B3919528F3F673001D5712 /* DayWeakMonthTrendVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayWeakMonthTrendVc.h; sourceTree = "<group>"; };
+		95B3919628F3F673001D5712 /* DayWeakMonthTrendVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayWeakMonthTrendVc.m; sourceTree = "<group>"; };
+		95B9505628E30B00001A068A /* ActivityLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityLineCell.m; sourceTree = "<group>"; };
+		95B9505728E30B00001A068A /* ActivityLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityLineCell.h; sourceTree = "<group>"; };
+		95BA690329CC374B00D2A512 /* SRDeviceInfo+description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SRDeviceInfo+description.m"; sourceTree = "<group>"; };
+		95BA690529CC412900D2A512 /* DBHistoryDataSr03.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHistoryDataSr03.h; sourceTree = "<group>"; };
+		95BBD27928B4C35500E80B9A /* NSString+Check.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Check.h"; sourceTree = "<group>"; };
+		95BBD27A28B4C35500E80B9A /* NSString+Check.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Check.m"; sourceTree = "<group>"; };
+		95BE8CDD28B0CFB3007DB0BB /* chargeTips.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chargeTips.gif; sourceTree = "<group>"; };
+		95C154052869D4CF000F5B19 /* MydeviceVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MydeviceVc.h; sourceTree = "<group>"; };
+		95C154062869D4CF000F5B19 /* MydeviceVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MydeviceVc.m; sourceTree = "<group>"; };
+		95C1540B2869D4ED000F5B19 /* OtherSettingVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherSettingVc.h; sourceTree = "<group>"; };
+		95C1540C2869D4ED000F5B19 /* OtherSettingVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherSettingVc.m; sourceTree = "<group>"; };
+		95C36B57284DFDD400E4EFBE /* LoginVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVc.h; sourceTree = "<group>"; };
+		95C36B58284DFDD400E4EFBE /* LoginVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVc.m; sourceTree = "<group>"; };
+		95C45E3C289B626B000E0D41 /* BatteryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BatteryView.h; sourceTree = "<group>"; };
+		95C45E3D289B626B000E0D41 /* BatteryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BatteryView.m; sourceTree = "<group>"; };
+		95CA2A9B28FF953E00C73C04 /* SRDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDeviceInfo.h; sourceTree = "<group>"; };
+		95CA2AA628FF953E00C73C04 /* SRBLeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBLeService.h; sourceTree = "<group>"; };
+		95CA2AA828FF953E00C73C04 /* LTSRingSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSRingSDK.h; sourceTree = "<group>"; };
+		95CA2AC328FFF86800C73C04 /* SleepStageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepStageHeader.h; sourceTree = "<group>"; };
+		95CF64792876DDE5000D2F40 /* CareRingAppRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CareRingAppRelease.entitlements; sourceTree = "<group>"; };
+		95CF647A2876DDE6000D2F40 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		95CF647C2876E3EE000D2F40 /* CareRingAppDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CareRingAppDebug.entitlements; sourceTree = "<group>"; };
+		95D001CF2848A246008536A9 /* HMShowPrivacyVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMShowPrivacyVc.h; sourceTree = "<group>"; };
+		95D001D12848A246008536A9 /* HMShowPrivacyVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMShowPrivacyVc.m; sourceTree = "<group>"; };
+		95D001D52848A39D008536A9 /* NAVTemplateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAVTemplateViewController.m; sourceTree = "<group>"; };
+		95D001D62848A39D008536A9 /* NAVTemplateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAVTemplateViewController.h; sourceTree = "<group>"; };
+		95D001D92848A3F8008536A9 /* UILabel+LNCTitleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LNCTitleStyle.m"; sourceTree = "<group>"; };
+		95D001DA2848A3F8008536A9 /* UILabel+LNCTitleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LNCTitleStyle.h"; sourceTree = "<group>"; };
+		95D327DF2885444D008D3F1D /* SleepHrObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepHrObj.h; sourceTree = "<group>"; };
+		95D327E02885444D008D3F1D /* SleepHrObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHrObj.m; sourceTree = "<group>"; };
+		95D327E22885450C008D3F1D /* SleepTimeDrawObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepTimeDrawObj.h; sourceTree = "<group>"; };
+		95D327E32885450C008D3F1D /* SleepTimeDrawObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepTimeDrawObj.m; sourceTree = "<group>"; };
+		95E4DE8228AE179F001DCF7B /* StagingDataV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StagingDataV2.h; sourceTree = "<group>"; };
+		95EB453A2861BD1800882390 /* SleepDrawLineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepDrawLineCell.h; sourceTree = "<group>"; };
+		95EB453B2861BD1800882390 /* SleepDrawLineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepDrawLineCell.m; sourceTree = "<group>"; };
+		95EB453D2861CCAB00882390 /* SleepDrawLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepDrawLineView.h; sourceTree = "<group>"; };
+		95EB453E2861CCAB00882390 /* SleepDrawLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepDrawLineView.m; sourceTree = "<group>"; };
+		95F1D11A2893C96100BBE764 /* TextInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextInfoView.h; sourceTree = "<group>"; };
+		95F1D11B2893C96100BBE764 /* TextInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextInfoView.m; sourceTree = "<group>"; };
+		95FB3BCB28728C4600D7C950 /* DBSteps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSteps.h; sourceTree = "<group>"; };
+		95FB3BD22872BB9D00D7C950 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		95FB3BD32872CFE600D7C950 /* MeasureDataListVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeasureDataListVc.h; sourceTree = "<group>"; };
+		95FB3BD42872CFE600D7C950 /* MeasureDataListVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeasureDataListVc.m; sourceTree = "<group>"; };
+		95FD1CC4289A59BC0050CA14 /* NotificationNameHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationNameHeader.h; sourceTree = "<group>"; };
+		A66F4F3DF866897CC00724AB /* Pods-RingSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSDK.release.xcconfig"; path = "Target Support Files/Pods-RingSDK/Pods-RingSDK.release.xcconfig"; sourceTree = "<group>"; };
+		F25AE04D0A64F6B6FC410BFB /* Pods-CareRingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareRingApp.release.xcconfig"; path = "Target Support Files/Pods-CareRingApp/Pods-CareRingApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		955D7B6F28475E980003307B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95299F6828FE564A00A87B91 /* Foundation.framework in Frameworks */,
+				95299F6628FE564400A87B91 /* Security.framework in Frameworks */,
+				95CF647B2876DDE6000D2F40 /* HealthKit.framework in Frameworks */,
+				951FDBCD2A25D5740076484B /* libRingSDK_1.0.6.a in Frameworks */,
+				2AD159DBF9686A7D6D45F9DB /* Pods_CareRingApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DDE76C27587B6A3BA8BB0EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95299F6728FE564A00A87B91 /* Foundation.framework */,
+				95299F6528FE564400A87B91 /* Security.framework */,
+				95CF647A2876DDE6000D2F40 /* HealthKit.framework */,
+				47F79097EE2A93A77B6B6D4C /* Pods_CareRingApp.framework */,
+				1E35B8A02DE262EE3F9B410C /* Pods_RingSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95094352284766C900FEEBF2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				95C45E3B289B625B000E0D41 /* WidgesView */,
+				954B7DB32862E82E00CFC929 /* TimeUtils.h */,
+				95094367284781C100FEEBF2 /* HMUserdefaultUtil.h */,
+				95094366284781C100FEEBF2 /* HMUserdefaultUtil.m */,
+				950943532847681C00FEEBF2 /* ConfigModel.h */,
+				950943562847688400FEEBF2 /* LocalizeTool.h */,
+				950943572847688400FEEBF2 /* LocalizeTool.m */,
+				950943542847681C00FEEBF2 /* ConfigModel.m */,
+				950943652847698600FEEBF2 /* LocalizeKeys.h */,
+				959B5583285D8F2F0023E1A0 /* Colors.h */,
+				95FD1CC4289A59BC0050CA14 /* NotificationNameHeader.h */,
+				9539329529C4603400478CBB /* SdkInnerHeader.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		951A44AB286AE8C200FA5F37 /* AboutSetting */ = {
+			isa = PBXGroup;
+			children = (
+				951A44AC286AE98A00FA5F37 /* NormalSetCell.h */,
+				951A44AD286AE98A00FA5F37 /* NormalSetCell.m */,
+				95AA8E0428912049002AAD6E /* TailLableCell.h */,
+				95AA8E0528912049002AAD6E /* TailLableCell.m */,
+			);
+			path = AboutSetting;
+			sourceTree = "<group>";
+		};
+		951A819528583B0700E952C4 /* BindDevice */ = {
+			isa = PBXGroup;
+			children = (
+				951A819628583B3200E952C4 /* BindeTipsVc.h */,
+				951A819728583B3200E952C4 /* BindeTipsVc.m */,
+				951A819928583B4800E952C4 /* ReadyToBindVc.h */,
+				951A819A28583B4800E952C4 /* ReadyToBindVc.m */,
+				951A819C28583BB400E952C4 /* BindDeviceListVc.h */,
+				951A819D28583BB400E952C4 /* BindDeviceListVc.m */,
+				951A819F28583BC200E952C4 /* BindSuccVc.h */,
+				951A81A028583BC200E952C4 /* BindSuccVc.m */,
+				950377DC288F9267003C2363 /* BindParameterHeader.h */,
+			);
+			path = BindDevice;
+			sourceTree = "<group>";
+		};
+		951A81A928587DCF00E952C4 /* AboutBind */ = {
+			isa = PBXGroup;
+			children = (
+				951A81AA28587DE400E952C4 /* DeviceCell.h */,
+				951A81AB28587DE400E952C4 /* DeviceCell.m */,
+			);
+			path = AboutBind;
+			sourceTree = "<group>";
+		};
+		9528895B29CADEED007364CA /* OusideBle */ = {
+			isa = PBXGroup;
+			children = (
+				9528895C29CADEED007364CA /* OusideBleDiscovery.h */,
+				9528895D29CADEED007364CA /* OusideBleDiscovery.m */,
+			);
+			path = OusideBle;
+			sourceTree = "<group>";
+		};
+		95299F8328FE8A8400A87B91 /* RingSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RingSDK;
+			sourceTree = "<group>";
+		};
+		95315A54284F29CF00722026 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				950377DD288F9890003C2363 /* SRDeviceInfo+description.h */,
+				95BA690329CC374B00D2A512 /* SRDeviceInfo+description.m */,
+				9528895B29CADEED007364CA /* OusideBle */,
+				95CA2ABE28FFE69500C73C04 /* SleepTools */,
+				9586C35A28D0866600EB6EB8 /* SharePdf */,
+				958F23B928C87A8D00B6B1B2 /* AboutOta */,
+				9567FFCA2865B577001DD63D /* AboutSleep */,
+				954B7DAF2862CB0D00CFC929 /* AboutReady */,
+				954701AD285B35F90009AD64 /* AboutActivity */,
+				95315A75284F4B7500722026 /* DeviceCenter.h */,
+				95315A76284F4B7500722026 /* DeviceCenter.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		95315A55284F29CF00722026 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				9539329129C4531900478CBB /* DBSleepData.h */,
+				95315A5C284F2D7D00722026 /* DBValueSuper.h */,
+				95315A5F284F2F0700722026 /* DBDevices.h */,
+				95FB3BCB28728C4600D7C950 /* DBSteps.h */,
+				95315A65284F2F2200722026 /* DBHeartRate.h */,
+				95315A68284F2F3300722026 /* DBThermemoter.h */,
+				95315A6B284F2F4100722026 /* DBHrv.h */,
+				95315A71284F414B00722026 /* DBTables.h */,
+				95BA690529CC412900D2A512 /* DBHistoryDataSr03.h */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		953E053A2856E5D200AB27DE /* AboutActivity */ = {
+			isa = PBXGroup;
+			children = (
+				953E053E28570A1C00AB27DE /* ActivityCell.h */,
+				953E053F28570A1C00AB27DE /* ActivityCell.m */,
+				95B9505728E30B00001A068A /* ActivityLineCell.h */,
+				95B9505628E30B00001A068A /* ActivityLineCell.m */,
+				957044D2285986C60083A41C /* BarDrawView.h */,
+				957044D3285986C60083A41C /* BarDrawView.m */,
+				958763082875710600986066 /* Blebutton.h */,
+				958763092875710600986066 /* Blebutton.m */,
+				953E053B2856E5EA00AB27DE /* ValueQuarView.h */,
+				953E053C2856E5EA00AB27DE /* ValueQuarView.m */,
+			);
+			path = AboutActivity;
+			sourceTree = "<group>";
+		};
+		953E0541285713C600AB27DE /* AboutReady */ = {
+			isa = PBXGroup;
+			children = (
+				953E0542285713D800AB27DE /* TextInfoCell.h */,
+				953E0543285713D800AB27DE /* TextInfoCell.m */,
+				95EB453A2861BD1800882390 /* SleepDrawLineCell.h */,
+				95EB453B2861BD1800882390 /* SleepDrawLineCell.m */,
+				95EB453D2861CCAB00882390 /* SleepDrawLineView.h */,
+				95EB453E2861CCAB00882390 /* SleepDrawLineView.m */,
+				95F1D11A2893C96100BBE764 /* TextInfoView.h */,
+				95F1D11B2893C96100BBE764 /* TextInfoView.m */,
+			);
+			path = AboutReady;
+			sourceTree = "<group>";
+		};
+		9542478728BDE52800F3B729 /* AboutOTA */ = {
+			isa = PBXGroup;
+			children = (
+				9542478C28BDF73000F3B729 /* OTAVc.h */,
+				9542478D28BDF73000F3B729 /* OTAVc.m */,
+			);
+			path = AboutOTA;
+			sourceTree = "<group>";
+		};
+		9542478828BDE54300F3B729 /* AboutOTA */ = {
+			isa = PBXGroup;
+			children = (
+				9542478F28BE092500F3B729 /* SRfileTableViewController.h */,
+				9542479028BE092500F3B729 /* SRfileTableViewController.m */,
+				9542478928BDE60900F3B729 /* OtaRemindView.h */,
+				9542478A28BDE60900F3B729 /* OtaRemindView.m */,
+			);
+			path = AboutOTA;
+			sourceTree = "<group>";
+		};
+		954701AD285B35F90009AD64 /* AboutActivity */ = {
+			isa = PBXGroup;
+			children = (
+				954701AE285B36BA0009AD64 /* ActivityObj.h */,
+				954701AF285B36BA0009AD64 /* ActivityObj.m */,
+			);
+			path = AboutActivity;
+			sourceTree = "<group>";
+		};
+		954B7DAF2862CB0D00CFC929 /* AboutReady */ = {
+			isa = PBXGroup;
+			children = (
+				954B7DB02862CB2900CFC929 /* ReadyDrawObj.h */,
+				954B7DB12862CB2900CFC929 /* ReadyDrawObj.m */,
+			);
+			path = AboutReady;
+			sourceTree = "<group>";
+		};
+		9556CEF328645BC000D49350 /* AboutSleep */ = {
+			isa = PBXGroup;
+			children = (
+				953734B82A28394200FEB0F3 /* NapSleepTimeCell.h */,
+				953734B92A28394200FEB0F3 /* NapSleepTimeCell.m */,
+				953734B62A28394200FEB0F3 /* NapSleepTimeDrawView.h */,
+				953734B72A28394200FEB0F3 /* NapSleepTimeDrawView.m */,
+				9556CEF428645C3E00D49350 /* SleepPercentView.h */,
+				9556CEF528645C3E00D49350 /* SleepPercentView.m */,
+				9567FFC428658D5E001DD63D /* SleepTimeCell.h */,
+				9567FFC528658D5E001DD63D /* SleepTimeCell.m */,
+				9567FFC728659EFF001DD63D /* SleepTimeDrawView.h */,
+				9567FFC828659EFF001DD63D /* SleepTimeDrawView.m */,
+			);
+			path = AboutSleep;
+			sourceTree = "<group>";
+		};
+		955D7B6928475E980003307B = {
+			isa = PBXGroup;
+			children = (
+				955D7B7428475E980003307B /* CareRingApp */,
+				95299F8328FE8A8400A87B91 /* RingSDK */,
+				955D7B7328475E980003307B /* Products */,
+				B3E5BFB2A7D4A734F673CA59 /* Pods */,
+				1DDE76C27587B6A3BA8BB0EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		955D7B7328475E980003307B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				955D7B7228475E980003307B /* CareRingApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		955D7B7428475E980003307B /* CareRingApp */ = {
+			isa = PBXGroup;
+			children = (
+				95BE8CDC28B0CFB3007DB0BB /* Res */,
+				95CF647C2876E3EE000D2F40 /* CareRingAppDebug.entitlements */,
+				95CF64792876DDE5000D2F40 /* CareRingAppRelease.entitlements */,
+				95FB3BD22872BB9D00D7C950 /* PrefixHeader.pch */,
+				95B77072285072E4009F1249 /* Libs */,
+				95315A54284F29CF00722026 /* Models */,
+				95C36B52284DF93700E4EFBE /* Views */,
+				95D001D82848A3F8008536A9 /* Category */,
+				95D001CC2848A237008536A9 /* VC */,
+				95094352284766C900FEEBF2 /* Utils */,
+				955D7B7528475E980003307B /* AppDelegate.h */,
+				955D7B7628475E980003307B /* AppDelegate.m */,
+				955D7B8128475E9B0003307B /* Assets.xcassets */,
+				955D7B8328475E9B0003307B /* LaunchScreen.storyboard */,
+				955D7B8628475E9B0003307B /* Info.plist */,
+				955D7B8728475E9B0003307B /* main.m */,
+				9509435F2847692500FEEBF2 /* Localizable.strings */,
+				950943632847694E00FEEBF2 /* LocalizableTwo.strings */,
+				9525AD522848C4AD00EEE73D /* Widges.xcassets */,
+				957044D92859E1A50083A41C /* InfoPlist.strings */,
+			);
+			path = CareRingApp;
+			sourceTree = "<group>";
+		};
+		9567FFCA2865B577001DD63D /* AboutSleep */ = {
+			isa = PBXGroup;
+			children = (
+				9567FFCB2865B586001DD63D /* SleepObj.h */,
+				9567FFCC2865B586001DD63D /* SleepObj.m */,
+				95D327DF2885444D008D3F1D /* SleepHrObj.h */,
+				95D327E02885444D008D3F1D /* SleepHrObj.m */,
+				95D327E22885450C008D3F1D /* SleepTimeDrawObj.h */,
+				95D327E32885450C008D3F1D /* SleepTimeDrawObj.m */,
+			);
+			path = AboutSleep;
+			sourceTree = "<group>";
+		};
+		9586C35A28D0866600EB6EB8 /* SharePdf */ = {
+			isa = PBXGroup;
+			children = (
+				9586C35B28D0866600EB6EB8 /* HMpdfManager.m */,
+				9586C35F28D0879D00EB6EB8 /* NSDate+HMTools.h */,
+				9586C36028D0879E00EB6EB8 /* NSDate+HMTools.m */,
+				9586C35C28D0866600EB6EB8 /* HMPdfShareProtoal.h */,
+				9586C35D28D0866600EB6EB8 /* HMpdfManager.h */,
+			);
+			path = SharePdf;
+			sourceTree = "<group>";
+		};
+		958D89EE28F7E8730058B2BD /* AboutTrend */ = {
+			isa = PBXGroup;
+			children = (
+				95B3919528F3F673001D5712 /* DayWeakMonthTrendVc.h */,
+				95B3919628F3F673001D5712 /* DayWeakMonthTrendVc.m */,
+				958D89F228F7F1550058B2BD /* Models */,
+				958D89F328F7F1550058B2BD /* Views */,
+				958D89EF28F7E89C0058B2BD /* TrendCollectionVc.h */,
+				958D89F028F7E89C0058B2BD /* TrendCollectionVc.m */,
+			);
+			path = AboutTrend;
+			sourceTree = "<group>";
+		};
+		958D89F228F7F1550058B2BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				958D89F428F7F4180058B2BD /* TrendDrawObj.h */,
+				958D89F528F7F4180058B2BD /* TrendDrawObj.m */,
+				958D89F728F7F4710058B2BD /* TrendHeader.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		958D89F328F7F1550058B2BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				958D89F828F804890058B2BD /* TrendClcViewCell.h */,
+				958D89F928F804890058B2BD /* TrendClcViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		958F23B928C87A8D00B6B1B2 /* AboutOta */ = {
+			isa = PBXGroup;
+			children = (
+				958F23BA28C87A9900B6B1B2 /* OTAHeader.h */,
+				958F23BB28C87D1300B6B1B2 /* OTAHelper.h */,
+				958F23BC28C87D1300B6B1B2 /* OTAHelper.m */,
+				958F23BE28C899D100B6B1B2 /* OTAImgObj.h */,
+				958F23BF28C899D100B6B1B2 /* OTAImgObj.m */,
+			);
+			path = AboutOta;
+			sourceTree = "<group>";
+		};
+		95B77072285072E4009F1249 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				951FDBCC2A25D5740076484B /* libRingSDK_1.0.6.a */,
+				95315A55284F29CF00722026 /* DataBase */,
+				95E4DE7828AE179F001DCF7B /* SleepStagingV2 */,
+				95CA2A9128FF953E00C73C04 /* BLESDK */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		95BE8CDC28B0CFB3007DB0BB /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				95BE8CDD28B0CFB3007DB0BB /* chargeTips.gif */,
+			);
+			path = Res;
+			sourceTree = "<group>";
+		};
+		95C154012869D4A5000F5B19 /* AboutSetting */ = {
+			isa = PBXGroup;
+			children = (
+				95C154052869D4CF000F5B19 /* MydeviceVc.h */,
+				95C154062869D4CF000F5B19 /* MydeviceVc.m */,
+				95C1540B2869D4ED000F5B19 /* OtherSettingVc.h */,
+				95C1540C2869D4ED000F5B19 /* OtherSettingVc.m */,
+			);
+			path = AboutSetting;
+			sourceTree = "<group>";
+		};
+		95C36B52284DF93700E4EFBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9542478828BDE54300F3B729 /* AboutOTA */,
+				950377E4288FC3F6003C2363 /* LTPHud.h */,
+				950377E3288FC3F6003C2363 /* LTPHud.m */,
+				951A44AB286AE8C200FA5F37 /* AboutSetting */,
+				9556CEF328645BC000D49350 /* AboutSleep */,
+				951A81A928587DCF00E952C4 /* AboutBind */,
+				953E0541285713C600AB27DE /* AboutReady */,
+				953E053A2856E5D200AB27DE /* AboutActivity */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95C36B56284DFD9F00E4EFBE /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				95C36B57284DFDD400E4EFBE /* LoginVc.h */,
+				95C36B58284DFDD400E4EFBE /* LoginVc.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		95C45E3B289B625B000E0D41 /* WidgesView */ = {
+			isa = PBXGroup;
+			children = (
+				95C45E3C289B626B000E0D41 /* BatteryView.h */,
+				95C45E3D289B626B000E0D41 /* BatteryView.m */,
+			);
+			path = WidgesView;
+			sourceTree = "<group>";
+		};
+		95CA2A9128FF953E00C73C04 /* BLESDK */ = {
+			isa = PBXGroup;
+			children = (
+				95CA2A9228FF953E00C73C04 /* Ble */,
+				95CA2AA828FF953E00C73C04 /* LTSRingSDK.h */,
+			);
+			path = BLESDK;
+			sourceTree = "<group>";
+		};
+		95CA2A9228FF953E00C73C04 /* Ble */ = {
+			isa = PBXGroup;
+			children = (
+				95CA2A9B28FF953E00C73C04 /* SRDeviceInfo.h */,
+				95CA2AA628FF953E00C73C04 /* SRBLeService.h */,
+			);
+			path = Ble;
+			sourceTree = "<group>";
+		};
+		95CA2ABE28FFE69500C73C04 /* SleepTools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SleepTools;
+			sourceTree = "<group>";
+		};
+		95D001CC2848A237008536A9 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				958E555A29D69BB100CE3FBC /* RealtimeMeasureVc.h */,
+				958E555B29D69BB100CE3FBC /* RealtimeMeasureVc.m */,
+				958D89EE28F7E8730058B2BD /* AboutTrend */,
+				9542478728BDE52800F3B729 /* AboutOTA */,
+				9587021B2873E5A9007544D7 /* BasicCalendaVc.h */,
+				9587021A2873E5A9007544D7 /* BasicCalendaVc.m */,
+				95C154012869D4A5000F5B19 /* AboutSetting */,
+				951A819528583B0700E952C4 /* BindDevice */,
+				95C36B56284DFD9F00E4EFBE /* Account */,
+				9525AD492848BE0000EEE73D /* HMTabbarController.h */,
+				9525AD4A2848BE0000EEE73D /* HMTabbarController.m */,
+				95D001D42848A39D008536A9 /* SuperVC */,
+				95D001CD2848A237008536A9 /* privacy */,
+				9525AD402848BD6900EEE73D /* MainSleepVc.h */,
+				9525AD412848BD6900EEE73D /* MainSleepVc.m */,
+				9525AD432848BD7800EEE73D /* MainActivityVc.h */,
+				9525AD442848BD7900EEE73D /* MainActivityVc.m */,
+				9525AD462848BD8500EEE73D /* MainSettingVc.h */,
+				9525AD472848BD8500EEE73D /* MainSettingVc.m */,
+				95FB3BD32872CFE600D7C950 /* MeasureDataListVc.h */,
+				95FB3BD42872CFE600D7C950 /* MeasureDataListVc.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		95D001CD2848A237008536A9 /* privacy */ = {
+			isa = PBXGroup;
+			children = (
+				95D001CF2848A246008536A9 /* HMShowPrivacyVc.h */,
+				95D001D12848A246008536A9 /* HMShowPrivacyVc.m */,
+			);
+			path = privacy;
+			sourceTree = "<group>";
+		};
+		95D001D42848A39D008536A9 /* SuperVC */ = {
+			isa = PBXGroup;
+			children = (
+				9525AD4D2848BFBE00EEE73D /* MainNav.h */,
+				9525AD4C2848BFBE00EEE73D /* MainNav.m */,
+				95D001D52848A39D008536A9 /* NAVTemplateViewController.m */,
+				95D001D62848A39D008536A9 /* NAVTemplateViewController.h */,
+			);
+			path = SuperVC;
+			sourceTree = "<group>";
+		};
+		95D001D82848A3F8008536A9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9525AD4F2848C05700EEE73D /* UIViewController+Custom.h */,
+				9525AD502848C05700EEE73D /* UIViewController+Custom.m */,
+				951CC03A28BCC04800FA8A02 /* NSObject+Tool.h */,
+				951CC03B28BCC04800FA8A02 /* NSObject+Tool.m */,
+				95D001D92848A3F8008536A9 /* UILabel+LNCTitleStyle.m */,
+				95D001DA2848A3F8008536A9 /* UILabel+LNCTitleStyle.h */,
+				950377E0288FC222003C2363 /* UITableViewCell+Styles.h */,
+				950377E1288FC222003C2363 /* UITableViewCell+Styles.m */,
+				950377E6288FF302003C2363 /* NSNumber+formatString.h */,
+				950377E7288FF302003C2363 /* NSNumber+formatString.m */,
+				9585A40428A25BE100D2D14F /* NSNumber+Imperial.h */,
+				9585A40528A25BE200D2D14F /* NSNumber+Imperial.m */,
+				95BBD27928B4C35500E80B9A /* NSString+Check.h */,
+				95BBD27A28B4C35500E80B9A /* NSString+Check.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		95E4DE7828AE179F001DCF7B /* SleepStagingV2 */ = {
+			isa = PBXGroup;
+			children = (
+				952736042900F7AE00921BC0 /* StagingListObj.h */,
+				952736072900F7AE00921BC0 /* StagingSubObj.h */,
+				95CA2AC328FFF86800C73C04 /* SleepStageHeader.h */,
+				95E4DE8228AE179F001DCF7B /* StagingDataV2.h */,
+			);
+			path = SleepStagingV2;
+			sourceTree = "<group>";
+		};
+		B3E5BFB2A7D4A734F673CA59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DCDAB602B2CC671B16BFBF3 /* Pods-CareRingApp.debug.xcconfig */,
+				F25AE04D0A64F6B6FC410BFB /* Pods-CareRingApp.release.xcconfig */,
+				643C8B2AB23B59CDED0F5AA1 /* Pods-RingSDK.debug.xcconfig */,
+				A66F4F3DF866897CC00724AB /* Pods-RingSDK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		955D7B7128475E980003307B /* CareRingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 955D7B8B28475E9B0003307B /* Build configuration list for PBXNativeTarget "CareRingApp" */;
+			buildPhases = (
+				2C10B0FFB7BAA5DFF6320F96 /* [CP] Check Pods Manifest.lock */,
+				955D7B6E28475E980003307B /* Sources */,
+				955D7B6F28475E980003307B /* Frameworks */,
+				955D7B7028475E980003307B /* Resources */,
+				37BDEE33D9D1B6D3DC7961A9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CareRingApp;
+			productName = CareRingApp;
+			productReference = 955D7B7228475E980003307B /* CareRingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		955D7B6A28475E980003307B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					955D7B7128475E980003307B = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 955D7B6D28475E980003307B /* Build configuration list for PBXProject "CareRingApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 955D7B6928475E980003307B;
+			productRefGroup = 955D7B7328475E980003307B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				955D7B7128475E980003307B /* CareRingApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		955D7B7028475E980003307B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955D7B8528475E9B0003307B /* LaunchScreen.storyboard in Resources */,
+				95BE8CDE28B0CFB4007DB0BB /* chargeTips.gif in Resources */,
+				957044D72859E1A50083A41C /* InfoPlist.strings in Resources */,
+				9525AD532848C4AD00EEE73D /* Widges.xcassets in Resources */,
+				9509435D2847692500FEEBF2 /* Localizable.strings in Resources */,
+				955D7B8228475E9B0003307B /* Assets.xcassets in Resources */,
+				950943612847694E00FEEBF2 /* LocalizableTwo.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C10B0FFB7BAA5DFF6320F96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CareRingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37BDEE33D9D1B6D3DC7961A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareRingApp/Pods-CareRingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CareRingApp/Pods-CareRingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CareRingApp/Pods-CareRingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		955D7B6E28475E980003307B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9556CEF628645C3E00D49350 /* SleepPercentView.m in Sources */,
+				95094368284781C200FEEBF2 /* HMUserdefaultUtil.m in Sources */,
+				958E555C29D69BB100CE3FBC /* RealtimeMeasureVc.m in Sources */,
+				953E053D2856E5EA00AB27DE /* ValueQuarView.m in Sources */,
+				9542478B28BDE60900F3B729 /* OtaRemindView.m in Sources */,
+				9567FFC628658D5E001DD63D /* SleepTimeCell.m in Sources */,
+				9542479128BE092500F3B729 /* SRfileTableViewController.m in Sources */,
+				95C36B59284DFDD400E4EFBE /* LoginVc.m in Sources */,
+				950377E8288FF302003C2363 /* NSNumber+formatString.m in Sources */,
+				951A81A128583BC200E952C4 /* BindSuccVc.m in Sources */,
+				9567FFCD2865B586001DD63D /* SleepObj.m in Sources */,
+				95AA8E0628912049002AAD6E /* TailLableCell.m in Sources */,
+				95D327E12885444D008D3F1D /* SleepHrObj.m in Sources */,
+				95FB3BD52872CFE600D7C950 /* MeasureDataListVc.m in Sources */,
+				9525AD4B2848BE0000EEE73D /* HMTabbarController.m in Sources */,
+				958F23BD28C87D1300B6B1B2 /* OTAHelper.m in Sources */,
+				951A81AC28587DE400E952C4 /* DeviceCell.m in Sources */,
+				958D89F128F7E89C0058B2BD /* TrendCollectionVc.m in Sources */,
+				95F1D11C2893C96100BBE764 /* TextInfoView.m in Sources */,
+				953734BA2A28394200FEB0F3 /* NapSleepTimeDrawView.m in Sources */,
+				95BA690429CC374B00D2A512 /* SRDeviceInfo+description.m in Sources */,
+				95BBD27B28B4C35500E80B9A /* NSString+Check.m in Sources */,
+				950943582847688400FEEBF2 /* LocalizeTool.m in Sources */,
+				958D89FA28F804890058B2BD /* TrendClcViewCell.m in Sources */,
+				953E054028570A1C00AB27DE /* ActivityCell.m in Sources */,
+				951A44AE286AE98A00FA5F37 /* NormalSetCell.m in Sources */,
+				951CC03C28BCC04800FA8A02 /* NSObject+Tool.m in Sources */,
+				9587630A2875710600986066 /* Blebutton.m in Sources */,
+				95EB453C2861BD1800882390 /* SleepDrawLineCell.m in Sources */,
+				950377E5288FC3F7003C2363 /* LTPHud.m in Sources */,
+				95C1540D2869D4ED000F5B19 /* OtherSettingVc.m in Sources */,
+				95D001D32848A246008536A9 /* HMShowPrivacyVc.m in Sources */,
+				951A819E28583BB400E952C4 /* BindDeviceListVc.m in Sources */,
+				958D89F628F7F4180058B2BD /* TrendDrawObj.m in Sources */,
+				951A819828583B3200E952C4 /* BindeTipsVc.m in Sources */,
+				9586C36128D0879E00EB6EB8 /* NSDate+HMTools.m in Sources */,
+				95315A77284F4B7500722026 /* DeviceCenter.m in Sources */,
+				9525AD422848BD6900EEE73D /* MainSleepVc.m in Sources */,
+				9525AD452848BD7900EEE73D /* MainActivityVc.m in Sources */,
+				95B9505828E30B00001A068A /* ActivityLineCell.m in Sources */,
+				957044D4285986C60083A41C /* BarDrawView.m in Sources */,
+				955D7B7728475E980003307B /* AppDelegate.m in Sources */,
+				953734BB2A28394200FEB0F3 /* NapSleepTimeCell.m in Sources */,
+				954701B0285B36BA0009AD64 /* ActivityObj.m in Sources */,
+				958F23C028C899D100B6B1B2 /* OTAImgObj.m in Sources */,
+				9586C35E28D0866600EB6EB8 /* HMpdfManager.m in Sources */,
+				9525AD512848C05700EEE73D /* UIViewController+Custom.m in Sources */,
+				9525AD482848BD8500EEE73D /* MainSettingVc.m in Sources */,
+				9525AD4E2848BFBE00EEE73D /* MainNav.m in Sources */,
+				9542478E28BDF73000F3B729 /* OTAVc.m in Sources */,
+				951A819B28583B4800E952C4 /* ReadyToBindVc.m in Sources */,
+				954B7DB22862CB2900CFC929 /* ReadyDrawObj.m in Sources */,
+				9528895E29CADEED007364CA /* OusideBleDiscovery.m in Sources */,
+				9587021C2873E5A9007544D7 /* BasicCalendaVc.m in Sources */,
+				95B3919728F3F673001D5712 /* DayWeakMonthTrendVc.m in Sources */,
+				95EB453F2861CCAB00882390 /* SleepDrawLineView.m in Sources */,
+				950943552847681C00FEEBF2 /* ConfigModel.m in Sources */,
+				95D327E42885450C008D3F1D /* SleepTimeDrawObj.m in Sources */,
+				95D001DB2848A3F8008536A9 /* UILabel+LNCTitleStyle.m in Sources */,
+				9567FFC928659EFF001DD63D /* SleepTimeDrawView.m in Sources */,
+				95D001D72848A39D008536A9 /* NAVTemplateViewController.m in Sources */,
+				955D7B8828475E9B0003307B /* main.m in Sources */,
+				9585A40628A25BE200D2D14F /* NSNumber+Imperial.m in Sources */,
+				953E0544285713D800AB27DE /* TextInfoCell.m in Sources */,
+				95C45E3E289B626B000E0D41 /* BatteryView.m in Sources */,
+				95C154072869D4CF000F5B19 /* MydeviceVc.m in Sources */,
+				950377E2288FC222003C2363 /* UITableViewCell+Styles.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9509435F2847692500FEEBF2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9509435E2847692500FEEBF2 /* en */,
+				950943602847694400FEEBF2 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		950943632847694E00FEEBF2 /* LocalizableTwo.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				950943622847694E00FEEBF2 /* en */,
+				950943642847694F00FEEBF2 /* zh-Hans */,
+			);
+			name = LocalizableTwo.strings;
+			sourceTree = "<group>";
+		};
+		955D7B8328475E9B0003307B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				955D7B8428475E9B0003307B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		957044D92859E1A50083A41C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				957044D82859E1A50083A41C /* en */,
+				957044DA2859E1A80083A41C /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		955D7B8928475E9B0003307B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		955D7B8A28475E9B0003307B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		955D7B8C28475E9B0003307B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DCDAB602B2CC671B16BFBF3 /* Pods-CareRingApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CareRingApp/CareRingAppDebug.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20230712;
+				DEVELOPMENT_TEAM = 67GVK9FHRE;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)//CareRingApp/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"SQLITE_HAS_CODEC=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CareRingApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ring Demo";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "need bluetooth.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "need bluetooth.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CareRingApp/Libs",
+				);
+				MARKETING_VERSION = 1.0.6;
+				OTHER_CFLAGS = (
+					"-DSQLITE_HAS_CODEC",
+					"-DSQLITE_TEMP_STORE=3",
+					"-DSQLCIPHER_CRYPTO_CC",
+					"-DNDEBUG",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lin.CareRingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		955D7B8D28475E9B0003307B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F25AE04D0A64F6B6FC410BFB /* Pods-CareRingApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CareRingApp/CareRingAppRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20230712;
+				DEVELOPMENT_TEAM = 67GVK9FHRE;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)//CareRingApp/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"SQLITE_HAS_CODEC=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CareRingApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ring Demo";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "need bluetooth.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "need bluetooth.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CareRingApp/Libs",
+				);
+				MARKETING_VERSION = 1.0.6;
+				OTHER_CFLAGS = (
+					"-DSQLITE_HAS_CODEC",
+					"-DSQLITE_TEMP_STORE=3",
+					"-DSQLCIPHER_CRYPTO_CC",
+					"-DNDEBUG",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lin.CareRingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		955D7B6D28475E980003307B /* Build configuration list for PBXProject "CareRingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				955D7B8928475E9B0003307B /* Debug */,
+				955D7B8A28475E9B0003307B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		955D7B8B28475E9B0003307B /* Build configuration list for PBXNativeTarget "CareRingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				955D7B8C28475E9B0003307B /* Debug */,
+				955D7B8D28475E9B0003307B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 955D7B6A28475E980003307B /* Project object */;
+}

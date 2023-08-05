@@ -1,0 +1,390 @@
+/* 
+  Localizable.strings
+  CareRingApp
+
+  Created by 兰仲平 on 2022/6/1.
+  
+*/
+"protocal_privacy" = "Privacy Policy";
+//"protocal_agreement" = "%@ TERMS OF USE";
+"welcome" = "Welcome";
+"protfmat" = " Agree to %@ and %@ ";
+"protocal_disc" = "Disclaimer";
+"Start" = "Start";
+"not_agree_privacy_tips" = "Please read and agree with %@ %@ and %@";
+
+/* tabbat */
+"tab_ready" = "Readiness";
+"tab_sleep" = "Sleep";
+"tab_activity" = "Home";
+"tab_setting" = "Settings";
+/* tabbat */
+
+// 其他的
+"tip" = "Tips";
+"comma" = ",";
+"tip_no_data" = "No more records";
+"tip_open_ble" = "Please turn on the Bluetooth function of your mobile phone.";
+"go_seting" = "Settings";
+"tip_need_auth_ble" = "%@ requires your permission to use the Bluetooth feature.";
+
+// 登录注册
+"btn_agree" = "Agree";
+"_login" = "Login";
+"_register" = "Sign up now";
+"forget_pwd" = "Forgot password?";
+"txt_input_email" = "please enter your email";
+"txt_input_pwd" = "Please enter a %d-%d digit password";
+"txt_input_authcode" = "Please enter auth code";
+"btn_regist" = "Register";
+"btn_send_authcode" = "Code";
+"btn_send_resend_authcode" = "Resend";
+
+"btn_rst_pwd" = "Reset Password";
+"tip_email_illegal" = "Email is illegal.";
+"tip_email_not_regist" = "Invalid account, please enter a registered account";
+
+"tip_authcode_sended" = "Authcode has send to your email.";
+"tip_account_exist" = "This account has been registered";
+"tip_regist_succ" = "Account is register successfully";
+"tip_authcode_illegal" = "Authcode is illegal or timeout";
+"tip_pwd_reset_succ" = "Password reset successfully";
+"tip_pwd_reset_fail" = "Password reset fail";
+"tip_login_succ" = "Login successfully";
+"tip_login_fail" = "Login failed";
+"tip_login_acc_or_pwd_error" = "Account or password incorrect";
+"tip_net_error" = "Internet is not well";
+"title_account" = "Account";
+"tip_logout" = "Are you sure you want to log out?";
+"title_regist_agree" = "Registration means you agree to %@ and %@";
+"title_user_agreement" = " User agreement ";
+"tip_pwd_contain_eligal" = "Password contains illegal characters!";
+"tip_pwd_must_more_than" = "Password no less than %d digits or letters";
+"tip_pwd_must_less_than" = "Password no more than %d digits or letters!";
+
+"title_login" = "Sign in to your account";
+"title_forget_pwd" = "Reset your password";
+"title_regist" = "Register your account";
+// 首页
+"quar_titl_hr" = "Resting heart rate";
+"quar_titl_hrv" = "HRV";
+"quar_titl_temp" = "Finger temperature";
+"quar_titl_step" = "Step count";
+"quar_titl_cal" = "Calorie";
+"BAR_DRAW_TITLE_HR" = "Heart rate";
+"BAR_DRAW_TITLE_HRV" = "HRV";
+"BAR_DRAW_TITLE_TEMP" = "Finger temperature";
+"just_now" = "Just now";
+"min_ago" = "min ago";
+"hour_ago" = "hours ago";
+"format_hour_min" = "hh:mm";
+"yesterday" = "Yesterday";
+"time_format_thisyear" = "dd/MM";
+"time_format_before_thisyear" = "dd/MM/yyyy";
+"measure_list_date_format" = "MMM dd,yyyy hh:mm";
+
+// 设置-目标
+"vc_title_set_target" = "Set Goals";
+"seg_titl_sleep" = "Sleep";
+"seg_titl_quality" = "Quality";
+"seg_titl_immerse" = "Dip";
+"seg_titl_deep" = "Deep";
+// 沉浸的 segment
+"immerse_seg_titl_sporter" = "Athlete";
+"immerse_seg_titl_normal" = "Normal";
+"immerse_seg_titl_reduce" = "Reduce";
+"immerse_seg_titl_low_dip" = "Low Dip";
+
+"L_TITLE_ABOUT" = "About";
+"L_TITEL_TARGET_SLEEP" = "Sleep goals";
+"L_TITEL_TARGET_GOODSLEEP" = "Quality sleep goals";
+"L_TITEL_TARGET_IMMERSE" = "Nighttime heart rate immersion";
+"L_TITEL_TARGET_DEEPSLEEP" = "Deep sleep goals";
+"L_SUNTITL_TARGET_SLEEP"= "Set your sleep goals";
+"L_SUNTITL_GOODSLEEP"= "Set your quality sleep goals";
+"L_SUNTITL_TARGET_IMMERSE"= "Set your nighttime heart rate immersion";
+"L_SUNTITL_TARGET_DEEPSLEEP"= "Set your deep sleep goals";
+"tip_save_succ" = "Successfully saved!";
+"tip_save_error" = "Save failed!";
+
+// 目标 睡眠时长
+"txt_target_about_sleep_a" = "Generally speaking you know how much sleep you need to feel refreshed, some people need more, some people less.\r\n";
+"txt_target_about_sleep_b" = "Research shows that most adults need between seven and nine hours of sleep each night.";
+
+// 目标 优质睡眠
+"txt_target_about_quality_sleep_a" = "Your quality goals are based on the percentage of sleep time needed, and most people find 70-80% to be a good starting goal.\r\n";
+"txt_target_about_quality_sleep_b" = "The Sleep Quality Graph analyzes your sleep duration, amplitude and heart rate while sleeping and is a great way to track how much quality sleep you're getting. \r\nYou can adjust the target to the value that works best for you. \r\n";
+//目标 沉浸
+"txt_target_about_immerse_a" = "The most common drop is 10-15%, if you regularly experience higher or lower drops than this, you can adjust for better reporting\r\nHeart rate immersion is the average of your sleeping heart rate with your of inactive daytime heart rate averages. \r\n";
+//目标 深度睡眠
+"txt_target_about_deepsleep_a" = "Most people get 10-30% deep sleep.\r\n";
+"txt_target_about_deepsleep_b" = "Research shows that adults need 1.5-1.8 hours of deep sleep per night. \r\nImportant: If you see too much or too little deep sleep, you may also need to adjust your heart rate drop target. \r\n";
+// 设置-个人信息
+//"title_userinfo" = "Personal information";
+"ud_sex" = "Gender";
+"ud_birth" = "Date of birth";
+"ud_height" = "Height";
+"ud_weight" = "Weight";
+"birth_format" = "dd.MM.yyyy";
+"ud_uint_height" = "cm";
+"ud_uint_weight" = "kg";
+"ud_uint_lbs" = "lbs";
+"ud_uint_ft" = "ft";
+"ud_uint_inch" = "in";
+
+"ri_male" = "Male";
+"ri_female" = "Female";
+"ri_other" = "Other";
+"tip_plsInput" = "Please input ";
+"tip_weight_range_format" = "Weight can be set in the range of %d-%d %@.";
+"tip_height_range_format" = "Height can be set in the range of %d-%d %@.";
+
+// 就绪状态
+"READY_STATE" = "Readiness score";
+"TITEL_READYSTATE_CONTRIBUE" = "Readiness contribution";
+"TITEL_READY_DETAIL" = "Details";
+"TITEL_HR_IMMERSION" = "Heart rate immersion";
+"TITEL_AVG_HR_INSELLP" = "Sleep average heart rate";
+
+"TITEL_SLEEP_DURATION" = "Total sleep";
+"title_min_hr" = "Lowest heart rate";
+"title_avg_hrv" = "Average HRV";
+
+"title_format_target_hr_immerse" = "%d%% - %d%% heart rate dip goal";
+"title_format_targethrv" = "%d ms, two weeks average HRV";
+"title_format_sleep_duration" = "%dh %dm sleep goal";
+"title_format_thermemoter" = "%d %@ - %d %@, daily finger temperature variations";
+
+"cont_title_sleep_duration" = "%dh %dm, reaching %d%% sleep goal";
+"cont_title_sleep_duration_reach" = "%dh %dm, reaching sleep goal";
+
+"cont_title_quality_sleep_finish" = "%dh %dm,reaching quality sleep goal";
+"cont_title_quality_sleep_NOT_finish" = "%dh %dm,reaching %d%% quality sleep goal";
+"cont_title_immerse" = "%d bpm, heart rate dip %d%%";
+
+"cont_title_deep_Sleep" = "%dh %dm, reaching %d%% deep sleep goal";
+"cont_title_deep_Sleep_fin" = "%dh %dm, reaching deep sleep goal";
+
+"cont_title_deep_hrv_higer" = "Average %dms, above the two weeks average";
+"cont_title_deep_hrv_lower" = "Average %dms, below the two weeks average";
+"cont_title_thermemoter_normal" = "%.1f%@, the finger temperature variations were normal";
+"cont_title_thermemoter_unnormal" = "%.1f%@, the finger temperature variations were abnormal";
+
+"format_avg_sleep_hr" = "Average heart rate %d bpm";
+"format_max_sleep_hrv" = "Max %d ms";
+// 设置
+"SET_MAIN_TITLE" = "Settings";
+"SET_ITEM_TITLE_MYINFO" = "My profile";
+"SET_ITEM_TITLE_MYDEVICE" = "My device";
+"SET_ITEM_TITLE_TARGET" = "Set goals";
+"SET_ITEM_TITLE_MYSET" = "Settings";
+"SET_ITEM_TITLE_CONTACT" = "Contact us";
+"SET_ITEM_TITLE_UPDATE_DEV" = "Update device software";
+
+// 设置-设备
+"L_DEV_MODEL_AND_SIZE" = "Models and dimensions";
+"L_DEV_FIRMWARE_VER" = "Firmware version";
+"L_DEV_SN" = "Serial number";
+"L_DEV_MAC_ADDRESS" = "Mac address";
+"L_DEV_REBOOT" = "Reboot";
+"L_DEV_RESET" = "Reset";
+"L_DEV_BINDNEW" = "Set up a new ring";
+"L_DEV_MEASURE_DURA" = "Hr Measure durations";
+
+"L_DEV_MAINTAIN" = "Maintain your ring";
+"L_DEV_CHARGING" = "Charge your ring";
+"L_DEV_ILLSUSTRATE" = "Product safety and use";
+"color_silver" = "Silver";
+"color_black" = "Dark";
+"color_gold" = "Champagne Gold ";
+"color_rose_gold" = "Rose Gold";
+
+"size_US" = "US";
+"title_wear" = "Wear and maintain";
+"title_tool" = "Tools";
+"titel_air_mode" = "Airplane mode";
+"already_conect_ring" = "Connected ring";
+"already_disconect_ring" = "Not connected";
+
+"dev_is_charging" = "Connected and charging";
+"dev_charge_full" = "Connection fully charged";
+
+"title_battery_level" = "Battery power";
+"tip_reboot_ring" = "Software reboot ring?";
+"tip_reset_ring" = "Do you want to reset the ring to factory settings?";
+"generation" = "Generation";
+
+
+// 设置-通用设置
+"L_TITLE_UNIT" = "Unit";
+"L_TITLE_NOTI" = "Notice";
+"L_TITLE_PRIVACY" = "Privacy Policy";
+"L_TITLE_USE_RULE" = "User agreement";
+
+"L_TITLE_APP_SOFT_VER" = "Software version";
+"L_TITLE_LOGOUT" = "Sign out";
+"Metric" = "Metric";
+"Imperial" = "Imperial"; // 英制单位
+"On" = "On"; //开
+"Off" = "Off"; //关
+"L_TIPS_NOTICE_SWITCH" = "Turn on notifications and you will receive a low battery notification for your ring or a notification to remind you to charge your ring before going to bed, etc.";
+"sure" = "Sure";
+
+
+"section_titl_normal_set" = "General settings";
+"section_titl_privacy" = "Privacy";
+"section_titl_soft_info" = "Software information";
+
+// 单位
+"unit_ms" = "ms";
+"unit_hr" = "bpm";
+"unit_celsius" = "℃"; // 摄氏度
+"unit_f" = "℉"; // 华氏度
+
+"UNIT_HOUR" = "hours";  // 小时
+"UNIT_minute" = "minutes"; //分钟
+"UNIT_CAL" = "cal"; // 卡路里
+// 绑定
+"btn_start_bind" = "Start Binding";
+"tip_congra_title" = "Congratulations, you can start binding devices";
+"tip_congra_cont" = "Connection binding takes about ten minutes. Make sure you have a stable internet connection and your existing data will be safely backed up.";
+"btn_bind" = "Binding";
+"btn_no_device" = "Don't have %@ yet?";
+"btn_start_use" = "start using";
+"tip_bind_titl" = "Connect your device";
+"tip_bind_cont" = "Connect your device to the charger and continue to the next step. Make sure your phone has Bluetooth enabled.";
+"tip_bind_succ" = "Binding succeeded!";
+"tip_before_use" = "For the best fit and most accurate readings, wear the ring with the sensor on the palm side of your index finger.";
+"title_searching_dev" = "Searching for your device...";
+"scan_no_device" = "No device is scanned.";
+"tips_found_device" = "These are the devices we found, make sure to choose the correct design and size.";
+"device_near" = "Products near you";
+"tip_bind_limit_mode" = "Restricted mode enabled, only factory reset and self-test.";
+"tips_wait_factory_reset" = "Restoring the device to factory settings, this may take a few minutes, please wait...";
+
+// 记录列表
+/*
+ "heart rate record";
+ "heart rate variability record";
+ "temperature record";
+ */
+
+"L_RECORD_TITLE_HR" = "Heart rate record";
+"L_RECORD_TITLE_HRV" = "HRV record";
+"L_RECORD_TITLE_THERMEMOTER" = "Finger temperature record";
+
+"Cancel" = "Cancel";
+"Ok" = "Ok";
+"today" = "Today";
+"Save" = "Save";
+
+// 睡眠
+"TXT_WAKETIME" = "Awake";
+"TXT_LIGHTSLEEP" = "Light";
+"TXT_DEEPSLEEP" = "Deep";
+"TXT_REMSLEEP" = "REM";
+
+"sleep_evo" = "Sleep score";
+"sleep contribution" = "Sleep contribution"; // 睡眠贡献
+"sleep detail" = "Sleep";
+"health" = "Health";
+"titl_quality_sleep" = "Quality sleep";
+"titl_deep_sleep" = "Deep sleep";
+"L_TITLE_OXYGEN_INSLEEP" = "Sleep SPO2";
+"L_TITLE_BREATH_RATE" = "Respiratory rate";
+"breath_subB_txt" = "%@ - %@ BPM(Breaths per minute)";
+"oxygen_subB_txt" = "%@ - %@ SpO2";
+"breath_sub_a_fmt_normal" = "Average %.1f, respiratory rate is good";
+"breath_sub_a_fmt_low" = "Average %.1f, respiratory rate is slow";
+"breath_sub_a_fmt_high" = "Average %.1f, respiratory rate is fast";
+"oxygen_sub_a_fmt_normal" = "Average %.1f%%, SpO2 is good";
+"oxygen_sub_a_fmt_slow" = "Average %.1f%%, SpO2 is low";
+
+
+"L_TITLE_SLEEP_ANALYZE" = "Sleep session";
+"sleep_cell_subB_fmt" = "Asleep %02dh %02dm, %d%% efficiency";
+"nap_sleep_cell_subB_fmt" = "Asleep %02dm";
+
+"contrib_best" = "Optimal";//
+"contrib_good" = "Good";//
+"contrib_attention" = "Attention";//
+
+"title_format_target_quality_sleep" = "%dh%dm high quality sleep goal";
+"title_format_target_deep_sleep" = "%d%% deep sleep goal";
+// ota
+"ota_vc_title" = "Firmware Upgrade";
+
+"new_ota_title" = "New Firmware";
+"update_now" = "Update now";
+"ota_charge_tips" = "Connect your device to the charger and the firmware update will start automatically.";
+"ota_upding_tips" = "The device firmware is being updated, it will take about 1 minute, please do not close the %@ APP";
+"ota_succ" = "Firmware update successful!";
+"ota_fail" = "Firmware update failed!";
+"ota_alert_msg_new" = "There is a new device software that can be updated, do you want to update it now?";
+"ota_is_lastest_ver" = "Already the latest firmware!";
+"ota_down_fail" = "Firmware download failed, please try again.";
+"ota_wait_reconnect" = "Waiting for Ring...";
+// 联系我们
+"tip_contact" = "If you encounter any problems, please email our support team.";
+"contact_email" = "Email:";
+"contact_web" = "Official website:";
+// pdf 分享
+"pdf_no" = "No.";
+"pdf_datetime" = "Date & Time";
+"pdf_tempture" = "Finger temperature";
+"pdf_time_format" = "MM/dd/yyyy hh:mm";
+"pdf_unit_bp" = "mmHg";
+"pdf_unit_hr" = "bpm";
+"pdf_sys_p" = "Systolic Pressure";
+"pdf_dia_p" = "Diastolic Pressure";
+"pdf_oxygen" = "Blood Oxygen";
+"pdf_record_time" = "Record time";
+"pdf_ecg_time_format" = "MM/dd/yyyy hh:mm";
+"Lead" = "Lead";
+"unit_hz" = "Hz";
+"u_m_secon" = "ms";
+"pdf_unit_bpm_big" = "BPM";
+"pdf_ecghr_format" = "%d BPM Average";
+"pdf_birth_format" = "Date of birth: %@ (Age %d)";
+"pdf_birth_time_format" = "MM/dd/yyyy";
+"pdf_nothing_share" = "No measurement records to share";
+// 医疗信息
+"L_MEDIC_TXT_HRV" = "Heart rate variability (HRV) reveals how your body responds to training, traveling or stress.\r\nHRV is personal, and it's affected by various factors such as age, health status, and fitness level. \r\nAverage HRV can vary from anywhere below 20 to over 120. High HRV is typically a sign of general health and fitness, whereas lowered HRV can be a sign of stress or overtraining.";  // hrv
+"L_MEDIC_TXT_TEMP"  = "Finger temperature variations can reveal a lot about your recovery and overall health. It's normal for Finger temperature to rise after eating, drinking or exercising late, or when sleeping in a warm environment. A sudden rise can also indicate that you're coming down with something. When this happens, it's a good idea to take your temperature with a thermometer, and allow yourself to rest.\r\nIf you track your menstrual cycle, you may spot monthly patterns in your Finger temperature Trend view. It's common for Finger temperature to fall during the first half of the menstrual cycle, and rise slightly during the second half."; // 手指温度
+"L_MEDIC_TXT_STEP" = "Daily step count is one measure of your daily physical activity. The optimal number of daily steps depends on your age, body size, fitness level and readiness to perform.\r\nWhile 10 000 steps is often used as a general target for gaining some of the health benefits of physical activity, less can be more. If you're only beginning to add physical activity into your daily life, the increased steps alone can make a big difference in your well-being."; //计步
+"L_MEDIC_TXT_RHR"  = "Resting heart rate (RHR) is a good measure of your recovery. It's the number of times your heart beats per minute when you're at rest.\r\nNormal resting heart rate for adults can range anywhere from 45-100 bpm. It takes about 2 weeks for NexRing to learn your personal baseline.\r\nFor NexRing, a resting heart rate slightly below your average is a sign of good readiness. Intense training, a late meal, elevated Finger temperature, or even thoughts and emotions, such as stress or excitement, can keep your heart rate up during your sleep."; // rhr
+
+"L_MEDIC_TXT_READINESS" = "The Readiness Score helps you decide whether it's time to gear up or wind down.\r\nIt sums up how well you've recovered both mentally and physically, and guides you to strike the perfect balance between activity and rest.\r\nThe Readiness Score ranges from 0 to 100:\r\n85 and over (optimal): You've recovered very well\r\n70-84 (good): You've recovered well\r\nUnder 70 (pay attention): You're not fully recovered\r\n";
+
+"L_MEDIC_TXT_SLEEP_SCORE" = "Ranging from 0-100, the Sleep Score is an overall measure of how well you slept.\r\n85 or over: Your overall sleep quality is optimal\r\n70-84: Your overall sleep quality is good\r\nUnder 70: Something may have disturbed your sleep quality\r\n";
+// 二级
+"trend_goal" = "Goal";
+"trend_know" = "Learn";
+"trend_edit" = "Edit";
+"trend_seg_day" = "Day";
+"trend_seg_week" = "Week";
+"trend_seg_month" = "Month";
+// 二级 关于
+"trend_about_immerse" = "  Heart Rate Dip compares your sleeping heart rate average to your inactive daytime heart rate average.\r\n"; // 沉浸
+"trend_about_immerse_b" = "Research shows that a dip of 10% or higher is an important part of healthy sleep.";
+"trend_about_hrv" = "  Heart rate variability (HRV) reveals how your body responds to training, traveling or stress.\r\n";
+"trend_about_hrv_b" = "HRV is personal, and it\'s affected by various factors such as age, health status, and fitness level. Average HRV can vary from anywhere below 20 to over 120. High HRV is typically a sign of general health and fitness, whereas lowered HRV can be a sign of stress or overtraining.";
+
+"trend_about_sleeptime" = "Your sleep has a huge impact on your daytime performance. Ready state contributions take into account all of your sleep, including naps.";
+
+"trend_about_deepsleep" = "  Deep sleep is a state in which your heart rate is slow and your muscles are relaxed to the point of being almost motionless.\r\nResearch shows that adults need 1.5 – 1.8 hours of deep sleep per night. \r\n";
+"trend_about_deepsleep_b" = "Important: If you see too much or too little deep sleep, you may also need to adjust your heart rate dip goal.";
+"trend_about_qualitysleep" = "Quality Sleep takes into account how long you slept, how much restlessness you experience, and your sleep heart rate.";
+"trend_about_oxygen" =  "  Oxygen Saturation indicates the percentage of hemoglobin in red blood cells that carry oxygen from the lungs to the rest of the body.\r\n";
+"trend_about_oxygen_b" = "Research shows that healthy people have an average blood oxygen saturation of 95% to 97% while sleeping, and for people over 60, this falls to between 93% and 97% with age.";
+"trend_about_breathrate" = "Sleep Breathing Rate is the number of breaths you take per minute during sleep and is measured in breaths per minute (BrPM). Studies have shown that in healthy people it is 12 to 20.";
+// 二级 目标文字
+"trend_goal_immerse" = "The most common dip is 10–15%, if you regularly experience drops higher or lower than this, you can adjust for better reporting.\r\n";
+"trend_goal_format" = "4 weeks average: %@\r\nCurrent goal: %@";
+
+"trend_goal_sleeptime" = "Research shows most adults need between seven and nine hours of sleep each night.\r\n";
+"trend_goal_quality_sleep" =  "Your quality goals are based on the percentage of required sleep time. Most people find that 70% - 80% is a good starting goal.\r\n";
+"trend_goal_deep_sleep" = "Your deep sleep goal is based on the percentage of required sleep time. Most people get 10% - 30% of their deep sleep.\r\n";
+"seg_sleep" = "Sleep";
+"seg_nap" = "Nap";
+

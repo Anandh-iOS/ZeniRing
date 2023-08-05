@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  CareRingApp
+
+  Created by 兰仲平 on 2022/6/15.
+  
+*/
+NSBluetoothAlwaysUsageDescription = "NexRing需要使用蓝牙传输设备数据.";
+NSBluetoothPeripheralUsageDescription = "NexRing需要使用蓝牙传输设备数据.";

@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  CareRingApp
+
+  Created by 兰仲平 on 2022/6/15.
+  
+*/
+NSBluetoothAlwaysUsageDescription = "NexRing needs your permission to use Bluetooth and connect the device to get Bluetooth Data.";
+NSBluetoothPeripheralUsageDescription ="NexRing needs your permission to use Bluetooth and connect the device to get Bluetooth Data.";

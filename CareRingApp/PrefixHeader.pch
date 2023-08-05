@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  sr01sdkProject
+//
+//  Created by 兰仲平 on 2022/5/30.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//#import "TestUtils.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef DEBUG
+#define DebugNSLog(...) NSLog(__VA_ARGS__)
+#else
+#define DebugNSLog(...)
+
+#endif
+
+#endif /* PrefixHeader_pch */

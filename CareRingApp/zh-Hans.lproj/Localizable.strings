@@ -1,0 +1,405 @@
+/* 
+  Localizable.strings
+  CareRingApp
+
+  Created by 兰仲平 on 2022/6/1.
+  
+*/
+"protocal_privacy" = "《隐私政策》";
+//"protocal_agreement" = "%@ 用户协议";
+"welcome" = "欢迎";
+"protfmat" = " 同意%@和%@";
+"protocal_disc" = "免责声明";
+"Start" = "开始";
+"not_agree_privacy_tips" = "请阅读并同意%@ %@和%@";
+
+/* tabbat */
+"tab_ready" = "就绪状态";
+"tab_sleep" = "睡眠";
+"tab_activity" = "主页";
+"tab_setting" = "设置";
+/* tabbat */
+
+// 其他的
+"tip" = "提示";
+"comma" = "，";
+"tip_no_data" = "没有更多记录";
+"tip_open_ble" = "请开启手机蓝牙功能。";
+"go_seting" = "前往设置";
+"tip_need_auth_ble" = "%@需要您允许使用蓝牙功能。";
+
+// 登录注册
+"btn_agree" = "同意";
+"_login" = "登录";
+"_register" = "立即注册";
+"forget_pwd" = "忘记密码?";
+"txt_input_email" = "请输入邮箱号";
+"txt_input_pwd" = "请输入%d-%d位密码";
+"txt_input_authcode" = "请输入验证码";
+
+"btn_regist" = "注册";
+"btn_send_authcode" = "发送验证码";
+"btn_send_resend_authcode" = "重发验证码";
+
+"btn_rst_pwd" = "重置密码";
+"tip_email_illegal" = "邮箱格式不正确";
+"tip_email_not_regist" = "无效帐号，请输入已注册的帐号";
+
+"tip_authcode_sended" = "验证码已发送到邮箱";
+"tip_account_exist" = "此账号已注册过， 无需重复注册";
+"tip_regist_succ" = "注册成功";
+"tip_authcode_illegal" = "验证码不正确或已失效";
+"tip_pwd_reset_succ" = "密码修改成功";
+"tip_pwd_reset_fail" = "密码修改失败";
+"tip_login_succ" = "登录成功";
+"tip_login_fail" = "登录失败";
+"tip_login_acc_or_pwd_error" = "账号或密码错误";
+"tip_net_error" = "网络不通畅";
+"title_account" = "账号";
+"tip_logout" = "确定退出登录?";
+"title_regist_agree" = "注册代表您同意%@和%@";
+"title_user_agreement" = "《使用条款》";
+"tip_pwd_contain_eligal" = "密码包含非法字符！";
+"tip_pwd_must_more_than"="密码不少于%d位数字或字母！";
+"tip_pwd_must_less_than" = "密码不多于%d位数字或字母！";
+
+
+"title_login" = "账号登录";
+"title_forget_pwd" = "重置密码";
+"title_regist" = "账号注册";
+
+// 首页
+"quar_titl_hr" = "静息心率";
+"quar_titl_hrv" = "心率变异性";
+"quar_titl_temp" = "手指温度";
+"quar_titl_step" = "步数";
+"quar_titl_cal" = "卡路里";
+
+"BAR_DRAW_TITLE_HR" = "心率";
+"BAR_DRAW_TITLE_HRV" = "心率变异性";
+"BAR_DRAW_TITLE_TEMP" = "手指温度";
+"just_now" = "刚刚";
+"min_ago" = "分钟前";
+"hour_ago" = "小时前";
+"format_hour_min" = "hh:mm";
+"yesterday" = "昨天";
+"time_format_thisyear" = "MM/dd";
+"time_format_before_thisyear" = "yyyy/MM/dd";
+
+"measure_list_date_format" = "yyyy.MM.dd hh:mm";
+
+
+// 就绪状态
+"READY_STATE" = "准备就绪状态";
+"TITEL_READYSTATE_CONTRIBUE" = "就绪状态贡献";
+"TITEL_READY_DETAIL" = "详情";
+"TITEL_HR_IMMERSION" = "心率沉浸";
+"TITEL_AVG_HR_INSELLP" = "睡眠平均心率";
+
+"TITEL_SLEEP_DURATION" = "睡眠时长";
+"title_min_hr" = "最低心率";
+"title_avg_hrv" = "平均HRV";
+
+"title_format_target_hr_immerse" = "%d%% - %d%% 心率沉浸目标";
+"title_format_targethrv" = "%d ms 两周的平均心率变异性";
+"title_format_sleep_duration" = "%d小时%d分钟 睡眠时间目标";
+"title_format_thermemoter" = "%d %@ - %d %@ 每日手指温度波动";
+
+
+"cont_title_sleep_duration" = "%dh %dm，达到%d%%的睡眠目标";
+"cont_title_sleep_duration_reach" = "%dh %dm，达到睡眠目标";
+
+"cont_title_quality_sleep_finish" = "%dh %dm，已完成优质睡眠目标";
+"cont_title_quality_sleep_NOT_finish" = "%dh %dm，完成%d%%优质睡眠目标";
+"cont_title_immerse" = "%d bpm，心率沉浸%d%%";
+"cont_title_deep_Sleep" = "%dh %dm，达到%d%%的深度睡眠目标";
+"cont_title_deep_Sleep_fin" = "%dh %dm，达到深度睡眠目标";
+
+"cont_title_deep_hrv_higer" = "平均%d ms，高于两周平均水平";
+"cont_title_deep_hrv_lower" = "平均%d ms，低于两周平均水平";
+
+"cont_title_thermemoter_normal" = "%.1f%@，手指温度波动正常";
+"cont_title_thermemoter_unnormal" = "%.1f%@，手指温度波动异常";
+
+"format_avg_sleep_hr" = "平均心率 %d bpm";
+"format_max_sleep_hrv" = "最大 %d ms";
+// 设置
+"SET_MAIN_TITLE" = "设置";
+"SET_ITEM_TITLE_MYINFO" = "我的信息";
+"SET_ITEM_TITLE_MYDEVICE" = "我的设备";
+"SET_ITEM_TITLE_TARGET" = "我的目标";
+"SET_ITEM_TITLE_MYSET" = "设置";
+"SET_ITEM_TITLE_CONTACT" = "联系我们";
+"SET_ITEM_TITLE_UPDATE_DEV" = "更新设备软件";
+
+// 设置-设备
+"L_DEV_MODEL_AND_SIZE" = "型号和尺寸";
+"L_DEV_FIRMWARE_VER" = "固件版本";
+"L_DEV_SN" = "序列号";
+"L_DEV_MAC_ADDRESS" = "Mac地址";
+"L_DEV_REBOOT" = "设备重启";
+"L_DEV_RESET" = "恢复出厂设置";
+"L_DEV_BINDNEW" = "设置一个新的戒指";
+"L_DEV_MEASURE_DURA" = "设备测量时长";
+
+"L_DEV_MAINTAIN" = "维护您的戒指";
+"L_DEV_CHARGING" = "给您的戒指充电";
+"L_DEV_ILLSUSTRATE" = "产品安全和使用";
+"color_silver" = "传承银色";
+"color_black" = "典雅黑色";
+"color_gold" = "香槟金";
+"color_rose_gold" = "玫瑰金";
+
+"size_US" = "US";
+"title_wear" = "佩戴和维护";
+"title_tool" = "工具";
+"titel_air_mode" = "飞行模式";
+
+"already_conect_ring" = "已连接戒指";
+"already_disconect_ring" = "未连接状态";
+
+"dev_is_charging" = "连接并在充电";
+"dev_charge_full" = "连接已满电";
+
+"title_battery_level" = "电池电量";
+"tip_reboot_ring" = "软件重启戒指?";
+"tip_reset_ring" = "是否要将戒指恢复为出厂设置?";
+"generation" = "迭代产品";
+
+// 设置-通用设置
+"L_TITLE_UNIT" = "单位";
+"L_TITLE_NOTI" = "通知";
+"L_TITLE_PRIVACY" = "隐私政策";
+"L_TITLE_USE_RULE" = "使用条款";
+
+"L_TITLE_APP_SOFT_VER" = "软件版本";
+"L_TITLE_LOGOUT" = "退出登录";
+"Metric" = "公制";
+"Imperial" = "英制";
+"On" = "开"; //开
+"Off" = "关"; //关
+"L_TIPS_NOTICE_SWITCH" = "打开通知，您将会收到戒指低电量通知或睡前提醒您为戒指充电通知等";
+"tip_plsInput" = "请输入";
+"sure" = "确定";
+
+"section_titl_normal_set" = "一般设置";
+"section_titl_privacy" = "隐私";
+"section_titl_soft_info" = "软件信息";
+
+
+// 设置-目标
+"vc_title_set_target" = "设置目标";
+"seg_titl_sleep" = "睡眠";
+"seg_titl_quality" = "质量";
+"seg_titl_immerse" = "沉浸";
+"seg_titl_deep" = "深度";
+
+"immerse_seg_titl_sporter" = "运动员";
+"immerse_seg_titl_normal" = "正常";
+"immerse_seg_titl_reduce" = "降低";
+"immerse_seg_titl_low_dip" = "低沉浸";
+
+
+"L_TITLE_ABOUT" = "关于";
+"L_TITEL_TARGET_SLEEP" = "睡眠目标";
+"L_TITEL_TARGET_GOODSLEEP" = "优质睡眠目标";
+"L_TITEL_TARGET_IMMERSE" = "夜间心率沉浸";
+"L_TITEL_TARGET_DEEPSLEEP" = "深度睡眠目标";
+
+"L_SUNTITL_TARGET_SLEEP"= "设置您的睡眠目标";
+"L_SUNTITL_GOODSLEEP"= "设置您的优质睡眠目标";
+"L_SUNTITL_TARGET_IMMERSE"= "设置您的夜间心率沉浸";
+"L_SUNTITL_TARGET_DEEPSLEEP"= "设置您的深度睡眠目标";
+"tip_save_succ" = "保存成功!";
+"tip_save_error" = "保存失败!";
+
+
+// 目标 睡眠时长
+"txt_target_about_sleep_a" = "通常来说您知道自己需要多少睡眠才能感觉神清气爽，有些人需要更多，有些人则更少。\r\n";
+"txt_target_about_sleep_b" = "研究表明，大多数成年人每晚需要7到9个小时的睡眠时间。";
+
+// 目标 优质睡眠
+"txt_target_about_quality_sleep_a" = "您的质量目标基于所需睡眠时间的百分比，大多数人发现70-80%是一个很好的起始目标。\r\n";
+"txt_target_about_quality_sleep_b" = "睡眠质量图分析了您的睡眠时长，睡眠时的幅度和心率是追踪您获得多少优质睡眠的好方法。\r\n您可以将目标调整为最合适您的数值。\r\n";
+//目标 沉浸
+"txt_target_about_immerse_a" = "最常见的下降是10-15%，如果您经常遇到比此更高或更低的下降， 您可以调整以获得更好的报告\r\n心率沉浸就是将您的睡眠心率平均值与您的非活动日间心率平均值进行比较。\r\n";
+//目标 深度睡眠
+"txt_target_about_deepsleep_a" = "大多数人的深度睡眠占比为10-30%。\r\n";
+"txt_target_about_deepsleep_b" = "研究表明，成年人每晚需要1.5-1.8小时的深度睡眠。\r\n重要提示：如果您看到过多或过少的深度睡眠，您可能还需要调整心率下降目标。\r\n";
+
+
+
+// 设置-个人信息
+//"title_userinfo" = "个人信息";
+"ud_sex" = "性别";
+"ud_birth" = "出生日期";
+"ud_height" = "身高";
+"ud_weight" = "体重";
+"birth_format" = "yyyy年MM月dd日";
+"ud_uint_height" = "厘米";
+
+"ud_uint_weight" = "千克";
+"ud_uint_lbs" = "磅";
+"ud_uint_ft" = "英尺";
+"ud_uint_inch" = "英寸";
+
+
+"ri_male" = "男";
+"ri_female" = "女";
+"ri_other" = "其他";
+"tip_weight_range_format" = "体重可设置范围是%d-%d %@。";
+"tip_height_range_format" = "身高可设置范围是%d-%d %@。";
+
+// 单位
+"unit_ms" = "ms";
+"unit_hr" = "bpm";
+"unit_celsius" = "℃"; // 摄氏度
+"unit_f" = "℉"; // 华氏度
+
+"UNIT_HOUR" = "小时";  // 小时
+"UNIT_minute" = "分钟"; //分钟
+"UNIT_CAL" = "卡"; // 卡路里
+
+// 绑定
+"btn_start_bind" = "开始绑定";
+"tip_congra_title" = "祝贺您可以开始绑定设备了";
+"tip_congra_cont" = "连接绑定大约需要十分钟。确保您有一个稳定的互联网连接，您的现有数据将得到安全备份。";
+"btn_bind" = "绑定设备";
+"btn_no_device" = "还没有%@?";
+"btn_start_use" = "开始使用";
+
+"tip_bind_titl" = "连接您的设备";
+"tip_bind_cont" = "将您的设备连接到充电器，然后继续下一步。请确保手机已启用蓝牙功能。";
+"tip_bind_succ" = "绑定成功!";
+"tip_before_use" = "为获得最佳贴合度和最准确的读数，请佩戴戒指，使其传感器位于食指的手掌侧。";
+"title_searching_dev" = "正在搜索您的设备...";
+"scan_no_device" = "未搜索到设备。";
+"tips_found_device" = "这些是我们发现的设备，请确保选择正确的设计和尺寸的产品。";
+"device_near" = "您附近的产品";
+"tip_bind_limit_mode" = "已启用受限模式，只能恢复出厂设置和自检。";
+"tips_wait_factory_reset" = "正在将设备恢复为出厂设置，这个可能需要几分钟时间，请稍等...";
+// 记录列表
+"L_RECORD_TITLE_HR" = "心率记录";
+"L_RECORD_TITLE_HRV" = "心率变异性记录";
+"L_RECORD_TITLE_THERMEMOTER" = "手指温度记录";
+
+"Cancel" = "取消";
+"Ok" = "好的";
+"today" = "今天";
+"Save" = "保存";
+
+// 睡眠
+"TXT_WAKETIME" = "苏醒/被打扰时间";
+"TXT_LIGHTSLEEP" = "浅度睡眠";
+"TXT_DEEPSLEEP" = "深度睡眠";
+"TXT_REMSLEEP" = "REM睡眠";
+"sleep_evo" = "综合睡眠评价";
+"sleep contribution" = "睡眠贡献";
+"sleep detail" = "睡眠详情";
+"health" = "健康";
+"titl_quality_sleep" = "优质睡眠";
+"titl_deep_sleep" = "深度睡眠";
+"L_TITLE_OXYGEN_INSLEEP" = "睡眠状态下的血氧饱和度";
+"L_TITLE_BREATH_RATE" = "呼吸速率";
+"breath_subB_txt" = "%@ - %@ 每分钟呼吸次数";
+"oxygen_subB_txt" = "%@ - %@ 血氧饱和度";
+
+"breath_sub_a_fmt_normal" = "平均%.1f，呼吸速率正常";
+"breath_sub_a_fmt_low" = "平均%.1f，呼吸速率过缓";
+"breath_sub_a_fmt_high" = "平均%.1f，呼吸速率过速";
+
+"oxygen_sub_a_fmt_normal" = "平均%.1f%%，血氧饱和度正常";
+"oxygen_sub_a_fmt_slow" = "平均%.1f%%，血氧饱和度偏低";
+
+"L_TITLE_SLEEP_ANALYZE" = "睡眠分析";
+"sleep_cell_subB_fmt" = "睡眠%02dh %02dm，%d%%效率";
+"nap_sleep_cell_subB_fmt" = "睡眠%02dm";
+
+"contrib_best" = "最佳";//: Optimal
+"contrib_good" = "良好";//: Good
+"contrib_attention" = "注意";//: Attention
+"title_format_target_quality_sleep" = "%d 小时 %d 分钟优质睡眠目标";
+"title_format_target_deep_sleep" = "%d%%的深度睡眠目标";
+// ota
+"ota_vc_title" = "固件升级";
+"new_ota_title" = "新固件提醒";
+"update_now" = "现在更新";
+"ota_charge_tips" = "将您的设备连接到充电器，固件更新会自动开始。";
+"ota_upding_tips" = "正在更新设备固件，大概需要1分钟时间，请不要关闭%@ APP";
+"ota_succ" = "固件更新成功！";
+"ota_fail" = "固件更新失败！";
+"ota_alert_msg_new" = "有新设备软件可以更新，是否现在更新？";
+"ota_is_lastest_ver" = "已是最新固件！";
+"ota_down_fail" = "固件下载失败, 请重试。";
+"ota_wait_reconnect" = "等待设备...";
+
+
+// 联系我们
+"tip_contact" = "如果您碰到什么问题，请发邮件与我们的支持团队取得联系。";
+"contact_email" = "Email：";
+"contact_web" = "官网：";
+// pdf 分享
+"pdf_no" = "No.";
+"pdf_datetime" = "日期 / 时间";
+"pdf_tempture" = "手指温度";
+"pdf_time_format" = "yyyy/MM/dd hh:mm";
+"pdf_unit_bp" = "mmHg";
+"pdf_unit_hr" = "bpm";
+"pdf_unit_bpm_big" = "BPM";
+"pdf_sys_p" = "收缩压";
+"pdf_dia_p" = "舒张压";
+"pdf_oxygen" = "血氧";
+"pdf_record_time" = "记录时间";
+"pdf_ecg_time_format" = "yyyy年MM月dd日 hh:mm";
+"Lead" = "导联";
+"unit_hz" = "赫";
+"u_m_secon" = "ms";
+"pdf_ecghr_format" = "平均%d次/分";
+"pdf_birth_format" = "出生日期: %@ (%d岁)";
+"pdf_birth_time_format" = "MM/dd/yyyy";
+"pdf_nothing_share" = "没有测量记录可分享.";
+// 医疗信息
+"L_MEDIC_TXT_HRV" = "心率变异性 (HRV) 揭示了您的身体对训练、旅行或压力的反应。 HRV是个人的，它受年龄、健康状况和健身水平等多种因素的影响。\r\n平均 HRV 可以从低于 20 到超过 120 不等。高 HRV 通常是一般健康和健身的标志，而降低 HRV 可能是压力或过度训练的标志。";  // hrv
+"L_MEDIC_TXT_TEMP"  = "手指温度变化可以揭示很多关于您的恢复和整体健康状况的信息。 进食、饮水或运动晚，或在温暖的环境中睡觉时，手指温度升高是正常的。 突然上升也可能表明你正在经历一些事情。 发生这种情况时，最好用温度计测量手指温度，然后让自己休息。
+如果您跟踪您的月经周期，您可能会在手指温度趋势视图中发现每月模式。 手指温度通常在月经周期的前半段下降，在后半段略有上升。"; // 手指温度
+"L_MEDIC_TXT_STEP" = "每日步数是衡量您每日体力活动的一项指标。 最佳的每日步数取决于您的年龄、体型、健康水平和准备情况。
+虽然 10 000 步通常被用作获得身体活动的一些健康益处的一般目标，但少即是多。\r\n如果您才刚刚开始在日常生活中增加体育锻炼，那么仅增加步数就能对您的健康产生重大影响。"; //计步
+"L_MEDIC_TXT_RHR"  = "静息心率 (RHR) 可以很好地衡量您的恢复情况。 这是你休息时每分钟心跳的次数。
+成人的正常静息心率范围为 45-100 bpm。\r\nNexRing 需要大约 2 周的时间来了解您的个人基线。\r\n
+对于 NexRing，静息心率略低于您的平均水平是准备就绪的标志。 高强度的训练、晚饭、手指温度升高，甚至是压力或兴奋等思想和情绪，都可以让您在睡眠期间保持心率加快。"; // rhr
+"L_MEDIC_TXT_READINESS" = "就绪分数可帮助您决定今天是该加速还是放松。\r\n它总结了您在精神和身体方面的恢复情况，并指导您在活动和休息之间取得完美平衡。\r\n准备分数范围从0到100：\r\n85及以上(最佳): 你恢复得很好\r\n70-84(好): 你恢复得很好\r\n70以下(注意): 你还没有完全康复\r\n";
+"L_MEDIC_TXT_SLEEP_SCORE" = "睡眠分数从0到100不等，是衡量您睡眠质量的总体指标。\r\n85 或以上: 您的整体睡眠质量最佳\r\n70-84: 你的整体睡眠质量很好\r\n70以下: 某些东西可能影响了你的睡眠质量\r\n";
+// 二级
+"trend_goal" = "目标";
+"trend_know" = "了解";
+"trend_edit" = "修改";
+"trend_seg_day" = "每日";
+"trend_seg_week" = "每周";
+"trend_seg_month" = "每月";
+// 二级 关于
+"trend_about_immerse" = "  心率沉浸是将您的睡眠心率平均值与您的非活动日间心率平均值进行比较。\r\n研究表明，10%或更高的下降数值是健康睡眠的重要组成部分。\r\n";
+"trend_about_immerse_b" = "研究表明，10%或更高的下降数值是健康睡眠的重要组成部分。";
+
+"trend_about_hrv" = "  心率变异性 (HRV) 揭示了您的身体对训练、旅行或压力的反应。HRV是个人的，它受年龄、健康状况和健身水平等多种因素的影响。\r\n";
+"trend_about_hrv_b" = "平均HRV可以从低于20到超过120不等。高HRV通常是一般健康和健身的标志，而降低HRV可能是压力或过度训练的标志。";
+
+"trend_about_sleeptime" = "你的睡眠对你白天的表现有很大的影响。就绪状态贡献会考虑您的所有睡眠，包括小睡。";
+"trend_about_deepsleep" = "  深度睡眠是您心率缓慢，肌肉放松到几乎不动的状态。\r\n研究表明，成年人每晚需要1.5 – 1.8小时的深度睡眠。\r\n";
+"trend_about_deepsleep_b" = "重要提示：如果您看到过多或过少的深度睡眠，您可能还需调整心率下降目标。";
+
+"trend_about_qualitysleep" = "优质睡眠会参考您睡了多长时间，您经历了多久不安以及您的睡眠心率。";
+"trend_about_oxygen" = "  血氧饱和度表示将肺部的氧气输送到身体其他部位的红细胞中血红蛋白的百分比。\r\n";
+"trend_about_oxygen_b" = "研究表明，健康人睡眠时的平均血氧饱和度是95%至97%，对于60岁以上的人来说，这一比例随着年龄的增长而降至93%至97%之间。";
+
+"trend_about_breathrate" = "睡眠呼吸率是指在睡眠期间你每分钟的呼吸次数，以每分钟呼吸次数（BrPM）来衡量。研究表明，在健康人群中该指标为12到20。";
+
+// 二级 目标文字
+"trend_goal_immerse" = "最常见的下降是10–15%，如果您经常遇到比此更高或更低的下降，您可以调整以获得更好的报告。\r\n";
+"trend_goal_format" = "4周平均：%@\r\n当前目标：%@";
+
+"trend_goal_sleeptime" = "研究表明，大多数成年人每晚需要7到9个小时的睡眠时间。\r\n";
+"trend_goal_quality_sleep" =  "您的质量目标基于所需睡眠时间的百分比。大多数人发现70% – 80%是一个很好的起始目标。\r\n";
+"trend_goal_deep_sleep" = "您的深度睡眠目标基于所需睡眠时间的百分比。大多数人的深度睡眠占比为10% – 30%。\r\n";
+"seg_sleep" = "睡眠";
+"seg_nap" = "零星小睡";
+
