@@ -359,6 +359,8 @@
                     cell.infoView.subLabelA.text = NONE_VALUE;
                     [cell.infoView setTextAndBarColor:HEALTH_COLOR_BEST];
                 }
+                
+                cell.infoView.titleLabel.text = [NSString stringWithFormat:@"%@ (%@%%)",_L(L_TITEL_SLEEP_DURATION), [sleepScoreData sharedInstance].sleepScoreContribution];
                
             }
                 break;
@@ -377,6 +379,7 @@
                     [cell.infoView setTextAndBarColor:HEALTH_COLOR_BEST];
                 }
                 
+                cell.infoView.titleLabel.text = [NSString stringWithFormat:@"%@ (%@%%)",_L(L_TITLE_QUALITY_SLEEP), [sleepScoreData sharedInstance].qualitySleepScoreContribution];
 
              
             }
@@ -397,6 +400,7 @@
                 [cell.infoView setTextAndBarColor:HEALTH_COLOR_BEST];
             }
            
+                cell.infoView.titleLabel.text = [NSString stringWithFormat:@"%@ (%@%%)",_L(L_TITEL_AVG_HR_INSLEEP), [sleepScoreData sharedInstance].dipGoalContribution];
                
             }
                 break;
@@ -416,6 +420,8 @@
                     [cell.infoView setTextAndBarColor:HEALTH_COLOR_BEST];
 
                 }
+                
+                cell.infoView.titleLabel.text = [NSString stringWithFormat:@"%@ (%@%%)",_L(L_TITEL_AVG_HR_INSLEEP), [sleepScoreData sharedInstance].deepGoalContribution];
                 
             }
                 break;
@@ -440,7 +446,7 @@
             case 0:
             {
                 [cell.infoView.titleLabel setText:_L(L_TITLE_OXYGEN_INSLEEP)];
-             
+                
                 cell.infoView.subLabelB.text = [NSString stringWithFormat:_L(L_TITLE_SPO2_SUB_B), @"95%", @"97%"];
                 if (dbsleep == nil || dbsleep.spo2.floatValue < 92) {
                     [cell.infoView setTextAndBarColor:HEALTH_COLOR_BEST];
@@ -462,6 +468,8 @@
                     }
                     
                     cell.infoView.subLabelA.text = [NSString stringWithFormat:_L(L_FMT_OXYGEN_NORMAL), dbsleep.spo2.floatValue];
+                    
+                    
                 }
 
             }

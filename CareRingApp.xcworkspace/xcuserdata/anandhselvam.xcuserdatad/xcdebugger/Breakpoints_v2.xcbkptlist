@@ -58,41 +58,11 @@
             filePath = "CareRingApp/VC/MainReadinessVc.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "579"
-            endingLineNumber = "579"
+            startingLineNumber = "585"
+            endingLineNumber = "585"
             landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "7">
             <Locations>
-               <Location
-                  uuid = "29AE6E2D-44E3-4047-9365-03A5799A5E91 - 3dedb8c0b884e1a2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[MainReadinessVc tableView:didSelectRowAtIndexPath:]"
-                  moduleName = "CareRingApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anandhselvam/Downloads/NexRing_iOS_SDK_V1.0.6/RingDemo_V1.0.6_build20230712/CareRingApp/VC/MainReadinessVc.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "579"
-                  endingLineNumber = "579"
-                  offsetFromSymbolStart = "3200">
-               </Location>
-               <Location
-                  uuid = "29AE6E2D-44E3-4047-9365-03A5799A5E91 - 3dedb8c0b884e1a2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[MainReadinessVc tableView:didSelectRowAtIndexPath:]"
-                  moduleName = "CareRingApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/anandhselvam/Downloads/NexRing_iOS_SDK_V1.0.6/RingDemo_V1.0.6_build20230712/CareRingApp/VC/MainReadinessVc.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "579"
-                  endingLineNumber = "579"
-                  offsetFromSymbolStart = "3144">
-               </Location>
                <Location
                   uuid = "29AE6E2D-44E3-4047-9365-03A5799A5E91 - 3dedb8c0b884e565"
                   shouldBeEnabled = "Yes"
@@ -106,6 +76,21 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "608"
                   endingLineNumber = "608"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "29AE6E2D-44E3-4047-9365-03A5799A5E91 - 3dedb8c0b884e42f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MainReadinessVc tableView:didSelectRowAtIndexPath:]"
+                  moduleName = "CareRingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anandhselvam/Downloads/NexRing_iOS_SDK_V1.0.6/RingDemo_V1.0.6_build20230712/CareRingApp/VC/MainReadinessVc.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "614"
+                  endingLineNumber = "614"
                   offsetFromSymbolStart = "84">
                </Location>
             </Locations>

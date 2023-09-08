@@ -51,6 +51,12 @@
 @property(strong, nonatomic)NSNumber *sleepTrend;
 @property(strong, nonatomic)NSNumber *temperatureTrend;
 
+@property(strong, nonatomic)NSNumber *hrDipCont;
+@property(strong, nonatomic)NSNumber *hrvCont;
+@property(strong, nonatomic)NSNumber *hrvTrendCont;
+@property(strong, nonatomic)NSNumber *sleepCont;
+@property(strong, nonatomic)NSNumber *temperatureCont;
+
 @property(strong, nonatomic)ActivityObj *hrObj, *hrvObj;
 
 //@property(strong, nonatomic)NSArray <ActivityObj *> * dataArray;
@@ -649,29 +655,42 @@
                     
                     infoCell.infoView.subLabelA.text = [NSString stringWithFormat:@"%@ %@(%@)",isnan([averageSleepHr floatValue]) ? @"--" : averageSleepHr,_L(L_UNIT_HR), dipPercentage];
                     
+                    infoCell.infoView.titleLabel.text = [NSString stringWithFormat:@"%@ (%@%%)",_L(L_READINESS_TITLE_HR),[self.hrDipCont stringValue]];
+                    
                 }
                     break;
                 case 1: // HRV
                 {
                     
 
-                    NSDate *begin = [TimeUtils zeroOfDate:self.date];
-                    NSDate *end = [TimeUtils zeroOfNextDayDate:self.date];
-                    
                     [infoCell.infoView.titleLabel setText:_L(L_READINESS_TITLE_HRV)];
                     [infoCell.infoView setTextAndBarColor:HEALTH_COLOR_WELL];
                     NSString *hrvAvg = [NSString stringWithFormat:@"%f", isfinite([self.hrvTrend floatValue]) ? 0.0 : [self.hrvTrend floatValue]];
                     infoCell.infoView.subLabelA.text = [NSString stringWithFormat:@"%@ %@", hrvAvg, _L(L_UNIT_MS)];
-                    infoCell.infoView.subLabelB.text = [NSString stringWithFormat:_L(L_TIEM_DETAIL_TARGET_HRV),
-                                                    72
-                    ];
+                    
+                    NSDate *begin = [TimeUtils zeroOfDate:self.date];
 
+                    // Calculate two weeks before the given date
+                    NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
+                    [dateComponents setWeekOfYear:-2]; // Two weeks before
+                    NSDate *end = [[NSCalendar currentCalendar] dateByAddingComponents:dateComponents toDate:begin options:0];
+                    
+                    [DBHrv queryAverage:[DeviceCenter instance].bindDevice.macAddress Begin:begin End:end Cpmplete:^(NSNumber * _Nullable average, NSNumber * _Nullable maxTime, NSNumber * _Nullable minTime) {
+
+                        infoCell.infoView.subLabelB.text = [NSString stringWithFormat:_L(L_TIEM_DETAIL_TARGET_HRV),
+                                                            average
+                        ];
+
+                    }];
+                    
+                    infoCell.infoView.titleLabel.text = [NSString stringWithFormat:@"%@ (%@%%)",_L(L_READINESS_TITLE_HRV),[self.hrvCont stringValue]];
+                    
                 }
                     break;
                 case 2: // Sleep
                 {
                     
-                    [infoCell.infoView.titleLabel setText:_L(L_READINESS_TITLE_TOTALSLEEP)];
+                    
                     [infoCell.infoView setTextAndBarColor:HEALTH_COLOR_ATTECTION];
                     NSMutableArray<DBSleepData *> *dbsleepArray = [DeviceCenter instance].GetSleepDBData;
                     NSNumber *sleepDuration = [dbsleepArray firstObject].duration;
@@ -682,13 +701,13 @@
                                                         goalData.sleepValue
                     ];
                     
+                    infoCell.infoView.titleLabel.text = [NSString stringWithFormat:@"%@ (%@%%)",_L(L_READINESS_TITLE_TOTALSLEEP),[self.sleepCont stringValue]];
+                    
                 }
                     break;
                 case 3: // Temperature
                 {
                     
-                    NSDate *begin = [TimeUtils zeroOfDate:self.date];
-                    NSDate *end = [TimeUtils zeroOfNextDayDate:self.date];
                     [infoCell.infoView.titleLabel setText:_L(L_READINESS_TITLE_THERMEMOTER)];
                     [infoCell.infoView setTextAndBarColor:HEALTH_COLOR_BEST];
                     infoCell.infoView.subLabelA.text = [NSString stringWithFormat:@"%f %@",[self.temperatureTrend floatValue],_L(L_UNIT_TEMP_C)];
@@ -696,6 +715,8 @@
                                                                             1.0 , _L(L_UNIT_TEMP_C),
                                                                             1.0 , _L(L_UNIT_TEMP_C)
                                             ];
+                    
+                    infoCell.infoView.titleLabel.text = [NSString stringWithFormat:@"%@ (%@%%)",_L(L_READINESS_TITLE_THERMEMOTER),[self.temperatureCont stringValue]];
                     
                 }
                     break;
@@ -742,7 +763,7 @@
 -(void)makeReadinessContri
 {
     NSDate *begin = [TimeUtils zeroOfDate:self.date];
-    NSDate *end = [TimeUtils zeroOfNextDayDate:self.date];
+    NSDate *end = [TimeUtils zeroOfBeforeDayDate:self.date];
     
     [DBHeartRate queryBy:[DeviceCenter instance].bindDevice.macAddress Begin:begin End:end OrderBeTimeDesc:YES Cpmplete:^(NSMutableArray<DBHeartRate *> * _Nonnull results, NSNumber *maxHr, NSNumber *minHr,NSNumber *avgHr) {
         
@@ -804,9 +825,6 @@
 
 -(NSNumber *)makeReadinessScore
 {
-    
-    
-    
     NSString *selectedDipValue = [goalValues retrieveGoalValues].dipPercentage;
     NSNumber *hrdip = @0;
     if([selectedDipValue isEqualToString:@"10 - 15%"])
@@ -863,7 +881,7 @@
         hrdip = @25;
         
     }
-    
+    self.hrDipCont = hrdip;
     
     NSNumber *hrv = @0;
     float difference = [self.hrvTrendPat2Weeks floatValue] - [self.hrvTrend floatValue];
@@ -888,7 +906,7 @@
         hrv = @(25.0 * 0.0);
     }
     
-    
+    self.hrvCont = hrv;
     
     NSNumber *sleepCont = @0;
     goalValues *goalData = [goalValues retrieveGoalValues];
@@ -902,6 +920,7 @@
         
     }
     
+    self.sleepCont = sleepCont;
     
     NSNumber *tempCont = @0;
         
@@ -910,6 +929,8 @@
                                 [hrv doubleValue] +
                                 [sleepCont doubleValue] +
                                 [tempCont doubleValue];
+    
+    self.temperatureCont = tempCont;
 
     // Return the total as an NSNumber
     return @(totalContributions);

@@ -121,9 +121,9 @@
 -(void)loginFunction:(UIButton *)btn {
    
     // go to active new device
-    BindeTipsVc *vc = [BindeTipsVc new];
-    [self.navigationController pushViewController:vc animated:YES];
-//    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+//    BindeTipsVc *vc = [BindeTipsVc new];
+//    [self.navigationController pushViewController:vc animated:YES];
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
    
 }
 
