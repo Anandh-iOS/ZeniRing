@@ -33,6 +33,9 @@
 
 @property(assign, nonatomic)BOOL isBinded; // is binded
 @property(assign, nonatomic)NSInteger hrMeasureDurations;
+@property(assign, nonatomic)BOOL isSupportSportMode;
+@property(assign, nonatomic)BOOL isWaveDataOn;  //Whether the real-time heart rate blood oxygen measurement waveform is reported
+
 
 - (instancetype) initWithPeripheral:(CBPeripheral *)peripheral;
 

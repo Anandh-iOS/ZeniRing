@@ -7,6 +7,7 @@
 //
 
 #import "MainNav.h"
+#import "goalValues.h"
 
 @interface MainNav ()
 
@@ -25,6 +26,18 @@
         self.navigationBar.scrollEdgeAppearance = self.navigationBar.standardAppearance;
     }
     self.navigationBar.translucent = NO; // 导航栏不透明
+    
+    
+    //Set Initial values for Goals module
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL isFirstLaunch = [defaults boolForKey:@"isFirstLaunch"];
+
+    if (!isFirstLaunch) {
+        [defaults setBool:YES forKey:@"isFirstLaunch"];
+        [goalValues setDefaultValue];
+    }
+
+    
 }
 
 -(instancetype)initWithRootViewController:(UIViewController *)rootViewController ShowNavBar:(BOOL)show

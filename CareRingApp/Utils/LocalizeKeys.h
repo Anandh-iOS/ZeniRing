@@ -225,15 +225,26 @@
 #define L_SAVE_FAIL  @"tip_save_error"
 // 目标 睡眠时长
 #define L_TXT_TRGT_ABOUT_SLEEP_A @"txt_target_about_sleep_a" //"通常来说您知道自己需要多少睡眠才能感觉神清气爽，有些人需要更多，有些人则更少。\r\n";
+
+
 #define L_TXT_TRGT_ABOUT_SLEEP_B @"txt_target_about_sleep_b" //= "研究表明，大多数成年人每晚需要7到9个小时的睡眠时间。";
+
+#define L_TXT_TRGT_ABOUT_SLEEP_A1 @"txt_target_about_sleep_a1"
+#define L_TXT_TRGT_ABOUT_SLEEP_A2 @"txt_target_about_sleep_a2"
 
 // 目标 优质睡眠
 #define L_TXT_TRGT_ABOUT_QUA_SLEEP_A @"txt_target_about_quality_sleep_a" //= "您的质量目标基于所需睡眠时间的百分比，大多数人发现70-80%是一个很好的起始目标。\r\n";
+#define L_TXT_TRGT_ABOUT_QUA_SLEEP_A1 @"txt_target_about_quality_sleep_a1"
+#define L_TXT_TRGT_ABOUT_QUA_SLEEP_A2 @"txt_target_about_quality_sleep_a2"
 #define L_TXT_TRGT_ABOUT_QUA_SLEEP_B @"txt_target_about_quality_sleep_b" //= "睡眠质量图分析了您的睡眠时长，睡眠时的幅度和心率是追踪您获得多少优质睡眠的好方法。\r\n您可以将目标调整为最合适您的数值。\r\n";
 //目标 沉浸
 #define L_TXT_TRGT_ABOUT_IMMERSE_A @"txt_target_about_immerse_a" //= "最常见的下降是10-15%，如果您经常遇到比此更高或更低的下降， 您可以调整以获得更好的报告\r\n心率沉浸就是将您的睡眠心率平均值与您的非活动日间心率平均值进行比较。\r\n";
+#define L_TXT_TRGT_ABOUT_IMMERSE_A1 @"txt_target_about_immerse_a1"
+#define L_TXT_TRGT_ABOUT_IMMERSE_A2 @"txt_target_about_immerse_a2"
 //目标 深度睡眠
 #define L_TXT_TRGT_ABOUT_DEEPSLEEP_A @"txt_target_about_deepsleep_a"// = "大多数人的深度睡眠占比为10-30%。\r\n";
+#define L_TXT_TRGT_ABOUT_DEEPSLEEP_A1 @"txt_target_about_deepsleep_a1"
+#define L_TXT_TRGT_ABOUT_DEEPSLEEP_A2 @"txt_target_about_deepsleep_a2"
 #define L_TXT_TRGT_ABOUT_DEEPSLEEP_B @"txt_target_about_deepsleep_b"// = "研究表明，成年人每晚需要1.5-1.8小时的深度睡眠。\r\n重要提示：如果您看到过多或过少的深度睡眠，您可能还需要调整心率下降目标。\r\n";
 
 // 设置-个人信息
@@ -293,6 +304,12 @@
 #define L_RECORD_TITLE_HR           @"L_RECORD_TITLE_HR"
 #define L_RECORD_TITLE_HRV          @"L_RECORD_TITLE_HRV"
 #define L_RECORD_TITLE_THERMEMOTER  @"L_RECORD_TITLE_THERMEMOTER"
+
+#define L_READINESS_TITLE_HR           @"L_Readiness_TITLE_HR"
+#define L_READINESS_TITLE_HRV          @"L_Readiness_TITLE_HRV"
+#define L_READINESS_TITLE_THERMEMOTER  @"L_Readiness_TITLE_THERMEMOTER"
+#define L_READINESS_TITLE_TOTALSLEEP  @"L_Readiness_TITLE_TotalSleep"
+
 
 #define L_CANCEL   @"Cancel"
 #define L_OK       @"Ok"
@@ -382,6 +399,7 @@
 #define L_MEDIC_TXT_HRV   @"L_MEDIC_TXT_HRV"  // hrv
 #define L_MEDIC_TXT_READINESS @"L_MEDIC_TXT_READINESS"
 #define L_MEDIC_TXT_SLEEP_SCORE @"L_MEDIC_TXT_SLEEP_SCORE"
+
 
 // 二级
 #define L_TREND_TITLE_GOAL @"trend_goal"

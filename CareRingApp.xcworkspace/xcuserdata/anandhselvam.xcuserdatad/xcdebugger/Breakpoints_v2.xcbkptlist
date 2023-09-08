@@ -7,17 +7,108 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "24D07B50-19FB-481C-8779-614D7E8D04D0"
+            uuid = "12DF6285-A56C-473E-A69C-74B74773FE5D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CareRingApp/VC/BindDevice/ReadyToBindVc.m"
+            filePath = "CareRingApp/Models/AboutReady/ReadyDrawObj.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "-gotoNext:"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "-queryTemperatureFluData:End:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E910AD7-4C45-4E4B-A189-29E19A48F093"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CareRingApp/VC/MeasureDataListVc.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "-queryData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "36BEA63A-0545-4453-B0E1-5A0F9DE5B8BD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29AE6E2D-44E3-4047-9365-03A5799A5E91"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CareRingApp/VC/MainReadinessVc.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "579"
+            endingLineNumber = "579"
+            landmarkName = "-tableView:didSelectRowAtIndexPath:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "29AE6E2D-44E3-4047-9365-03A5799A5E91 - 3dedb8c0b884e1a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MainReadinessVc tableView:didSelectRowAtIndexPath:]"
+                  moduleName = "CareRingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anandhselvam/Downloads/NexRing_iOS_SDK_V1.0.6/RingDemo_V1.0.6_build20230712/CareRingApp/VC/MainReadinessVc.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "579"
+                  endingLineNumber = "579"
+                  offsetFromSymbolStart = "3200">
+               </Location>
+               <Location
+                  uuid = "29AE6E2D-44E3-4047-9365-03A5799A5E91 - 3dedb8c0b884e1a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MainReadinessVc tableView:didSelectRowAtIndexPath:]"
+                  moduleName = "CareRingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anandhselvam/Downloads/NexRing_iOS_SDK_V1.0.6/RingDemo_V1.0.6_build20230712/CareRingApp/VC/MainReadinessVc.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "579"
+                  endingLineNumber = "579"
+                  offsetFromSymbolStart = "3144">
+               </Location>
+               <Location
+                  uuid = "29AE6E2D-44E3-4047-9365-03A5799A5E91 - 3dedb8c0b884e565"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[MainReadinessVc tableView:didSelectRowAtIndexPath:]"
+                  moduleName = "CareRingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anandhselvam/Downloads/NexRing_iOS_SDK_V1.0.6/RingDemo_V1.0.6_build20230712/CareRingApp/VC/MainReadinessVc.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "608"
+                  endingLineNumber = "608"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

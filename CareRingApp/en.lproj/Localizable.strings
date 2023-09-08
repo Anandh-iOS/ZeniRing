@@ -96,8 +96,8 @@
 "immerse_seg_titl_low_dip" = "Low Dip";
 
 "L_TITLE_ABOUT" = "About";
-"L_TITEL_TARGET_SLEEP" = "Sleep goals";
-"L_TITEL_TARGET_GOODSLEEP" = "Quality sleep goals";
+"L_TITEL_TARGET_SLEEP" = "Sleep goal";
+"L_TITEL_TARGET_GOODSLEEP" = "Quality sleep goal";
 "L_TITEL_TARGET_IMMERSE" = "Nighttime heart rate immersion";
 "L_TITEL_TARGET_DEEPSLEEP" = "Deep sleep goals";
 "L_SUNTITL_TARGET_SLEEP"= "Set your sleep goals";
@@ -110,14 +110,22 @@
 // 目标 睡眠时长
 "txt_target_about_sleep_a" = "Generally speaking you know how much sleep you need to feel refreshed, some people need more, some people less.\r\n";
 "txt_target_about_sleep_b" = "Research shows that most adults need between seven and nine hours of sleep each night.";
+"txt_target_about_sleep_a1" = "Your Sleeping time last night was %@";
+"txt_target_about_sleep_a2" = "The 7-day average  sleep time is %@";
 
 // 目标 优质睡眠
 "txt_target_about_quality_sleep_a" = "Your quality goals are based on the percentage of sleep time needed, and most people find 70-80% to be a good starting goal.\r\n";
+"txt_target_about_quality_sleep_a1" = "Your quality sleeping time last night was %@";
+"txt_target_about_quality_sleep_a2" = "The 7-day average quality sleep time is %@";
 "txt_target_about_quality_sleep_b" = "The Sleep Quality Graph analyzes your sleep duration, amplitude and heart rate while sleeping and is a great way to track how much quality sleep you're getting. \r\nYou can adjust the target to the value that works best for you. \r\n";
 //目标 沉浸
 "txt_target_about_immerse_a" = "The most common drop is 10-15%, if you regularly experience higher or lower drops than this, you can adjust for better reporting\r\nHeart rate immersion is the average of your sleeping heart rate with your of inactive daytime heart rate averages. \r\n";
+"txt_target_about_immerse_a1" = "Your Heart rate immersion for last night was %@";
+"txt_target_about_immerse_a2" = "The 7-day average Heart rate immersion is %@";
 //目标 深度睡眠
 "txt_target_about_deepsleep_a" = "Most people get 10-30% deep sleep.\r\n";
+"txt_target_about_deepsleep_a1" = "Your deep sleep time last night was %@";
+"txt_target_about_deepsleep_a2" = "The 7-day average deep sleep time is %@";
 "txt_target_about_deepsleep_b" = "Research shows that adults need 1.5-1.8 hours of deep sleep per night. \r\nImportant: If you see too much or too little deep sleep, you may also need to adjust your heart rate drop target. \r\n";
 // 设置-个人信息
 //"title_userinfo" = "Personal information";
@@ -150,20 +158,20 @@
 "title_min_hr" = "Lowest heart rate";
 "title_avg_hrv" = "Average HRV";
 
-"title_format_target_hr_immerse" = "%d%% - %d%% heart rate dip goal";
+"title_format_target_hr_immerse" = "%@ heart rate dip goal";
 "title_format_targethrv" = "%d ms, two weeks average HRV";
-"title_format_sleep_duration" = "%dh %dm sleep goal";
+"title_format_sleep_duration" = "%@ sleep goal";
 "title_format_thermemoter" = "%d %@ - %d %@, daily finger temperature variations";
 
-"cont_title_sleep_duration" = "%dh %dm, reaching %d%% sleep goal";
-"cont_title_sleep_duration_reach" = "%dh %dm, reaching sleep goal";
+"cont_title_sleep_duration" = "%ldh %ldm (%ld%%)";
+"cont_title_sleep_duration_reach" = "%dh %dm";
 
-"cont_title_quality_sleep_finish" = "%dh %dm,reaching quality sleep goal";
+"cont_title_quality_sleep_finish" = "%@ quality sleep goal";
 "cont_title_quality_sleep_NOT_finish" = "%dh %dm,reaching %d%% quality sleep goal";
 "cont_title_immerse" = "%d bpm, heart rate dip %d%%";
 
 "cont_title_deep_Sleep" = "%dh %dm, reaching %d%% deep sleep goal";
-"cont_title_deep_Sleep_fin" = "%dh %dm, reaching deep sleep goal";
+"cont_title_deep_Sleep_fin" = "%@, deep sleep goal";
 
 "cont_title_deep_hrv_higer" = "Average %dms, above the two weeks average";
 "cont_title_deep_hrv_lower" = "Average %dms, below the two weeks average";
@@ -175,8 +183,8 @@
 // 设置
 "SET_MAIN_TITLE" = "Settings";
 "SET_ITEM_TITLE_MYINFO" = "My profile";
-"SET_ITEM_TITLE_MYDEVICE" = "My device";
-"SET_ITEM_TITLE_TARGET" = "Set goals";
+"SET_ITEM_TITLE_MYDEVICE" = "Smart Ring";
+"SET_ITEM_TITLE_TARGET" = "My goals";
 "SET_ITEM_TITLE_MYSET" = "Settings";
 "SET_ITEM_TITLE_CONTACT" = "Contact us";
 "SET_ITEM_TITLE_UPDATE_DEV" = "Update device software";
@@ -268,6 +276,11 @@
  "heart rate variability record";
  "temperature record";
  */
+
+"L_Readiness_TITLE_HR" = "Heart rate dip";
+"L_Readiness_TITLE_HRV" = "HRV";
+"L_Readiness_TITLE_TotalSleep" = "Total Sleep";
+"L_Readiness_TITLE_THERMEMOTER" = "Finger temperature";
 
 "L_RECORD_TITLE_HR" = "Heart rate record";
 "L_RECORD_TITLE_HRV" = "HRV record";
@@ -365,14 +378,14 @@
 "trend_seg_week" = "Week";
 "trend_seg_month" = "Month";
 // 二级 关于
-"trend_about_immerse" = "  Heart Rate Dip compares your sleeping heart rate average to your inactive daytime heart rate average.\r\n"; // 沉浸
+"trend_about_immerse" = "Heart Rate Dip compares your sleeping heart rate average to your inactive daytime heart rate average.\r\n"; // 沉浸
 "trend_about_immerse_b" = "Research shows that a dip of 10% or higher is an important part of healthy sleep.";
-"trend_about_hrv" = "  Heart rate variability (HRV) reveals how your body responds to training, traveling or stress.\r\n";
+"trend_about_hrv" = "Heart rate variability (HRV) reveals how your body responds to training, traveling or stress.\r\n";
 "trend_about_hrv_b" = "HRV is personal, and it\'s affected by various factors such as age, health status, and fitness level. Average HRV can vary from anywhere below 20 to over 120. High HRV is typically a sign of general health and fitness, whereas lowered HRV can be a sign of stress or overtraining.";
 
 "trend_about_sleeptime" = "Your sleep has a huge impact on your daytime performance. Ready state contributions take into account all of your sleep, including naps.";
 
-"trend_about_deepsleep" = "  Deep sleep is a state in which your heart rate is slow and your muscles are relaxed to the point of being almost motionless.\r\nResearch shows that adults need 1.5 – 1.8 hours of deep sleep per night. \r\n";
+"trend_about_deepsleep" = "Deep sleep is a state in which your heart rate is slow and your muscles are relaxed to the point of being almost motionless.\r\nResearch shows that adults need 1.5 – 1.8 hours of deep sleep per night. \r\n";
 "trend_about_deepsleep_b" = "Important: If you see too much or too little deep sleep, you may also need to adjust your heart rate dip goal.";
 "trend_about_qualitysleep" = "Quality Sleep takes into account how long you slept, how much restlessness you experience, and your sleep heart rate.";
 "trend_about_oxygen" =  "  Oxygen Saturation indicates the percentage of hemoglobin in red blood cells that carry oxygen from the lungs to the rest of the body.\r\n";

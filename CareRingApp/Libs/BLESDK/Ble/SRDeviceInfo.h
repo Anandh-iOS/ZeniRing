@@ -21,6 +21,14 @@ typedef NS_ENUM(NSInteger, MAIN_CHIP_TYPE) {
     MAIN_CHIP_14531_01 = 1,
 }; //ring's main chip type
 
+typedef NS_ENUM(NSUInteger, CMD_EXECTE_ERROR_REASON) {
+    REASON_NONE = 0,
+    REASON_1, // 设备自动测量中
+    REASON_2, // 设备在运动模式测量中
+    REASON_3, // 设备app测量中
+    REASON_4, // 参数错误
+};
+
 @interface SRDeviceInfo : NSObject
 @property(assign, nonatomic, readonly)DEV_COLOR color; // ring's color
 @property(assign, nonatomic, readonly)NSUInteger size; // ring's size

@@ -19,7 +19,9 @@
 #import "TimeUtils.h"
 
 #import "DBHeartRate.h"
-
+#import "ReadinessHeaderView.h"
+#import "goalValues.h"
+#import "sleepScoreData.h"
 
 @interface MainSleepVc ()<UITableViewDelegate, UITableViewDataSource>
 @property(strong, nonatomic)UITableView *tableView;
@@ -36,15 +38,17 @@
 
 // 睡眠时长
 @property(strong, nonatomic)NSNumber *sleepDuration;
-@property(strong, nonatomic)NSNumber *sleepGoalPercent;
+@property(strong, nonatomic)NSNumber *sleepPercent;
 @property(assign, nonatomic)CONTRIBUTE_LEVEL sleepDurationLevel;
 
 // 优质睡眠
 @property(strong, nonatomic)NSNumber *qualitSleepDuration;
+@property(strong, nonatomic)NSNumber *qualitSleepPercent;
 @property(assign, nonatomic)CONTRIBUTE_LEVEL qualitySleepDurationLevel;
 
 // 深度睡眠
 @property(strong, nonatomic)NSNumber *deepSleepDuration;
+@property(strong, nonatomic)NSNumber *deepSleepPercent;
 @property(assign, nonatomic)CONTRIBUTE_LEVEL deepSleepDurationLevel;
 
 //沉浸
@@ -78,8 +82,8 @@
         [self notifySleepHRVQueryFin:nil];
         self.didLoad = @(YES);
     }
-//    [self.hrObj startDraw];
-//    [self.hrvObj startDraw];
+
+    
     
 }
 
@@ -167,7 +171,6 @@
     self.date = [[DeviceCenter instance] currentQueryDate];
     // TODO: 更新头部日期
     
-    
 }
 
 
@@ -193,20 +196,20 @@
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 4;
+    return 5;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.section == 0 || indexPath.section == 2) {
+    if (indexPath.section == 1 || indexPath.section == 3) {
         return 95.f;
     }
     
-    if (indexPath.section == 1) {
+    if (indexPath.section == 2) {
         return 450.f; // 睡眠分期图
     }
     
-    if (indexPath.section == 3) {
+    if (indexPath.section == 4) {
         return 350.f; // 睡眠的心率 hrv 折线图
     }
     
@@ -219,6 +222,18 @@
 {
     UIView *content = [UIView new];
     
+    if (section == 0) {
+        
+        ReadinessHeaderView *headerView = [[ReadinessHeaderView alloc] initWithFrame:CGRectMake(0, 0, 150, 150)];
+        [content addSubview:headerView];
+        NSNumber *score = [sleepScoreData sharedInstance].calculateScore;
+        [headerView setScoreTitle:@"SLEEP SCORE" :[score stringValue]];
+        [headerView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.center.equalTo(headerView.superview).centerOffset(CGPointMake(-75, -75));
+        }];
+        return content;
+        
+    }
     
     UILabel *label = [UILabel new];
     label.frame = CGRectMake(0, 0, SCREEN_WIDTH, 40);
@@ -227,18 +242,18 @@
     label.textColor = UIColor.whiteColor;
     [content addSubview:label];
     
-    if (section == 0) {
+    if (section == 1) {
         label.text = _L(L_TITLE_SLEEP_CON);// 就绪贡献
     }
-    if ( section == 1 ) {
+    if ( section == 2 ) {
         label.text = _L(L_TITLE_SLEEP_DETAIL); // 详情
     }
     
-    if (section == 2) {
+    if (section == 3) {
         label.text = _L(L_TITLE_HEALTH);
     }
     
-    if (section == 3) {
+    if (section == 4) {
         label.text = _L(L_TITEL_READY_DETAIL);
     }
     label.adjustsFontSizeToFitWidth = YES;
@@ -250,7 +265,7 @@
     
     BOOL showNap = [DeviceCenter instance].GetNapSleepDBData.count > 0 && [DeviceCenter instance].GetSleepDBData.count; // 两种都有才显示切换
     
-    if (section == 1 &&  showNap) {
+    if (section == 2 &&  showNap) {
         label.frame = CGRectMake(0, 0, SCREEN_WIDTH, 80);
         [content addSubview:self.sleepSeg];
         [label mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -272,22 +287,27 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
+    if (section == 0) {
+        return 180;
+    }
+    
     BOOL showNap = [DeviceCenter instance].GetNapSleepDBData.count > 0; // 需要显示小睡切换seg
-    if (section == 1) {
+    if (section == 2) {
         if (showNap) {
             return 80;
         }
     }
+    
     return 40;
 }
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section == 0) {
+    if (section == 1) {
         return 4;
     }
-    if (section == 1) { // 睡眠分期图
+    if (section == 2) { // 睡眠分期图
         if (!self.isCurrentShowNap) {
             NSUInteger count = [DeviceCenter instance].GetSleepDBData.count;
             return count > 0 ? count : 1;
@@ -299,11 +319,11 @@
       
     }
     
-    if (section == 2) { // 血氧+呼吸率
+    if (section == 3) { // 血氧+呼吸率
         return 2;
     }
     
-    if (section == 3) { // 折线图
+    if (section == 4) { // 折线图
         return 2;
     }
     
@@ -316,7 +336,8 @@
     DBSleepData *dbsleep = [[DeviceCenter instance].GetSleepDBData firstObject];
     StagingDataV2 *sleepData = dbsleep.stagingData;
     
-    if (indexPath.section == 0 ) {
+    
+    if (indexPath.section == 1 ) {
         
         TextInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TextInfoCell class])];
         if (!cell) {
@@ -326,22 +347,13 @@
         switch (indexPath.row) {
             case 0: // sleep duration
             {
+
                 [cell.infoView.titleLabel setText:_L(L_TITEL_SLEEP_DURATION)];
                 [cell.infoView setTextAndBarColor:HEALTH_COLOR_BEST];
-                if (self.sleepGoalPercent.floatValue >= 1.0) {
-                    
-                    cell.infoView.subLabelA.text = [NSString stringWithFormat:_L(L_TIEM_DATA_STR_SLEEP_DURATION_REACH),
-                                                    self.sleepDuration.integerValue / 3600 ,
-                                                    self.sleepDuration.integerValue % 3600 / 60
-                    ];
-                    
-                } else {
-                    cell.infoView.subLabelA.text = [NSString stringWithFormat:_L(L_TIEM_DATA_STR_SLEEP_DURATION),
-                                                    self.sleepDuration.integerValue / 3600 ,
-                                                    self.sleepDuration.integerValue % 3600 / 60,
-                                                    (int)(self.sleepGoalPercent.floatValue * 100)
-                    ];
-                }
+                NSDictionary *ComputedData=[[DeviceCenter instance] getSleepData:CONTRI_TOTAL_SLEEP];
+                cell.infoView.subLabelA.text = [ComputedData valueForKey:@"labelA"];
+                cell.infoView.subLabelB.text = [ComputedData valueForKey:@"labelB"];
+                self.sleepPercent = [ComputedData valueForKey:@"percentage"];
                 
                 if (!sleepData) {
                     cell.infoView.subLabelA.text = NONE_VALUE;
@@ -354,11 +366,11 @@
             {
                 [cell.infoView.titleLabel setText:_L(L_TITLE_QUALITY_SLEEP)];
                 [cell.infoView setTextAndBarColor:HEALTH_COLOR_BEST];
-                                
-                    cell.infoView.subLabelA.text = [NSString stringWithFormat:_L(L_TIEM_DATA_STR_QUALITY_SLEEP_FIN),
-                                                    self.qualitSleepDuration.integerValue / 3600 ,
-                                                    self.qualitSleepDuration.integerValue % 3600 / 60
-                                                   ];
+                NSDictionary *ComputedData=[[DeviceCenter instance] getSleepData:CONTRI_QUALITY_SLEEP];
+                cell.infoView.subLabelA.text = [ComputedData valueForKey:@"labelA"];
+                cell.infoView.subLabelB.text = [ComputedData valueForKey:@"labelB"];
+                self.qualitSleepPercent = [ComputedData valueForKey:@"percentage"];
+                
                 
                 if (!sleepData) {
                     cell.infoView.subLabelA.text = NONE_VALUE;
@@ -372,31 +384,32 @@
             case 2: // heart dip
             {
               
-                    [cell.infoView.titleLabel setText:_L(L_TITEL_AVG_HR_INSLEEP)];
-                    cell.infoView.subLabelA.text = [NSString stringWithFormat:@"%d%@",
-                                                    (int)(sleepData.averageHr),
-                                                    _L(L_PDF_UNIT_HR)
-                                                    ];
-               
+                [cell.infoView.titleLabel setText:_L(L_TITEL_AVG_HR_INSLEEP)];
                 [cell.infoView setTextAndBarColor:HEALTH_COLOR_BEST];
-                
-             
-                if (!sleepData) {
-                    cell.infoView.subLabelA.text = NONE_VALUE;
-                    [cell.infoView setTextAndBarColor:HEALTH_COLOR_BEST];
-                }
+                NSDictionary *ComputedData=[[DeviceCenter instance] getSleepData:CONTRI_AVERAGE_HR];
+                cell.infoView.subLabelA.text = [ComputedData valueForKey:@"labelA"];
+                cell.infoView.subLabelB.text = [ComputedData valueForKey:@"labelB"];
+                self.immersePercent = [ComputedData valueForKey:@"percentage"];
+            
+            
+            if (!sleepData) {
+                cell.infoView.subLabelA.text = NONE_VALUE;
+                [cell.infoView setTextAndBarColor:HEALTH_COLOR_BEST];
+            }
+           
                
             }
                 break;
             case 3: // deep sleep duration
             {
+                
                 [cell.infoView.titleLabel setText:_L(L_TITLE_DEEP_SLEEP)];
                 [cell.infoView setTextAndBarColor:HEALTH_COLOR_BEST];
-                    cell.infoView.subLabelA.text = [NSString stringWithFormat:_L(L_TIEM_DATA_STR_DEEP_SLEEP_FIN),
-                                                    self.deepSleepDuration.integerValue / 3600,
-                                                    self.deepSleepDuration.integerValue % 3600 / 60
-                                                    ];
-
+                
+                NSDictionary *ComputedData=[[DeviceCenter instance] getSleepData:CONTRI_DEEP_SLEEP];
+                cell.infoView.subLabelA.text = [ComputedData valueForKey:@"labelA"];
+                cell.infoView.subLabelB.text = [ComputedData valueForKey:@"labelB"];
+                self.deepSleepPercent = [ComputedData valueForKey:@"percentage"];
                 
                 if (!sleepData) {
                     cell.infoView.subLabelA.text = NONE_VALUE;
@@ -404,8 +417,6 @@
 
                 }
                 
-             
-
             }
                 break;
                 
@@ -418,7 +429,7 @@
         
     }
     
-    if ( indexPath.section == 2) {
+    if ( indexPath.section == 3) {
         
         TextInfoCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([TextInfoCell class])];
         if (!cell) {
@@ -463,7 +474,7 @@
                     [cell.infoView setTextAndBarColor:HEALTH_COLOR_BEST];
                     cell.infoView.subLabelA.text = NONE_VALUE;
                 } else {
-                    double averageHr = sleepData.averageHr;
+                    
                     double breath =  dbsleep.br.floatValue;
                     if (breath < 12 || breath > 24) {
                         [cell.infoView setTextAndBarColor:HEALTH_COLOR_ATTECTION];
@@ -502,7 +513,7 @@
         
     }
     
-    if (indexPath.section == 1) { // 睡眠分期图
+    if (indexPath.section == 2) { // 睡眠分期图
         if (!self.isCurrentShowNap) {
             SleepTimeCell *cell = [[SleepTimeCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([SleepTimeCell class])];
             // 块状图
@@ -527,7 +538,7 @@
       
     }
     
-    if (indexPath.section == 3) {
+    if (indexPath.section == 4) {
         SleepDrawLineCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([SleepDrawLineCell class])];
         if (!cell) {
             cell = [[SleepDrawLineCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:NSStringFromClass([SleepDrawLineCell class])];

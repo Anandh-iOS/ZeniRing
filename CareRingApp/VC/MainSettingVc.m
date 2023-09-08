@@ -19,12 +19,15 @@
 #import "OTAVc.h"
 #import "UIViewController+Custom.h"
 #import "LTPHud.h"
-
+#import "SetGoalVC.h"
 
 typedef NS_ENUM(NSUInteger, SET_TAG) {
+    SET_TAG_MYPROFILE,
     SET_TAG_MYDEVICE,
+    SET_TAG_MYGOALS,
     SET_TAG_MYSET,
     SET_TAG_UPGRADE_DEVICE,
+    SET_TAG_CONTACT,
 };
 
 @interface MainSettingVc ()<UITableViewDelegate, UITableViewDataSource, SRBleScanProtocal, SRBleDataProtocal>
@@ -76,8 +79,8 @@ typedef NS_ENUM(NSUInteger, SET_TAG) {
 
 -(void)initData {
     
-    NSArray *secction_one = @[ @(SET_TAG_MYDEVICE),  @(SET_TAG_MYSET),];
-    NSArray *secction_two = @[@(SET_TAG_UPGRADE_DEVICE)];
+    NSArray *secction_one = @[ @(SET_TAG_MYPROFILE), @(SET_TAG_MYDEVICE),  @(SET_TAG_MYGOALS), @(SET_TAG_MYSET)];
+    NSArray *secction_two = @[@(SET_TAG_UPGRADE_DEVICE), @(SET_TAG_CONTACT)];
     
     self.dataArray = @[secction_one, secction_two];
     
@@ -131,6 +134,25 @@ typedef NS_ENUM(NSUInteger, SET_TAG) {
         {
             cell.textLabel.text = _L(L_SET_ITEM_TITLE_MYSET);
             cell.imageView.image = [UIImage imageNamed:@"setting_mysetting"];
+            cell.imageView.tintColor = UIColor.whiteColor;
+            cell.textLabel.textColor = UIColor.whiteColor;
+
+        }
+            break;
+        case SET_TAG_MYPROFILE:
+        {
+            cell.textLabel.text = _L(L_SET_ITEM_TITLE_MYINFO);
+            cell.imageView.image = [UIImage systemImageNamed:@"person"];
+            cell.imageView.tintColor = UIColor.whiteColor;
+            cell.textLabel.textColor = UIColor.whiteColor;
+
+        }
+            break;
+        case SET_TAG_MYGOALS:
+        {
+            cell.textLabel.text = _L(L_SET_ITEM_TITLE_TARGET);
+            cell.imageView.image = [UIImage systemImageNamed:@"target"];
+            cell.imageView.tintColor = UIColor.whiteColor;
             cell.textLabel.textColor = UIColor.whiteColor;
 
         }
@@ -139,6 +161,15 @@ typedef NS_ENUM(NSUInteger, SET_TAG) {
         {
             cell.textLabel.text = _L(L_SET_ITEM_TITLE_MYDEVICE);
             cell.imageView.image = [UIImage imageNamed:@"setting_mydevice"];
+            cell.imageView.tintColor = UIColor.whiteColor;
+            cell.textLabel.textColor = UIColor.whiteColor;
+        }
+            break;
+        case SET_TAG_CONTACT :
+        {
+            cell.textLabel.text = _L(L_SET_ITEM_TITLE_CONTACT);
+            cell.imageView.image = [UIImage systemImageNamed:@"paperplane"];
+            cell.imageView.tintColor = UIColor.whiteColor;
             cell.textLabel.textColor = UIColor.whiteColor;
         }
             break;
@@ -147,6 +178,7 @@ typedef NS_ENUM(NSUInteger, SET_TAG) {
         {
             cell.textLabel.text = _L(L_SET_ITEM_TITLE_UPDATE_DEV);
             cell.imageView.image = [UIImage imageNamed:@"setting_update_firm"];
+            cell.imageView.tintColor = UIColor.whiteColor;
             if ([DeviceCenter instance].isBleConnected) {
                 cell.textLabel.textColor = UIColor.whiteColor;
             } else {
@@ -182,6 +214,15 @@ typedef NS_ENUM(NSUInteger, SET_TAG) {
             OtherSettingVc *vc = [[OtherSettingVc alloc]init];
             vc.hidesBottomBarWhenPushed = YES; //隐藏tabbar
             [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case SET_TAG_MYGOALS :
+        {
+            SetGoalVC *vc = [[SetGoalVC alloc]init];
+            vc.hidesBottomBarWhenPushed = YES; //隐藏tabbar
+            [self.navigationController pushViewController:vc animated:YES];
+            
         }
             break;
 

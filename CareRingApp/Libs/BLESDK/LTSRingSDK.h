@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
+#import "SRDeviceInfo.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -57,6 +58,7 @@ typedef NS_ENUM(UInt8, EXCUTED_CMD) {
     EXCUTED_CMD_DEVICE_INFO =         0x0f, // Get device information
     EXCUTED_CMD_SN =                  0x10, // serial number
     EXCUTED_CMD_BATTERY =             0X11, // battery power
+    EXCUTED_CMD_SPORT_MODE =          0x20, // sport Mode
     EXCUTED_CMD_FUNCTIN_SWITCH =      0x31, // Device function switch
 };// 下发命令字
 
@@ -104,6 +106,10 @@ typedef NS_ENUM(NSUInteger, REALTIME_MEASURE_TYPE) {
 /// @param hr  -- heart rate
 - (void)srBleRealtimeHeartRate:(NSNumber *)hr;
 
+/// Call back for realtime HRV measurement
+/// @param hrv  -- HRV
+- (void)srBleRealtimeHrv:(NSNumber *)hrv;
+
 /// call back device's battery level and charging state
 /// @param batteryLevel battery level
 /// @param isCharging YES = device is charging
@@ -120,7 +126,7 @@ typedef NS_ENUM(NSUInteger, REALTIME_MEASURE_TYPE) {
 /// call back value of history data
 /// @param currentCount current received data index
 /// @param isComplete YES = translate finish
-- (void)srBleHistorySr03DataWithCurrentCount:(NSInteger)currentCount IsComplete:(BOOL)isComplete;
+- (void)srBleHistorySr03DataWithCurrentCount:(NSInteger)currentCount IsComplete:(BOOL)isComplete DEPRECATED_MSG_ATTRIBUTE("deprecate from V1.0.7, use srBleCmdExcute:Succ:Reason: instead");
 
 /// call back realtime steps
 /// @param steps steps
@@ -130,14 +136,25 @@ typedef NS_ENUM(NSUInteger, REALTIME_MEASURE_TYPE) {
 /// @param temperature skin temperature Unit(℃)
 - (void)srBleDeviceRealtimeTemperature:(NSNumber *)temperature;
 
+
 /// call back for excute result of sended command
 /// @param cmd  sended cmd
 /// @param isSucc YES = success
-- (void)srBleCmdExcute:(EXCUTED_CMD)cmd Succ:(BOOL)isSucc;
+- (void)srBleCmdExcute:(EXCUTED_CMD)cmd Succ:(BOOL)isSucc DEPRECATED_MSG_ATTRIBUTE("deprecate from V1.0.7, use srBleCmdExcute:Succ:Reason: instead");
+
+/// call back for excute result of sended command
+/// @param cmd  sended cmd
+/// @param isSucc YES = success
+- (void)srBleCmdExcute:(EXCUTED_CMD)cmd Succ:(BOOL)isSucc Reason:(CMD_EXECTE_ERROR_REASON)reason;
 
 /// Return historical data entries
 /// @param count The amount of historical data saved by the device
-- (void)srBleHistoryDataCount:(NSInteger)count;
+- (void)srBleHistoryDataCount:(NSInteger)count DEPRECATED_MSG_ATTRIBUTE("deprecate from V1.0.7, use srBleHistoryDataProgress:IsComplete: instead");
+
+/// Historical data synchronization progress
+/// @param percent range (0.0 - 1.0)
+/// @param isComplete YES = complete
+- (void)srBleHistoryDataProgress:(float)percent IsComplete:(BOOL)isComplete;
 
 /// gain device's cache data time out
 - (void)srBleHistoryDataTimeout;
@@ -158,6 +175,14 @@ typedef NS_ENUM(NSUInteger, REALTIME_MEASURE_TYPE) {
 /// call back to report device's measure duration
 /// - Parameter seconds: measuration druration
 -(void)srBleMeasureDuration:(NSInteger)seconds;
+
+/// Report real-time measurement infrared data
+/// - Parameter irData: infrared data
+-(void)srBleIrData:(uint16_t)irData;
+
+/// Report real-time measured red light data
+/// - Parameter redData: red light data
+-(void)srBleRedData:(uint16_t)redData;
 
 @end
 
@@ -267,6 +292,10 @@ typedef NS_ENUM(NSUInteger, REALTIME_MEASURE_TYPE) {
 /// - Parameter duration: duration of each measurement, uint:second
 -(void)functionSetDeviceMeasureDuration:(NSInteger)duration;
 
+/// Set the original waveform reporting switch in real-time measurement
+/// @param isON YES = ON
+-(void)functionSetRealmeasureWaveSwitch:(BOOL)isON;
+
 /**  About OTA **/
 
 /// Start ota to upgrade the ring firmware
@@ -275,7 +304,14 @@ typedef NS_ENUM(NSUInteger, REALTIME_MEASURE_TYPE) {
 
 /**  About OTA **/
 
+/* sprot mode */
+/// Turn on sport mode
+/// @param durationMinutes Duration Unit: Minute Range (5min - 180min)
+/// @param valueInterval Device value interval, unit - second
+-(void)functionStartSportMode:(uint16_t)durationMinutes ValueInterval:(uint16_t)valueInterval;
 
+/// Turn off sport mode manually
+-(void)functionShutdownSportMode;
 
 
 - (instancetype)init NS_UNAVAILABLE;

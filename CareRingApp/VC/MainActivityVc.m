@@ -30,6 +30,7 @@
 #import "DBHistoryDataSr03.h"
 #import "ActivityLineCell.h"
 #import "RealtimeMeasureVc.h"
+#import "sleepScoreData.h"
 
 @interface MainActivityVc ()<UITableViewDelegate, UITableViewDataSource,SRBleScanProtocal, SRBleDataProtocal>
 
@@ -199,10 +200,13 @@
 
 -(void)autoLoginSucc:(NSNotification *)noti
 {
+    [self viewDidAppear:YES]; // 自动登录刷新
     // 自动登录时推动计算睡眠
     self.date = [NSDate date];
     [[DeviceCenter instance] querySleep:self.date];
-    [self viewDidAppear:YES]; // 自动登录刷新
+    [[DeviceCenter instance] queryhearRate:self.date];
+    [[sleepScoreData sharedInstance] makeSleepContributorScore];
+    
 }
 
 -(void)intUI {
@@ -642,6 +646,8 @@
         ((ActivityLineCell *)cell).activityObj =  [DeviceCenter instance].temperautreFluObj;
     }
 }
+
+
 
 #pragma mark -- bledelegate
 - (void)srBlePowerStateChange:(CBManagerState)state {

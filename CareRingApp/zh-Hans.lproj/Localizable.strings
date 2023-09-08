@@ -100,7 +100,7 @@
 "title_min_hr" = "最低心率";
 "title_avg_hrv" = "平均HRV";
 
-"title_format_target_hr_immerse" = "%d%% - %d%% 心率沉浸目标";
+"title_format_target_hr_immerse" = "%@ 心率沉浸目标";
 "title_format_targethrv" = "%d ms 两周的平均心率变异性";
 "title_format_sleep_duration" = "%d小时%d分钟 睡眠时间目标";
 "title_format_thermemoter" = "%d %@ - %d %@ 每日手指温度波动";
@@ -278,6 +278,12 @@
 "device_near" = "您附近的产品";
 "tip_bind_limit_mode" = "已启用受限模式，只能恢复出厂设置和自检。";
 "tips_wait_factory_reset" = "正在将设备恢复为出厂设置，这个可能需要几分钟时间，请稍等...";
+
+"L_Readiness_TITLE_HR" = "心率下降";
+"L_Readiness_TITLE_HRV" = "心率变异性";
+"L_Readiness_TITLE_TotalSleep" = "总睡眠时间";
+"L_Readiness_TITLE_THERMEMOTER" = "手指温度";
+
 // 记录列表
 "L_RECORD_TITLE_HR" = "心率记录";
 "L_RECORD_TITLE_HRV" = "心率变异性记录";

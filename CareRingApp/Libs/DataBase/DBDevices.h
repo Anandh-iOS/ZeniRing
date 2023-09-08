@@ -47,6 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(strong, nonatomic)NSString *sn, *fireWareVersion;// sn=serial number, fireWareVersion=Device firmware version number
 @property(assign, nonatomic)MAIN_CHIP_TYPE mainChipType; // 主芯片型号
 @property(assign, nonatomic)NSUInteger deviceGeneration;  // 迭代版本
+@property(assign, nonatomic)BOOL isSupportSportMode;
 
 /// Convert to a.b.c format
 -(NSString *)transFirmVersionToRemoteType;

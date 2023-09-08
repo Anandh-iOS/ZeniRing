@@ -14,9 +14,10 @@ target 'CareRingApp' do
   pod 'Toast'
   pod 'QMUIKit', '~> 4.4.3'
   pod 'MJRefresh'
+  pod 'RESegmentedControl'
+  
+  
   # for sdk
   pod 'DateTools'
   pod 'MJExtension', '~> 3.4.1'
-  
-  
 end

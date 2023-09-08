@@ -15,6 +15,8 @@
 #import "NSString+Check.h"
 #import "OTAHelper.h"
 #import "OusideBleDiscovery.h"
+#import "sleepScoreData.h"
+#import "goalValues.h"
 const NSTimeInterval AUTO_SCAN_TIME_OUT = 120;//120;
 
 NSString * const CP_NAME = @"";
@@ -36,6 +38,9 @@ NSString * const CP_NAME = @"";
 
 @property(strong, nonatomic)NSMutableArray<DBSleepData *> *currentSelectDataSleepArray; //
 @property(strong, nonatomic)NSMutableArray<DBSleepData *> *currentSelectNapArray; // nap array
+@property(strong, nonatomic)NSMutableArray<DBHeartRate *> *currentSelectHeartRate;
+@property(strong, nonatomic)NSNumber *avgActiveHeartRate;
+
 
 @property(strong, nonatomic)OusideBleDiscovery *ousideBleManager;
 
@@ -275,8 +280,7 @@ NSString * const CP_NAME = @"";
 #pragma mark -- 睡眠相关
 -(void)querySleep:(NSDate *)date
 {
-    
-    
+
     self.calcSleepDate = date;
     // 0 通知日期变更,其他界面各自查询
     [[NSNotificationCenter defaultCenter] postNotificationOnMainThreadWithName:NOTI_NAME_SLEEP_DATE_CHANGE object:self.calcSleepDate];
@@ -286,7 +290,7 @@ NSString * const CP_NAME = @"";
     // 测试
     WEAK_SELF
     NSDate *beginDate = [TimeUtils zeroOfDate:self.calcSleepDate];
-    NSDate *endDate = [TimeUtils zeroOfNextDayDate:self.calcSleepDate];
+    NSDate *endDate = [TimeUtils zeroOfBeforeDayDate:self.calcSleepDate];
     // query sleep data
     [DBSleepData queryDbSleepBy:self.bindDevice.macAddress Begin:[beginDate timeIntervalSince1970] EndTime:[endDate timeIntervalSince1970] Comp:^(NSMutableArray<DBSleepData *> * _Nonnull results) {
         STRONG_SELF
@@ -327,8 +331,7 @@ NSString * const CP_NAME = @"";
                 
             }];
 
-            
-            
+
             [strongSelf otherQueryAfterQueryOrCalcSleep:NO];
 
             [[NSNotificationCenter defaultCenter] postNotificationOnMainThreadWithName:NOTI_NAME_SLEEP_CALC_FINISH
@@ -336,7 +339,49 @@ NSString * const CP_NAME = @"";
                                                                                 object:nil]; // notify sleep query finish
 
         } else {
-            strongSelf.currentSelectDataSleepArray = nil;
+            
+            
+#if DEBUG
+            // Create a start timestamp for the week (adjust as needed)
+            NSTimeInterval startTimestamp = [[NSDate date] timeIntervalSince1970];
+            
+            // Create an array to store the dummy sleep data objects
+            NSMutableArray<DBSleepData *> *dummySleepDataArray = [NSMutableArray array];
+            
+            // Generate dummy sleep data for a week (7 days)
+            for (int i = 0; i < 7; i++) {
+                // Create a new DBSleepData object
+                DBSleepData *dummySleepData = [[DBSleepData alloc] init];
+                
+                // Assign dummy values to the properties
+                dummySleepData.sleepStart = @(startTimestamp);
+                dummySleepData.sleepEnd = @(startTimestamp + (8 * 3600)); // 8 hours of sleep
+                dummySleepData.dateString = [NSString stringWithFormat:@"Date %d", i + 1];
+                dummySleepData.macAddress = @"00:11:22:33:44:55";
+                dummySleepData.hr = @(65 + (arc4random() % 10)); // Random HR value
+                dummySleepData.hrv = @(55 + (arc4random() % 10)); // Random HRV value
+                dummySleepData.br = @(12 + (arc4random() % 3)); // Random BR value
+                dummySleepData.spo2 = @(97 + (arc4random() % 2)); // Random SpO2 value
+                dummySleepData.hrDip = @(0.2 + (arc4random() % 3) / 10.0); // Random HR Dip value
+                dummySleepData.duration = @(8 * 3600); // 8 hours in seconds
+                dummySleepData.qulalityDuration = @(7 * 3600); // 7 hours in seconds
+                dummySleepData.deepDuration = @(3 * 3600); // 3 hours in seconds
+                dummySleepData.effieiency = @(85 + (arc4random() % 5)); // Random efficiency value
+                // Assuming StagingDataV2 is another object, you would create and assign it here
+                
+                dummySleepData.isNap = NO; // Not a nap
+                
+                // Add the dummy sleep data object to the array
+                [dummySleepDataArray addObject:dummySleepData];
+                
+                // Increment the start timestamp for the next day
+                startTimestamp += 24 * 3600; // 24 hours in seconds
+            }
+            ////////////////////////////////////////////////////////////////////////////////
+            
+            strongSelf.currentSelectDataSleepArray = dummySleepDataArray; //nil by default, changed to add dummy data
+#endif
+            
             [strongSelf otherQueryAfterQueryOrCalcSleep:YES];
            
 
@@ -349,6 +394,166 @@ NSString * const CP_NAME = @"";
     
 
 }
+
+
+-(void)queryhearRate:(NSDate *)date
+{
+    NSDate *begin = [TimeUtils zeroOfDate:date];
+    NSDate *end = [TimeUtils zeroOfBeforeDayDate:date];
+    WEAK_SELF
+    [DBHeartRate queryBy:[DeviceCenter instance].bindDevice.macAddress Begin:begin End:end OrderBeTimeDesc:YES Cpmplete:^(NSMutableArray<DBHeartRate *> * _Nonnull results, NSNumber *maxHr, NSNumber *minHr,NSNumber *avgHr) {
+
+        if (results.count) { //
+            self.currentSelectDataSleepArray = [NSMutableArray new];
+            self.currentSelectNapArray = [NSMutableArray new];
+            
+            [results enumerateObjectsUsingBlock:^(DBHeartRate * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                [self.currentSelectHeartRate addObject:obj];
+                
+            }];
+            
+            self.avgActiveHeartRate = avgHr;
+
+            [[NSNotificationCenter defaultCenter] postNotificationOnMainThreadWithName:NOTI_NAME_SLEEP_HEART_RATE_QUERY_READY
+                               
+                                                                                object:nil]; // notify sleep query finish
+        }
+        
+       
+        
+    }];
+
+}
+
+-(NSDictionary *)getSleepData :(SLEEP_CONTRI)SleepContriType
+{
+    
+    // Create a dictionary to map SLEEP_CONTRI values to property keys
+    NSDictionary<NSNumber *, NSString *> *SleepDataMapping = @{
+        @(CONTRI_TOTAL_SLEEP): @"duration",
+        @(CONTRI_QUALITY_SLEEP): @"qulalityDuration",
+        @(CONTRI_AVERAGE_HR): @"hr",
+        @(CONTRI_DEEP_SLEEP): @"deepDuration"
+    };
+    // Create a dictionary to map SLEEP_CONTRI values to Goal property keys
+    NSDictionary<NSNumber *, NSString *> *goalDataMapping = @{
+        @(CONTRI_TOTAL_SLEEP): @"sleepValue",
+        @(CONTRI_QUALITY_SLEEP): @"qualityValue",
+        @(CONTRI_AVERAGE_HR): @"dipPercentage",
+        @(CONTRI_DEEP_SLEEP): @"deepValue"
+    };
+    
+    NSArray *subTitles = @[_L(L_TIEM_DETAIL_TARGET_SLEEP_DURATION),_L(L_TIEM_DATA_STR_QUALITY_SLEEP_FIN),_L(L_TIEM_DATA_STR_DEEP_SLEEP_FIN),_L(L_TIEM_DETAIL_TARGET_HRIMMERSE)];
+    
+    if(SleepContriType == CONTRI_TOTAL_SLEEP || SleepContriType == CONTRI_DEEP_SLEEP || SleepContriType == CONTRI_QUALITY_SLEEP)
+    {
+        // Initialize a variable to store the sum of durations
+        NSNumber *totalDuration = @0;
+
+        // Iterate through the array and accumulate the durations
+        for (DBSleepData *sleepData in self.currentSelectDataSleepArray) {
+            NSNumber *duration = @0;
+            NSString *propertyKey = SleepDataMapping[@(SleepContriType)];
+            
+            // Check if the property key exists and is valid
+            if (propertyKey && [sleepData respondsToSelector:NSSelectorFromString(propertyKey)]) {
+                duration = [sleepData valueForKey:propertyKey];
+            }
+            
+            // Check if the duration is not nil before adding it to the total
+            if (duration) {
+                totalDuration = @(totalDuration.doubleValue + duration.doubleValue);
+            }
+        }
+        
+
+        goalValues *goalData = [goalValues retrieveGoalValues];
+        NSString *goalPropertyKey = goalDataMapping[@(SleepContriType)];
+        NSArray *components = @[];
+        NSString *goalString;
+        
+        if (goalPropertyKey) {
+            NSString *goalVal = [goalData valueForKey:goalPropertyKey];
+            components = [goalVal  componentsSeparatedByString:@" "];
+            goalString = [NSString stringWithFormat:subTitles[SleepContriType], [goalData valueForKey:goalPropertyKey]];
+        }
+        
+        // Calculate hours and minutes
+        NSInteger totalDurationInMinutes = [totalDuration integerValue] / 60;
+        NSInteger hours = totalDurationInMinutes / 60;
+        NSInteger minutes = totalDurationInMinutes % 60;
+        
+        
+        NSInteger Goalhours = 0;
+        NSInteger Goalminutes = 0;
+
+        if (components.count >= 2) {
+            Goalhours = [[components objectAtIndex:0] integerValue];
+            Goalminutes = [[components objectAtIndex:1] integerValue];
+        }
+        
+        
+        
+        
+        NSInteger totalDurationAInMinutes = (hours * 60) + minutes;//Actual duaration
+        NSInteger totalGoalDurationInMinutes = (Goalhours * 60) + Goalminutes;//Goal Duration
+
+        // Calculate the percentage
+        NSInteger percentage = totalDurationAInMinutes / totalGoalDurationInMinutes * 100;
+        
+
+        //update the score object to calculated the scores
+        
+        if(SleepContriType == CONTRI_TOTAL_SLEEP)
+        {[sleepScoreData sharedInstance].achievedSleepDurationPercentage =  @(percentage);}
+        else if(SleepContriType == CONTRI_DEEP_SLEEP)
+        {[sleepScoreData sharedInstance].achievedDeepSleepPercentage =  @(percentage);}
+        else if(SleepContriType == CONTRI_QUALITY_SLEEP)
+        {[sleepScoreData sharedInstance].achievedQualitSleepDurationPercentage = @(percentage);}
+        
+        // Format the hours and minutes 8h 0m (24%)
+        NSString *formattedDuration = [NSString stringWithFormat:_L(L_TIEM_DATA_STR_SLEEP_DURATION), (long)hours, (long)minutes, percentage];
+        
+        NSDictionary *dict = @{@"percentage":@(percentage),
+                               @"duration":totalDuration,
+                               @"labelA":formattedDuration,
+                               @"labelB":goalString
+        };
+        return  dict;
+    }
+    else
+    {
+        
+        NSNumber *totalHr = @0;
+        // Iterate through the array of DBSleepData objects
+        for (DBSleepData *sleepData in self.currentSelectDataSleepArray) {
+            // Add the hrDip value of each object to the total
+            totalHr = @([totalHr floatValue] + [sleepData.hr floatValue]);
+        }
+
+        // Calculate the average hrDip value as a rounded integer
+        NSNumber *averageSleepHr = @(round([totalHr floatValue] / [self.currentSelectDataSleepArray count]));
+                        
+        goalValues *goalData = [goalValues retrieveGoalValues];
+        double hrDipPercentage = ([self.avgActiveHeartRate doubleValue] - [averageSleepHr doubleValue])/[self.avgActiveHeartRate doubleValue];
+        
+        [sleepScoreData sharedInstance].achievedDipPercent =  @(hrDipPercentage);
+        
+        NSString *dipPercentage = [NSString stringWithFormat:@"%.1f%%",isinf(hrDipPercentage) ? 0.0 : hrDipPercentage];
+        NSDictionary *dict = @{@"percentage":@(hrDipPercentage),
+                               @"duration":totalHr,
+                               @"labelA":[NSString stringWithFormat:@"%@ %@(%@)",isnan([averageSleepHr floatValue]) ? @"--" : averageSleepHr,_L(L_UNIT_HR), dipPercentage],
+                               @"labelB":[NSString stringWithFormat:_L(L_TIEM_DETAIL_TARGET_HRIMMERSE), goalData.dipPercentage]
+        };
+        return  dict;
+
+    }
+    
+    
+}
+
+
+
 
 /// 查询或者计算出睡眠后的操作
 -(void)otherQueryAfterQueryOrCalcSleep:(BOOL)isClean {
@@ -370,6 +575,7 @@ NSString * const CP_NAME = @"";
         [self.temperautreFluObj queryTemperatureFluData:sleepStartDate  End:sleepEndDate];
     }
 }
+
 
 -(NSMutableArray<DBSleepData *> *)GetSleepDBData {
     return self.currentSelectDataSleepArray; // 数据库原始数据

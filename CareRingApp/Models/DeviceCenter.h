@@ -28,6 +28,14 @@ typedef NS_ENUM(NSUInteger, SYNC_FINISH) {
 };
 
 
+typedef NS_ENUM(NSUInteger, SLEEP_CONTRI) {
+    CONTRI_TOTAL_SLEEP,
+    CONTRI_QUALITY_SLEEP,
+    CONTRI_DEEP_SLEEP,
+    CONTRI_AVERAGE_HR
+};
+
+
 
 @interface DeviceCenter : NSObject<SRBleScanProtocal, SRBleDataProtocal>
 
@@ -89,6 +97,9 @@ typedef NS_ENUM(NSUInteger, SYNC_FINISH) {
 
 /* about sleep */
 -(void)querySleep:(NSDate *)date;
+-(void)queryhearRate:(NSDate *)date;
+-(NSDictionary *)getSleepData :(SLEEP_CONTRI)SleepContriType;
+
 -(NSMutableArray<DBSleepData *> *)GetSleepDBData;
 -(NSMutableArray<DBSleepData *> *)GetNapSleepDBData;
 

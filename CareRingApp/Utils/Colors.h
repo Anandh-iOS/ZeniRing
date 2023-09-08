@@ -13,11 +13,11 @@
 #define SEPLINE_COLOR(X)  ([UIColor colorWithRed:150/255.0f green:156/255.0f blue:171/255.0f alpha:X])
 
 
-// 健康评分色 最好 绿色
+// 健康评分色 最好 绿色 Green
 #define HEALTH_COLOR_BEST ([UIColor colorWithRed:40/255.0f green:217/255.0f blue:89/255.0f alpha:1.f])
-// 健康评分色 好 黄色
+// 健康评分色 好 黄色 Orange
 #define HEALTH_COLOR_WELL ([UIColor colorWithRed:233/255.0f green:125/255.0f blue:57/255.0f alpha:1.f])
-// 健康评分色 注意 红色
+// 健康评分色 注意 红色 Red
 #define HEALTH_COLOR_ATTECTION ([UIColor colorWithRed:255/255.0f green:62/255.0f blue:41/255.0f alpha:1.f])
 
 // 列表元素的背景色
@@ -33,5 +33,6 @@
 
 
 #define FONT_ARIAL_BOLD  @"Arial-BoldMT"
+#define FONT_ARIAL_REGULAR  @"ArialMT"
 
 #endif /* Colors_h */

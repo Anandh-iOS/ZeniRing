@@ -22,6 +22,16 @@ NS_ASSUME_NONNULL_BEGIN
 +(void)queryueryRestHrBymacAdres:(NSString *)macAdres Date:(NSDate *)date CMP:(void(^)(NSNumber *restHr ))cmpBlk;
 
 
+/// Query the measurement data of the sport mode.
+/// - Parameters:
+///   - macAddress: device mac address
+///   - beginDate: start of time
+///   - endDate: end of time
+///   - isDesc: YES= output in reverse chronological order
+///   - cmpBlk: return result.
++(void)queryForSportBy:(NSString * _Nonnull)macAddress Begin:(NSDate *)beginDate End:(NSDate *)endDate OrderBeTimeDesc:(BOOL)isDesc Cpmplete:(void(^)(NSMutableArray<NSDictionary *> *results))cmpBlk;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

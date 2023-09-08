@@ -13,6 +13,7 @@
 #import "MainSleepVc.h"
 #import "MainActivityVc.h"
 #import "MainSettingVc.h"
+#import "MainReadinessVc.h"
 
 @interface HMTabbarController ()
 
@@ -33,6 +34,10 @@
     // 首页
     [self addSubControllers: [[MainNav alloc]initWithRootViewController:[MainActivityVc new] ShowNavBar:YES]
                       Title:_L(L_TAB_ACTIVITY) ImageName:@"tab_activity_unsec" SelectImagName:@"tab_activity_select"];
+    
+    
+    [self addSubControllers:[[MainNav alloc]initWithRootViewController:[MainReadinessVc new] ShowNavBar:NO]
+                      Title:_L(L_TAB_READY) ImageName:@"tab_ready_unsec" SelectImagName:@"tab_ready_select"];
 
     // 睡眠
     [self addSubControllers:[[MainNav alloc]initWithRootViewController:[MainSleepVc new] ShowNavBar:NO]
@@ -41,6 +46,8 @@
     // 设置
     [self addSubControllers:[[MainNav alloc]initWithRootViewController:[MainSettingVc new] ShowNavBar:YES]
                       Title:_L(L_TAB_SETTING) ImageName:@"tab_setting_unsec" SelectImagName:@"tab_setting_select"];
+    
+    
     
     
 }

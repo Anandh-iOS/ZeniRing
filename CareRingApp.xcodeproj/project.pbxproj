@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121078262A92680400CF469E /* MainReadinessVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 121078252A92680400CF469E /* MainReadinessVc.m */; };
+		1210782A2A9394B500CF469E /* ReadinessHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 121078292A9394B500CF469E /* ReadinessHeaderView.m */; };
+		12F20B1F2A9E32D800EAF96D /* chartview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F20B1D2A9E32D800EAF96D /* chartview.swift */; };
+		12F20B202A9E32D800EAF96D /* HRDipTrendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F20B1E2A9E32D800EAF96D /* HRDipTrendVC.swift */; };
+		12F20B232AA0B84700EAF96D /* SetGoalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F20B222AA0B84700EAF96D /* SetGoalVC.m */; };
+		12F20B262AA0BFCF00EAF96D /* SleepGoalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F20B252AA0BFCF00EAF96D /* SleepGoalView.m */; };
+		12F20B292AA20E6100EAF96D /* GoalsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F20B282AA20E6100EAF96D /* GoalsData.m */; };
+		12F20B2C2AA3654500EAF96D /* goalValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F20B2B2AA3654500EAF96D /* goalValues.m */; };
+		12F20B442AA5AA6300EAF96D /* libRingSDK_1.0.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F20B392AA5AA6300EAF96D /* libRingSDK_1.0.7.a */; };
+		12F20B472AA72A5C00EAF96D /* sleepScoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F20B462AA72A5C00EAF96D /* sleepScoreData.m */; };
 		2AD159DBF9686A7D6D45F9DB /* Pods_CareRingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F79097EE2A93A77B6B6D4C /* Pods_CareRingApp.framework */; };
 		950377E2288FC222003C2363 /* UITableViewCell+Styles.m in Sources */ = {isa = PBXBuildFile; fileRef = 950377E1288FC222003C2363 /* UITableViewCell+Styles.m */; };
 		950377E5288FC3F7003C2363 /* LTPHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 950377E3288FC3F6003C2363 /* LTPHud.m */; };
@@ -23,7 +33,6 @@
 		951A81A128583BC200E952C4 /* BindSuccVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 951A81A028583BC200E952C4 /* BindSuccVc.m */; };
 		951A81AC28587DE400E952C4 /* DeviceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 951A81AB28587DE400E952C4 /* DeviceCell.m */; };
 		951CC03C28BCC04800FA8A02 /* NSObject+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 951CC03B28BCC04800FA8A02 /* NSObject+Tool.m */; };
-		951FDBCD2A25D5740076484B /* libRingSDK_1.0.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 951FDBCC2A25D5740076484B /* libRingSDK_1.0.6.a */; };
 		9525AD422848BD6900EEE73D /* MainSleepVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 9525AD412848BD6900EEE73D /* MainSleepVc.m */; };
 		9525AD452848BD7900EEE73D /* MainActivityVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 9525AD442848BD7900EEE73D /* MainActivityVc.m */; };
 		9525AD482848BD8500EEE73D /* MainSettingVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 9525AD472848BD8500EEE73D /* MainSettingVc.m */; };
@@ -90,6 +99,41 @@
 
 /* Begin PBXFileReference section */
 		0DCDAB602B2CC671B16BFBF3 /* Pods-CareRingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareRingApp.debug.xcconfig"; path = "Target Support Files/Pods-CareRingApp/Pods-CareRingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		121078242A92680400CF469E /* MainReadinessVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainReadinessVc.h; sourceTree = "<group>"; };
+		121078252A92680400CF469E /* MainReadinessVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainReadinessVc.m; sourceTree = "<group>"; };
+		121078282A9394B500CF469E /* ReadinessHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadinessHeaderView.h; sourceTree = "<group>"; };
+		121078292A9394B500CF469E /* ReadinessHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadinessHeaderView.m; sourceTree = "<group>"; };
+		12F20B1D2A9E32D800EAF96D /* chartview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chartview.swift; sourceTree = "<group>"; };
+		12F20B1E2A9E32D800EAF96D /* HRDipTrendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRDipTrendVC.swift; sourceTree = "<group>"; };
+		12F20B212AA0B84700EAF96D /* SetGoalVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetGoalVC.h; sourceTree = "<group>"; };
+		12F20B222AA0B84700EAF96D /* SetGoalVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetGoalVC.m; sourceTree = "<group>"; };
+		12F20B242AA0BFCF00EAF96D /* SleepGoalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepGoalView.h; sourceTree = "<group>"; };
+		12F20B252AA0BFCF00EAF96D /* SleepGoalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepGoalView.m; sourceTree = "<group>"; };
+		12F20B272AA20E6100EAF96D /* GoalsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoalsData.h; sourceTree = "<group>"; };
+		12F20B282AA20E6100EAF96D /* GoalsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoalsData.m; sourceTree = "<group>"; };
+		12F20B2A2AA3654500EAF96D /* goalValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = goalValues.h; sourceTree = "<group>"; };
+		12F20B2B2AA3654500EAF96D /* goalValues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goalValues.m; sourceTree = "<group>"; };
+		12F20B2F2AA5AA6300EAF96D /* DBDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDevices.h; sourceTree = "<group>"; };
+		12F20B302AA5AA6300EAF96D /* DBValueSuper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBValueSuper.h; sourceTree = "<group>"; };
+		12F20B312AA5AA6300EAF96D /* DBHrv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHrv.h; sourceTree = "<group>"; };
+		12F20B322AA5AA6300EAF96D /* DBSleepData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSleepData.h; sourceTree = "<group>"; };
+		12F20B332AA5AA6300EAF96D /* DBHistoryDataSr03.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHistoryDataSr03.h; sourceTree = "<group>"; };
+		12F20B342AA5AA6300EAF96D /* DBTables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBTables.h; sourceTree = "<group>"; };
+		12F20B352AA5AA6300EAF96D /* DBThermemoter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBThermemoter.h; sourceTree = "<group>"; };
+		12F20B362AA5AA6300EAF96D /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		12F20B372AA5AA6300EAF96D /* DBSteps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSteps.h; sourceTree = "<group>"; };
+		12F20B382AA5AA6300EAF96D /* DBHeartRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHeartRate.h; sourceTree = "<group>"; };
+		12F20B392AA5AA6300EAF96D /* libRingSDK_1.0.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRingSDK_1.0.7.a; sourceTree = "<group>"; };
+		12F20B3B2AA5AA6300EAF96D /* SleepStageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepStageHeader.h; sourceTree = "<group>"; };
+		12F20B3C2AA5AA6300EAF96D /* StagingSubObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StagingSubObj.h; sourceTree = "<group>"; };
+		12F20B3D2AA5AA6300EAF96D /* StagingListObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StagingListObj.h; sourceTree = "<group>"; };
+		12F20B3E2AA5AA6300EAF96D /* StagingDataV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StagingDataV2.h; sourceTree = "<group>"; };
+		12F20B412AA5AA6300EAF96D /* SRDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDeviceInfo.h; sourceTree = "<group>"; };
+		12F20B422AA5AA6300EAF96D /* SRBLeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBLeService.h; sourceTree = "<group>"; };
+		12F20B432AA5AA6300EAF96D /* LTSRingSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSRingSDK.h; sourceTree = "<group>"; };
+		12F20B452AA72A5C00EAF96D /* sleepScoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sleepScoreData.h; sourceTree = "<group>"; };
+		12F20B462AA72A5C00EAF96D /* sleepScoreData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sleepScoreData.m; sourceTree = "<group>"; };
+		12FA83042A991BBE00F7CCCA /* CareRingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CareRingApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		1E35B8A02DE262EE3F9B410C /* Pods_RingSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RingSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F79097EE2A93A77B6B6D4C /* Pods_CareRingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareRingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		643C8B2AB23B59CDED0F5AA1 /* Pods-RingSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSDK.debug.xcconfig"; path = "Target Support Files/Pods-RingSDK/Pods-RingSDK.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,7 +170,6 @@
 		951A81AB28587DE400E952C4 /* DeviceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceCell.m; sourceTree = "<group>"; };
 		951CC03A28BCC04800FA8A02 /* NSObject+Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Tool.h"; sourceTree = "<group>"; };
 		951CC03B28BCC04800FA8A02 /* NSObject+Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Tool.m"; sourceTree = "<group>"; };
-		951FDBCC2A25D5740076484B /* libRingSDK_1.0.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRingSDK_1.0.6.a; sourceTree = "<group>"; };
 		9525AD402848BD6900EEE73D /* MainSleepVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainSleepVc.h; sourceTree = "<group>"; };
 		9525AD412848BD6900EEE73D /* MainSleepVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainSleepVc.m; sourceTree = "<group>"; };
 		9525AD432848BD7800EEE73D /* MainActivityVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainActivityVc.h; sourceTree = "<group>"; };
@@ -140,25 +183,16 @@
 		9525AD4F2848C05700EEE73D /* UIViewController+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Custom.h"; sourceTree = "<group>"; };
 		9525AD502848C05700EEE73D /* UIViewController+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Custom.m"; sourceTree = "<group>"; };
 		9525AD522848C4AD00EEE73D /* Widges.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Widges.xcassets; sourceTree = "<group>"; };
-		952736042900F7AE00921BC0 /* StagingListObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StagingListObj.h; sourceTree = "<group>"; };
-		952736072900F7AE00921BC0 /* StagingSubObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StagingSubObj.h; sourceTree = "<group>"; };
 		9528895C29CADEED007364CA /* OusideBleDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OusideBleDiscovery.h; sourceTree = "<group>"; };
 		9528895D29CADEED007364CA /* OusideBleDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OusideBleDiscovery.m; sourceTree = "<group>"; };
 		95299F6528FE564400A87B91 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		95299F6728FE564A00A87B91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		95315A5C284F2D7D00722026 /* DBValueSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBValueSuper.h; sourceTree = "<group>"; };
-		95315A5F284F2F0700722026 /* DBDevices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBDevices.h; sourceTree = "<group>"; wrapsLines = 0; };
-		95315A65284F2F2200722026 /* DBHeartRate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHeartRate.h; sourceTree = "<group>"; };
-		95315A68284F2F3300722026 /* DBThermemoter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBThermemoter.h; sourceTree = "<group>"; };
-		95315A6B284F2F4100722026 /* DBHrv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHrv.h; sourceTree = "<group>"; };
-		95315A71284F414B00722026 /* DBTables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBTables.h; sourceTree = "<group>"; };
 		95315A75284F4B7500722026 /* DeviceCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceCenter.h; sourceTree = "<group>"; };
 		95315A76284F4B7500722026 /* DeviceCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceCenter.m; sourceTree = "<group>"; };
 		953734B62A28394200FEB0F3 /* NapSleepTimeDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NapSleepTimeDrawView.h; sourceTree = "<group>"; };
 		953734B72A28394200FEB0F3 /* NapSleepTimeDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NapSleepTimeDrawView.m; sourceTree = "<group>"; };
 		953734B82A28394200FEB0F3 /* NapSleepTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NapSleepTimeCell.h; sourceTree = "<group>"; };
 		953734B92A28394200FEB0F3 /* NapSleepTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NapSleepTimeCell.m; sourceTree = "<group>"; };
-		9539329129C4531900478CBB /* DBSleepData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSleepData.h; sourceTree = "<group>"; };
 		9539329529C4603400478CBB /* SdkInnerHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SdkInnerHeader.h; sourceTree = "<group>"; };
 		953E053B2856E5EA00AB27DE /* ValueQuarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ValueQuarView.h; sourceTree = "<group>"; };
 		953E053C2856E5EA00AB27DE /* ValueQuarView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ValueQuarView.m; sourceTree = "<group>"; };
@@ -229,7 +263,6 @@
 		95B9505628E30B00001A068A /* ActivityLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityLineCell.m; sourceTree = "<group>"; };
 		95B9505728E30B00001A068A /* ActivityLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityLineCell.h; sourceTree = "<group>"; };
 		95BA690329CC374B00D2A512 /* SRDeviceInfo+description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SRDeviceInfo+description.m"; sourceTree = "<group>"; };
-		95BA690529CC412900D2A512 /* DBHistoryDataSr03.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHistoryDataSr03.h; sourceTree = "<group>"; };
 		95BBD27928B4C35500E80B9A /* NSString+Check.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Check.h"; sourceTree = "<group>"; };
 		95BBD27A28B4C35500E80B9A /* NSString+Check.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Check.m"; sourceTree = "<group>"; };
 		95BE8CDD28B0CFB3007DB0BB /* chargeTips.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chargeTips.gif; sourceTree = "<group>"; };
@@ -241,10 +274,6 @@
 		95C36B58284DFDD400E4EFBE /* LoginVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVc.m; sourceTree = "<group>"; };
 		95C45E3C289B626B000E0D41 /* BatteryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BatteryView.h; sourceTree = "<group>"; };
 		95C45E3D289B626B000E0D41 /* BatteryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BatteryView.m; sourceTree = "<group>"; };
-		95CA2A9B28FF953E00C73C04 /* SRDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRDeviceInfo.h; sourceTree = "<group>"; };
-		95CA2AA628FF953E00C73C04 /* SRBLeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRBLeService.h; sourceTree = "<group>"; };
-		95CA2AA828FF953E00C73C04 /* LTSRingSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSRingSDK.h; sourceTree = "<group>"; };
-		95CA2AC328FFF86800C73C04 /* SleepStageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepStageHeader.h; sourceTree = "<group>"; };
 		95CF64792876DDE5000D2F40 /* CareRingAppRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CareRingAppRelease.entitlements; sourceTree = "<group>"; };
 		95CF647A2876DDE6000D2F40 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		95CF647C2876E3EE000D2F40 /* CareRingAppDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CareRingAppDebug.entitlements; sourceTree = "<group>"; };
@@ -258,14 +287,12 @@
 		95D327E02885444D008D3F1D /* SleepHrObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepHrObj.m; sourceTree = "<group>"; };
 		95D327E22885450C008D3F1D /* SleepTimeDrawObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepTimeDrawObj.h; sourceTree = "<group>"; };
 		95D327E32885450C008D3F1D /* SleepTimeDrawObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepTimeDrawObj.m; sourceTree = "<group>"; };
-		95E4DE8228AE179F001DCF7B /* StagingDataV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StagingDataV2.h; sourceTree = "<group>"; };
 		95EB453A2861BD1800882390 /* SleepDrawLineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepDrawLineCell.h; sourceTree = "<group>"; };
 		95EB453B2861BD1800882390 /* SleepDrawLineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepDrawLineCell.m; sourceTree = "<group>"; };
 		95EB453D2861CCAB00882390 /* SleepDrawLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepDrawLineView.h; sourceTree = "<group>"; };
 		95EB453E2861CCAB00882390 /* SleepDrawLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepDrawLineView.m; sourceTree = "<group>"; };
 		95F1D11A2893C96100BBE764 /* TextInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextInfoView.h; sourceTree = "<group>"; };
 		95F1D11B2893C96100BBE764 /* TextInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextInfoView.m; sourceTree = "<group>"; };
-		95FB3BCB28728C4600D7C950 /* DBSteps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSteps.h; sourceTree = "<group>"; };
 		95FB3BD22872BB9D00D7C950 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		95FB3BD32872CFE600D7C950 /* MeasureDataListVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeasureDataListVc.h; sourceTree = "<group>"; };
 		95FB3BD42872CFE600D7C950 /* MeasureDataListVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeasureDataListVc.m; sourceTree = "<group>"; };
@@ -282,7 +309,7 @@
 				95299F6828FE564A00A87B91 /* Foundation.framework in Frameworks */,
 				95299F6628FE564400A87B91 /* Security.framework in Frameworks */,
 				95CF647B2876DDE6000D2F40 /* HealthKit.framework in Frameworks */,
-				951FDBCD2A25D5740076484B /* libRingSDK_1.0.6.a in Frameworks */,
+				12F20B442AA5AA6300EAF96D /* libRingSDK_1.0.7.a in Frameworks */,
 				2AD159DBF9686A7D6D45F9DB /* Pods_CareRingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +317,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121078272A93947D00CF469E /* AboutReadiness */ = {
+			isa = PBXGroup;
+			children = (
+				121078282A9394B500CF469E /* ReadinessHeaderView.h */,
+				121078292A9394B500CF469E /* ReadinessHeaderView.m */,
+			);
+			path = AboutReadiness;
+			sourceTree = "<group>";
+		};
+		12F20B2D2AA5AA6300EAF96D /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				12F20B2E2AA5AA6300EAF96D /* DataBase */,
+				12F20B392AA5AA6300EAF96D /* libRingSDK_1.0.7.a */,
+				12F20B3A2AA5AA6300EAF96D /* SleepStagingV2 */,
+				12F20B3F2AA5AA6300EAF96D /* BLESDK */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		12F20B2E2AA5AA6300EAF96D /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				12F20B2F2AA5AA6300EAF96D /* DBDevices.h */,
+				12F20B302AA5AA6300EAF96D /* DBValueSuper.h */,
+				12F20B312AA5AA6300EAF96D /* DBHrv.h */,
+				12F20B322AA5AA6300EAF96D /* DBSleepData.h */,
+				12F20B332AA5AA6300EAF96D /* DBHistoryDataSr03.h */,
+				12F20B342AA5AA6300EAF96D /* DBTables.h */,
+				12F20B352AA5AA6300EAF96D /* DBThermemoter.h */,
+				12F20B362AA5AA6300EAF96D /* sqlite3.h */,
+				12F20B372AA5AA6300EAF96D /* DBSteps.h */,
+				12F20B382AA5AA6300EAF96D /* DBHeartRate.h */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		12F20B3A2AA5AA6300EAF96D /* SleepStagingV2 */ = {
+			isa = PBXGroup;
+			children = (
+				12F20B3B2AA5AA6300EAF96D /* SleepStageHeader.h */,
+				12F20B3C2AA5AA6300EAF96D /* StagingSubObj.h */,
+				12F20B3D2AA5AA6300EAF96D /* StagingListObj.h */,
+				12F20B3E2AA5AA6300EAF96D /* StagingDataV2.h */,
+			);
+			path = SleepStagingV2;
+			sourceTree = "<group>";
+		};
+		12F20B3F2AA5AA6300EAF96D /* BLESDK */ = {
+			isa = PBXGroup;
+			children = (
+				12F20B402AA5AA6300EAF96D /* Ble */,
+				12F20B432AA5AA6300EAF96D /* LTSRingSDK.h */,
+			);
+			path = BLESDK;
+			sourceTree = "<group>";
+		};
+		12F20B402AA5AA6300EAF96D /* Ble */ = {
+			isa = PBXGroup;
+			children = (
+				12F20B412AA5AA6300EAF96D /* SRDeviceInfo.h */,
+				12F20B422AA5AA6300EAF96D /* SRBLeService.h */,
+			);
+			path = Ble;
+			sourceTree = "<group>";
+		};
 		1DDE76C27587B6A3BA8BB0EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,24 +480,14 @@
 				954701AD285B35F90009AD64 /* AboutActivity */,
 				95315A75284F4B7500722026 /* DeviceCenter.h */,
 				95315A76284F4B7500722026 /* DeviceCenter.m */,
+				12F20B272AA20E6100EAF96D /* GoalsData.h */,
+				12F20B282AA20E6100EAF96D /* GoalsData.m */,
+				12F20B2A2AA3654500EAF96D /* goalValues.h */,
+				12F20B2B2AA3654500EAF96D /* goalValues.m */,
+				12F20B452AA72A5C00EAF96D /* sleepScoreData.h */,
+				12F20B462AA72A5C00EAF96D /* sleepScoreData.m */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		95315A55284F29CF00722026 /* DataBase */ = {
-			isa = PBXGroup;
-			children = (
-				9539329129C4531900478CBB /* DBSleepData.h */,
-				95315A5C284F2D7D00722026 /* DBValueSuper.h */,
-				95315A5F284F2F0700722026 /* DBDevices.h */,
-				95FB3BCB28728C4600D7C950 /* DBSteps.h */,
-				95315A65284F2F2200722026 /* DBHeartRate.h */,
-				95315A68284F2F3300722026 /* DBThermemoter.h */,
-				95315A6B284F2F4100722026 /* DBHrv.h */,
-				95315A71284F414B00722026 /* DBTables.h */,
-				95BA690529CC412900D2A512 /* DBHistoryDataSr03.h */,
-			);
-			path = DataBase;
 			sourceTree = "<group>";
 		};
 		953E053A2856E5D200AB27DE /* AboutActivity */ = {
@@ -516,11 +599,11 @@
 		955D7B7428475E980003307B /* CareRingApp */ = {
 			isa = PBXGroup;
 			children = (
+				12F20B2D2AA5AA6300EAF96D /* Libs */,
 				95BE8CDC28B0CFB3007DB0BB /* Res */,
 				95CF647C2876E3EE000D2F40 /* CareRingAppDebug.entitlements */,
 				95CF64792876DDE5000D2F40 /* CareRingAppRelease.entitlements */,
 				95FB3BD22872BB9D00D7C950 /* PrefixHeader.pch */,
-				95B77072285072E4009F1249 /* Libs */,
 				95315A54284F29CF00722026 /* Models */,
 				95C36B52284DF93700E4EFBE /* Views */,
 				95D001D82848A3F8008536A9 /* Category */,
@@ -609,17 +692,6 @@
 			path = AboutOta;
 			sourceTree = "<group>";
 		};
-		95B77072285072E4009F1249 /* Libs */ = {
-			isa = PBXGroup;
-			children = (
-				951FDBCC2A25D5740076484B /* libRingSDK_1.0.6.a */,
-				95315A55284F29CF00722026 /* DataBase */,
-				95E4DE7828AE179F001DCF7B /* SleepStagingV2 */,
-				95CA2A9128FF953E00C73C04 /* BLESDK */,
-			);
-			path = Libs;
-			sourceTree = "<group>";
-		};
 		95BE8CDC28B0CFB3007DB0BB /* Res */ = {
 			isa = PBXGroup;
 			children = (
@@ -642,6 +714,8 @@
 		95C36B52284DF93700E4EFBE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				12F20B1D2A9E32D800EAF96D /* chartview.swift */,
+				121078272A93947D00CF469E /* AboutReadiness */,
 				9542478828BDE54300F3B729 /* AboutOTA */,
 				950377E4288FC3F6003C2363 /* LTPHud.h */,
 				950377E3288FC3F6003C2363 /* LTPHud.m */,
@@ -650,6 +724,9 @@
 				951A81A928587DCF00E952C4 /* AboutBind */,
 				953E0541285713C600AB27DE /* AboutReady */,
 				953E053A2856E5D200AB27DE /* AboutActivity */,
+				12FA83042A991BBE00F7CCCA /* CareRingApp-Bridging-Header.h */,
+				12F20B242AA0BFCF00EAF96D /* SleepGoalView.h */,
+				12F20B252AA0BFCF00EAF96D /* SleepGoalView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -672,24 +749,6 @@
 			path = WidgesView;
 			sourceTree = "<group>";
 		};
-		95CA2A9128FF953E00C73C04 /* BLESDK */ = {
-			isa = PBXGroup;
-			children = (
-				95CA2A9228FF953E00C73C04 /* Ble */,
-				95CA2AA828FF953E00C73C04 /* LTSRingSDK.h */,
-			);
-			path = BLESDK;
-			sourceTree = "<group>";
-		};
-		95CA2A9228FF953E00C73C04 /* Ble */ = {
-			isa = PBXGroup;
-			children = (
-				95CA2A9B28FF953E00C73C04 /* SRDeviceInfo.h */,
-				95CA2AA628FF953E00C73C04 /* SRBLeService.h */,
-			);
-			path = Ble;
-			sourceTree = "<group>";
-		};
 		95CA2ABE28FFE69500C73C04 /* SleepTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -700,6 +759,7 @@
 		95D001CC2848A237008536A9 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				12F20B1E2A9E32D800EAF96D /* HRDipTrendVC.swift */,
 				958E555A29D69BB100CE3FBC /* RealtimeMeasureVc.h */,
 				958E555B29D69BB100CE3FBC /* RealtimeMeasureVc.m */,
 				958D89EE28F7E8730058B2BD /* AboutTrend */,
@@ -721,6 +781,10 @@
 				9525AD472848BD8500EEE73D /* MainSettingVc.m */,
 				95FB3BD32872CFE600D7C950 /* MeasureDataListVc.h */,
 				95FB3BD42872CFE600D7C950 /* MeasureDataListVc.m */,
+				121078242A92680400CF469E /* MainReadinessVc.h */,
+				121078252A92680400CF469E /* MainReadinessVc.m */,
+				12F20B212AA0B84700EAF96D /* SetGoalVC.h */,
+				12F20B222AA0B84700EAF96D /* SetGoalVC.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -764,17 +828,6 @@
 				95BBD27A28B4C35500E80B9A /* NSString+Check.m */,
 			);
 			path = Category;
-			sourceTree = "<group>";
-		};
-		95E4DE7828AE179F001DCF7B /* SleepStagingV2 */ = {
-			isa = PBXGroup;
-			children = (
-				952736042900F7AE00921BC0 /* StagingListObj.h */,
-				952736072900F7AE00921BC0 /* StagingSubObj.h */,
-				95CA2AC328FFF86800C73C04 /* SleepStageHeader.h */,
-				95E4DE8228AE179F001DCF7B /* StagingDataV2.h */,
-			);
-			path = SleepStagingV2;
 			sourceTree = "<group>";
 		};
 		B3E5BFB2A7D4A734F673CA59 /* Pods */ = {
@@ -821,6 +874,7 @@
 				TargetAttributes = {
 					955D7B7128475E980003307B = {
 						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -908,10 +962,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9556CEF628645C3E00D49350 /* SleepPercentView.m in Sources */,
+				12F20B1F2A9E32D800EAF96D /* chartview.swift in Sources */,
 				95094368284781C200FEEBF2 /* HMUserdefaultUtil.m in Sources */,
 				958E555C29D69BB100CE3FBC /* RealtimeMeasureVc.m in Sources */,
 				953E053D2856E5EA00AB27DE /* ValueQuarView.m in Sources */,
 				9542478B28BDE60900F3B729 /* OtaRemindView.m in Sources */,
+				12F20B2C2AA3654500EAF96D /* goalValues.m in Sources */,
 				9567FFC628658D5E001DD63D /* SleepTimeCell.m in Sources */,
 				9542479128BE092500F3B729 /* SRfileTableViewController.m in Sources */,
 				95C36B59284DFDD400E4EFBE /* LoginVc.m in Sources */,
@@ -928,11 +984,14 @@
 				95F1D11C2893C96100BBE764 /* TextInfoView.m in Sources */,
 				953734BA2A28394200FEB0F3 /* NapSleepTimeDrawView.m in Sources */,
 				95BA690429CC374B00D2A512 /* SRDeviceInfo+description.m in Sources */,
+				12F20B232AA0B84700EAF96D /* SetGoalVC.m in Sources */,
 				95BBD27B28B4C35500E80B9A /* NSString+Check.m in Sources */,
 				950943582847688400FEEBF2 /* LocalizeTool.m in Sources */,
 				958D89FA28F804890058B2BD /* TrendClcViewCell.m in Sources */,
 				953E054028570A1C00AB27DE /* ActivityCell.m in Sources */,
 				951A44AE286AE98A00FA5F37 /* NormalSetCell.m in Sources */,
+				12F20B262AA0BFCF00EAF96D /* SleepGoalView.m in Sources */,
+				12F20B202A9E32D800EAF96D /* HRDipTrendVC.swift in Sources */,
 				951CC03C28BCC04800FA8A02 /* NSObject+Tool.m in Sources */,
 				9587630A2875710600986066 /* Blebutton.m in Sources */,
 				95EB453C2861BD1800882390 /* SleepDrawLineCell.m in Sources */,
@@ -945,12 +1004,15 @@
 				9586C36128D0879E00EB6EB8 /* NSDate+HMTools.m in Sources */,
 				95315A77284F4B7500722026 /* DeviceCenter.m in Sources */,
 				9525AD422848BD6900EEE73D /* MainSleepVc.m in Sources */,
+				1210782A2A9394B500CF469E /* ReadinessHeaderView.m in Sources */,
 				9525AD452848BD7900EEE73D /* MainActivityVc.m in Sources */,
 				95B9505828E30B00001A068A /* ActivityLineCell.m in Sources */,
 				957044D4285986C60083A41C /* BarDrawView.m in Sources */,
 				955D7B7728475E980003307B /* AppDelegate.m in Sources */,
+				12F20B472AA72A5C00EAF96D /* sleepScoreData.m in Sources */,
 				953734BB2A28394200FEB0F3 /* NapSleepTimeCell.m in Sources */,
 				954701B0285B36BA0009AD64 /* ActivityObj.m in Sources */,
+				121078262A92680400CF469E /* MainReadinessVc.m in Sources */,
 				958F23C028C899D100B6B1B2 /* OTAImgObj.m in Sources */,
 				9586C35E28D0866600EB6EB8 /* HMpdfManager.m in Sources */,
 				9525AD512848C05700EEE73D /* UIViewController+Custom.m in Sources */,
@@ -971,6 +1033,7 @@
 				955D7B8828475E9B0003307B /* main.m in Sources */,
 				9585A40628A25BE200D2D14F /* NSNumber+Imperial.m in Sources */,
 				953E0544285713D800AB27DE /* TextInfoCell.m in Sources */,
+				12F20B292AA20E6100EAF96D /* GoalsData.m in Sources */,
 				95C45E3E289B626B000E0D41 /* BatteryView.m in Sources */,
 				95C154072869D4CF000F5B19 /* MydeviceVc.m in Sources */,
 				950377E2288FC222003C2363 /* UITableViewCell+Styles.m in Sources */,
@@ -1069,7 +1132,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1122,7 +1185,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1136,6 +1199,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CareRingApp/CareRingAppDebug.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -1161,7 +1225,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1181,6 +1245,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CareRingApp/Views/CareRingApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1191,6 +1258,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = CareRingApp/CareRingAppRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -1216,7 +1284,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1236,6 +1304,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CareRingApp/Views/CareRingApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
