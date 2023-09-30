@@ -14,6 +14,8 @@
 #import "MainActivityVc.h"
 #import "MainSettingVc.h"
 #import "MainReadinessVc.h"
+#import "CareRingApp-Swift.h"
+#import "constants.h"
 
 @interface HMTabbarController ()
 
@@ -25,14 +27,14 @@
     [super viewDidLoad];
     self.tabBar.translucent = NO;
     [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
-    self.tabBar.tintColor = MAIN_BLUE;
+    self.tabBar.tintColor = MAIN_WHITE;
     self.tabBar.unselectedItemTintColor = [UIColor lightGrayColor];
 }
 
 -(void)createTabs
 {
     // 首页
-    [self addSubControllers: [[MainNav alloc]initWithRootViewController:[MainActivityVc new] ShowNavBar:YES]
+    [self addSubControllers: [[MainNav alloc]initWithRootViewController:[MainHomeController new] ShowNavBar:YES]
                       Title:_L(L_TAB_ACTIVITY) ImageName:@"tab_activity_unsec" SelectImagName:@"tab_activity_select"];
     
     

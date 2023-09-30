@@ -6,7 +6,7 @@
 //
 
 #import "TextInfoView.h"
-#import "Colors.h"
+#import "constants.h"
 #import "ConfigModel.h"
 
 @implementation TextInfoView

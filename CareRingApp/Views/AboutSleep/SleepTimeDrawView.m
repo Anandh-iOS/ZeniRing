@@ -10,7 +10,7 @@
 #import <Masonry/Masonry.h>
 
 #import "TimeUtils.h"
-#import "Colors.h"
+#import "constants.h"
 
 const CGFloat SLEEP_LAYER_HEIGHT = 45.0f;  // 大区域的高度
 const CGFloat SQUAR_HEIGHT = 28.0f; // 方形高度

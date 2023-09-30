@@ -10,7 +10,7 @@
 #import "ConfigModel.h"
 #import "TimeUtils.h"
 #import "SleepDrawLineView.h"
-#import "Colors.h"
+#import "constants.h"
 
 #import "NSNumber+Imperial.h"
 @implementation ActivityLineCell

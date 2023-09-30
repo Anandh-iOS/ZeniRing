@@ -8,7 +8,7 @@
 #import <Masonry/Masonry.h>
 #import <QMUIKit/QMUIKit.h>
 #import "DayWeakMonthTrendVc.h"
-#import "Colors.h"
+#import "constants.h"
 #import "ConfigModel.h"
 #import "TimeUtils.h"
 

@@ -10,7 +10,7 @@
 #import <Masonry/Masonry.h>
 
 #import "TimeUtils.h"
-#import "Colors.h"
+#import "constants.h"
 #import "DBSleepData.h"
 
 extern const CGFloat SLEEP_LAYER_HEIGHT;

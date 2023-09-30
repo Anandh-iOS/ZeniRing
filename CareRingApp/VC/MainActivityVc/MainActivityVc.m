@@ -210,6 +210,7 @@
 }
 
 -(void)intUI {
+    
     [self.view addSubview:self.tableView];
     UIView *slideBar = [UIView new];
     [self.view addSubview:slideBar];

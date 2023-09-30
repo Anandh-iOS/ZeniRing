@@ -7,7 +7,7 @@
 
 #import "SleepGoalView.h"
 #import <MAsonry/Masonry.h>
-#import "LocalizeKeys.h"
+#import "constants.h"
 #import "ConfigModel.h"
 #import "sleepScoreData.h"
 

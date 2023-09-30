@@ -19,7 +19,7 @@
 #import "goalValues.h"
 const NSTimeInterval AUTO_SCAN_TIME_OUT = 120;//120;
 
-NSString * const CP_NAME = @"";
+NSString * const CP_NAME = @"Linktop";
 
 @interface DeviceCenter ()
 
@@ -289,8 +289,8 @@ NSString * const CP_NAME = @"";
 
     // 测试
     WEAK_SELF
-    NSDate *beginDate = [TimeUtils zeroOfDate:self.calcSleepDate];
-    NSDate *endDate = [TimeUtils zeroOfBeforeDayDate:self.calcSleepDate];
+    NSDate *beginDate = [TimeUtils zeroOfBeforeDayDate:self.calcSleepDate];
+    NSDate *endDate = [TimeUtils zeroOfDate:self.calcSleepDate];
     // query sleep data
     [DBSleepData queryDbSleepBy:self.bindDevice.macAddress Begin:[beginDate timeIntervalSince1970] EndTime:[endDate timeIntervalSince1970] Comp:^(NSMutableArray<DBSleepData *> * _Nonnull results) {
         STRONG_SELF
@@ -305,7 +305,7 @@ NSString * const CP_NAME = @"";
 //        stage.endTime = napData.sleepEnd.doubleValue;
 //        napData.stagingData = stage;
 //
-//
+
 //        DBSleepData *napData2 = [[DBSleepData alloc]init];
 //        napData2.isNap = YES;
 //        napData2.sleepStart = @(1685577600 + 7200);
@@ -708,6 +708,12 @@ NSString * const CP_NAME = @"";
 - (void)srBleDeviceInfo:(nonnull SRDeviceInfo *)devInfo {
     
     if (devInfo) {
+//        if(!self.bindDevice)
+//        {
+//            self.bindDevice = [[DBDevices alloc] init];
+//            self.bindDevice.macAddress = devInfo.bleMacAddress;
+//        }
+        
         self.bindDevice.otherInfo.fireWareVersion = devInfo.softWareVersion;
         self.bindDevice.otherInfo.size = devInfo.size;
         self.bindDevice.otherInfo.color = devInfo.color;

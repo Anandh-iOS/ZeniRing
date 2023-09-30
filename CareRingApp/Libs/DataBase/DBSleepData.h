@@ -39,13 +39,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// - Parameter oriSleep: original instance
 +(instancetype)copyWithDbSleepData:(DBSleepData *)oriSleep;
 
-
 /// Query for sleep data
 /// - Parameters:
 ///   - macAddress: devic's macaddress
 ///   - beginTime: start of time range
 ///   - endTime: end of time range
 ///   - cmpBlk: return result
+///
 +(void)queryDbSleepBy:(NSString *)macAddress Begin:(NSTimeInterval)beginTime EndTime:(NSTimeInterval)endTime Comp:(void(^)(NSMutableArray<DBSleepData *> *results))cmpBlk;
 
 @end

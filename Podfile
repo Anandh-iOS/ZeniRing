@@ -20,4 +20,6 @@ target 'CareRingApp' do
   # for sdk
   pod 'DateTools'
   pod 'MJExtension', '~> 3.4.1'
+  pod 'SnapKit', '~> 5.6'
+  
 end

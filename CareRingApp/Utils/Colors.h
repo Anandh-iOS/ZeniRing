@@ -10,6 +10,12 @@
 
 #define MAIN_BLUE  ([UIColor colorWithRed:64/255.0f green:125/255.0f blue:250/255.0f alpha:1.f])
 
+#define MAIN_PINK  ([UIColor colorWithRed:228/255.0f green:63/255.0f blue:111/255.0f alpha:1.f])
+
+#define MAIN_PINK  ([UIColor colorWithRed:228/255.0f green:63/255.0f blue:111/255.0f alpha:1.f])
+
+
+
 #define SEPLINE_COLOR(X)  ([UIColor colorWithRed:150/255.0f green:156/255.0f blue:171/255.0f alpha:X])
 
 
@@ -35,4 +41,9 @@
 #define FONT_ARIAL_BOLD  @"Arial-BoldMT"
 #define FONT_ARIAL_REGULAR  @"ArialMT"
 
+
+
 #endif /* Colors_h */
+
+
+

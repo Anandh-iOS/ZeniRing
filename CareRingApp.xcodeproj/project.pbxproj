@@ -9,6 +9,29 @@
 /* Begin PBXBuildFile section */
 		121078262A92680400CF469E /* MainReadinessVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 121078252A92680400CF469E /* MainReadinessVc.m */; };
 		1210782A2A9394B500CF469E /* ReadinessHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 121078292A9394B500CF469E /* ReadinessHeaderView.m */; };
+		12BBD2FC2ABC3836002908CF /*  MainHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BBD2FB2ABC3836002908CF /*  MainHomeController.swift */; };
+		12BBD3102ABC514B002908CF /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD2FE2ABC514B002908CF /* Poppins-ExtraLight.ttf */; };
+		12BBD3112ABC514B002908CF /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD2FF2ABC514B002908CF /* Poppins-ThinItalic.ttf */; };
+		12BBD3122ABC514B002908CF /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD3002ABC514B002908CF /* Poppins-ExtraLightItalic.ttf */; };
+		12BBD3132ABC514B002908CF /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD3012ABC514B002908CF /* Poppins-BoldItalic.ttf */; };
+		12BBD3142ABC514B002908CF /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD3022ABC514B002908CF /* Poppins-Light.ttf */; };
+		12BBD3152ABC514B002908CF /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD3032ABC514B002908CF /* Poppins-Medium.ttf */; };
+		12BBD3162ABC514B002908CF /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD3042ABC514B002908CF /* Poppins-SemiBoldItalic.ttf */; };
+		12BBD3172ABC514B002908CF /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD3052ABC514B002908CF /* Poppins-ExtraBoldItalic.ttf */; };
+		12BBD3182ABC514B002908CF /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD3062ABC514B002908CF /* Poppins-ExtraBold.ttf */; };
+		12BBD3192ABC514B002908CF /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD3072ABC514B002908CF /* Poppins-BlackItalic.ttf */; };
+		12BBD31A2ABC514B002908CF /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD3082ABC514B002908CF /* Poppins-Regular.ttf */; };
+		12BBD31B2ABC514B002908CF /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD3092ABC514B002908CF /* Poppins-LightItalic.ttf */; };
+		12BBD31C2ABC514B002908CF /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD30A2ABC514B002908CF /* Poppins-Bold.ttf */; };
+		12BBD31D2ABC514B002908CF /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD30B2ABC514B002908CF /* Poppins-Black.ttf */; };
+		12BBD31E2ABC514B002908CF /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD30C2ABC514B002908CF /* Poppins-Thin.ttf */; };
+		12BBD31F2ABC514B002908CF /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD30D2ABC514B002908CF /* Poppins-SemiBold.ttf */; };
+		12BBD3202ABC514B002908CF /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD30E2ABC514B002908CF /* Poppins-Italic.ttf */; };
+		12BBD3212ABC514B002908CF /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BBD30F2ABC514B002908CF /* Poppins-MediumItalic.ttf */; };
+		12BBD3282ABD33A0002908CF /* constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BBD3272ABD33A0002908CF /* constants.m */; };
+		12BBD32A2ABD553A002908CF /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BBD3292ABD553A002908CF /* utils.swift */; };
+		12BBD3382ABD7D53002908CF /* healthInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BBD3372ABD7D53002908CF /* healthInfoCell.swift */; };
+		12BBD33B2ABD99DA002908CF /* MeasureDataListVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BBD33A2ABD99DA002908CF /* MeasureDataListVc.m */; };
 		12F20B1F2A9E32D800EAF96D /* chartview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F20B1D2A9E32D800EAF96D /* chartview.swift */; };
 		12F20B202A9E32D800EAF96D /* HRDipTrendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F20B1E2A9E32D800EAF96D /* HRDipTrendVC.swift */; };
 		12F20B232AA0B84700EAF96D /* SetGoalVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F20B222AA0B84700EAF96D /* SetGoalVC.m */; };
@@ -17,6 +40,7 @@
 		12F20B2C2AA3654500EAF96D /* goalValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F20B2B2AA3654500EAF96D /* goalValues.m */; };
 		12F20B442AA5AA6300EAF96D /* libRingSDK_1.0.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12F20B392AA5AA6300EAF96D /* libRingSDK_1.0.7.a */; };
 		12F20B472AA72A5C00EAF96D /* sleepScoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F20B462AA72A5C00EAF96D /* sleepScoreData.m */; };
+		12F665672ABDC70B00F70F16 /* scoreCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12F665662ABDC70B00F70F16 /* scoreCardCell.swift */; };
 		2AD159DBF9686A7D6D45F9DB /* Pods_CareRingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F79097EE2A93A77B6B6D4C /* Pods_CareRingApp.framework */; };
 		950377E2288FC222003C2363 /* UITableViewCell+Styles.m in Sources */ = {isa = PBXBuildFile; fileRef = 950377E1288FC222003C2363 /* UITableViewCell+Styles.m */; };
 		950377E5288FC3F7003C2363 /* LTPHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 950377E3288FC3F6003C2363 /* LTPHud.m */; };
@@ -94,15 +118,39 @@
 		95EB453C2861BD1800882390 /* SleepDrawLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EB453B2861BD1800882390 /* SleepDrawLineCell.m */; };
 		95EB453F2861CCAB00882390 /* SleepDrawLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EB453E2861CCAB00882390 /* SleepDrawLineView.m */; };
 		95F1D11C2893C96100BBE764 /* TextInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F1D11B2893C96100BBE764 /* TextInfoView.m */; };
-		95FB3BD52872CFE600D7C950 /* MeasureDataListVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 95FB3BD42872CFE600D7C950 /* MeasureDataListVc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0DCDAB602B2CC671B16BFBF3 /* Pods-CareRingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareRingApp.debug.xcconfig"; path = "Target Support Files/Pods-CareRingApp/Pods-CareRingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		121078242A92680400CF469E /* MainReadinessVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainReadinessVc.h; sourceTree = "<group>"; };
-		121078252A92680400CF469E /* MainReadinessVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainReadinessVc.m; sourceTree = "<group>"; };
+		121078252A92680400CF469E /* MainReadinessVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainReadinessVc.m; path = /Users/anandhselvam/Downloads/NexRing_iOS_SDK_V1.0.6/RingDemo_V1.0.6_build20230712/CareRingApp/VC/MainReadinessVc/MainReadinessVc.m; sourceTree = "<absolute>"; };
 		121078282A9394B500CF469E /* ReadinessHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadinessHeaderView.h; sourceTree = "<group>"; };
 		121078292A9394B500CF469E /* ReadinessHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadinessHeaderView.m; sourceTree = "<group>"; };
+		12BBD2FB2ABC3836002908CF /*  MainHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = " MainHomeController.swift"; path = "/Users/anandhselvam/Downloads/NexRing_iOS_SDK_V1.0.6/RingDemo_V1.0.6_build20230712/CareRingApp/VC/ MainHomeController.swift"; sourceTree = "<absolute>"; };
+		12BBD2FE2ABC514B002908CF /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		12BBD2FF2ABC514B002908CF /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		12BBD3002ABC514B002908CF /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		12BBD3012ABC514B002908CF /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		12BBD3022ABC514B002908CF /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		12BBD3032ABC514B002908CF /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		12BBD3042ABC514B002908CF /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		12BBD3052ABC514B002908CF /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		12BBD3062ABC514B002908CF /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		12BBD3072ABC514B002908CF /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		12BBD3082ABC514B002908CF /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		12BBD3092ABC514B002908CF /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		12BBD30A2ABC514B002908CF /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		12BBD30B2ABC514B002908CF /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		12BBD30C2ABC514B002908CF /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		12BBD30D2ABC514B002908CF /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		12BBD30E2ABC514B002908CF /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		12BBD30F2ABC514B002908CF /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		12BBD3262ABD33A0002908CF /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		12BBD3272ABD33A0002908CF /* constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = constants.m; sourceTree = "<group>"; };
+		12BBD3292ABD553A002908CF /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		12BBD3372ABD7D53002908CF /* healthInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = healthInfoCell.swift; path = /Users/anandhselvam/Downloads/NexRing_iOS_SDK_V1.0.6/RingDemo_V1.0.6_build20230712/CareRingApp/Views/healthInfoCell.swift; sourceTree = "<absolute>"; };
+		12BBD3392ABD99DA002908CF /* MeasureDataListVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureDataListVc.h; sourceTree = "<group>"; };
+		12BBD33A2ABD99DA002908CF /* MeasureDataListVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasureDataListVc.m; sourceTree = "<group>"; };
 		12F20B1D2A9E32D800EAF96D /* chartview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chartview.swift; sourceTree = "<group>"; };
 		12F20B1E2A9E32D800EAF96D /* HRDipTrendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HRDipTrendVC.swift; sourceTree = "<group>"; };
 		12F20B212AA0B84700EAF96D /* SetGoalVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetGoalVC.h; sourceTree = "<group>"; };
@@ -133,7 +181,8 @@
 		12F20B432AA5AA6300EAF96D /* LTSRingSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTSRingSDK.h; sourceTree = "<group>"; };
 		12F20B452AA72A5C00EAF96D /* sleepScoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sleepScoreData.h; sourceTree = "<group>"; };
 		12F20B462AA72A5C00EAF96D /* sleepScoreData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sleepScoreData.m; sourceTree = "<group>"; };
-		12FA83042A991BBE00F7CCCA /* CareRingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CareRingApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		12F665662ABDC70B00F70F16 /* scoreCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = scoreCardCell.swift; path = scoreCardCell/scoreCardCell.swift; sourceTree = "<group>"; };
+		12FA83042A991BBE00F7CCCA /* CareRingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CareRingApp-Bridging-Header.h"; path = "/Users/anandhselvam/Downloads/NexRing_iOS_SDK_V1.0.6/RingDemo_V1.0.6_build20230712/CareRingApp/CareRingApp-Bridging-Header.h"; sourceTree = "<absolute>"; };
 		1E35B8A02DE262EE3F9B410C /* Pods_RingSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RingSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F79097EE2A93A77B6B6D4C /* Pods_CareRingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CareRingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		643C8B2AB23B59CDED0F5AA1 /* Pods-RingSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSDK.debug.xcconfig"; path = "Target Support Files/Pods-RingSDK/Pods-RingSDK.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,7 +202,6 @@
 		950943602847694400FEEBF2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		950943622847694E00FEEBF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableTwo.strings; sourceTree = "<group>"; };
 		950943642847694F00FEEBF2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LocalizableTwo.strings"; sourceTree = "<group>"; };
-		950943652847698600FEEBF2 /* LocalizeKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizeKeys.h; sourceTree = "<group>"; };
 		95094366284781C100FEEBF2 /* HMUserdefaultUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMUserdefaultUtil.m; sourceTree = "<group>"; };
 		95094367284781C100FEEBF2 /* HMUserdefaultUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMUserdefaultUtil.h; sourceTree = "<group>"; };
 		951A44AC286AE98A00FA5F37 /* NormalSetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NormalSetCell.h; sourceTree = "<group>"; };
@@ -255,7 +303,6 @@
 		958F23BC28C87D1300B6B1B2 /* OTAHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTAHelper.m; sourceTree = "<group>"; };
 		958F23BE28C899D100B6B1B2 /* OTAImgObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTAImgObj.h; sourceTree = "<group>"; };
 		958F23BF28C899D100B6B1B2 /* OTAImgObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTAImgObj.m; sourceTree = "<group>"; };
-		959B5583285D8F2F0023E1A0 /* Colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colors.h; sourceTree = "<group>"; };
 		95AA8E0428912049002AAD6E /* TailLableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TailLableCell.h; sourceTree = "<group>"; };
 		95AA8E0528912049002AAD6E /* TailLableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TailLableCell.m; sourceTree = "<group>"; };
 		95B3919528F3F673001D5712 /* DayWeakMonthTrendVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayWeakMonthTrendVc.h; sourceTree = "<group>"; };
@@ -294,8 +341,6 @@
 		95F1D11A2893C96100BBE764 /* TextInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextInfoView.h; sourceTree = "<group>"; };
 		95F1D11B2893C96100BBE764 /* TextInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextInfoView.m; sourceTree = "<group>"; };
 		95FB3BD22872BB9D00D7C950 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		95FB3BD32872CFE600D7C950 /* MeasureDataListVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeasureDataListVc.h; sourceTree = "<group>"; };
-		95FB3BD42872CFE600D7C950 /* MeasureDataListVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeasureDataListVc.m; sourceTree = "<group>"; };
 		95FD1CC4289A59BC0050CA14 /* NotificationNameHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationNameHeader.h; sourceTree = "<group>"; };
 		A66F4F3DF866897CC00724AB /* Pods-RingSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RingSDK.release.xcconfig"; path = "Target Support Files/Pods-RingSDK/Pods-RingSDK.release.xcconfig"; sourceTree = "<group>"; };
 		F25AE04D0A64F6B6FC410BFB /* Pods-CareRingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CareRingApp.release.xcconfig"; path = "Target Support Files/Pods-CareRingApp/Pods-CareRingApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -324,6 +369,139 @@
 				121078292A9394B500CF469E /* ReadinessHeaderView.m */,
 			);
 			path = AboutReadiness;
+			sourceTree = "<group>";
+		};
+		12BBD2FD2ABC514B002908CF /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				12BBD2FE2ABC514B002908CF /* Poppins-ExtraLight.ttf */,
+				12BBD2FF2ABC514B002908CF /* Poppins-ThinItalic.ttf */,
+				12BBD3002ABC514B002908CF /* Poppins-ExtraLightItalic.ttf */,
+				12BBD3012ABC514B002908CF /* Poppins-BoldItalic.ttf */,
+				12BBD3022ABC514B002908CF /* Poppins-Light.ttf */,
+				12BBD3032ABC514B002908CF /* Poppins-Medium.ttf */,
+				12BBD3042ABC514B002908CF /* Poppins-SemiBoldItalic.ttf */,
+				12BBD3052ABC514B002908CF /* Poppins-ExtraBoldItalic.ttf */,
+				12BBD3062ABC514B002908CF /* Poppins-ExtraBold.ttf */,
+				12BBD3072ABC514B002908CF /* Poppins-BlackItalic.ttf */,
+				12BBD3082ABC514B002908CF /* Poppins-Regular.ttf */,
+				12BBD3092ABC514B002908CF /* Poppins-LightItalic.ttf */,
+				12BBD30A2ABC514B002908CF /* Poppins-Bold.ttf */,
+				12BBD30B2ABC514B002908CF /* Poppins-Black.ttf */,
+				12BBD30C2ABC514B002908CF /* Poppins-Thin.ttf */,
+				12BBD30D2ABC514B002908CF /* Poppins-SemiBold.ttf */,
+				12BBD30E2ABC514B002908CF /* Poppins-Italic.ttf */,
+				12BBD30F2ABC514B002908CF /* Poppins-MediumItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		12BBD32B2ABD7534002908CF /* LTPHud */ = {
+			isa = PBXGroup;
+			children = (
+				950377E4288FC3F6003C2363 /* LTPHud.h */,
+				950377E3288FC3F6003C2363 /* LTPHud.m */,
+			);
+			path = LTPHud;
+			sourceTree = "<group>";
+		};
+		12BBD32C2ABD7543002908CF /* SleepGoalView */ = {
+			isa = PBXGroup;
+			children = (
+				12F20B242AA0BFCF00EAF96D /* SleepGoalView.h */,
+				12F20B252AA0BFCF00EAF96D /* SleepGoalView.m */,
+			);
+			path = SleepGoalView;
+			sourceTree = "<group>";
+		};
+		12BBD32D2ABD7573002908CF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				955D7B7528475E980003307B /* AppDelegate.h */,
+				955D7B7628475E980003307B /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		12BBD32E2ABD7586002908CF /* MainSleepVc */ = {
+			isa = PBXGroup;
+			children = (
+				9525AD402848BD6900EEE73D /* MainSleepVc.h */,
+				9525AD412848BD6900EEE73D /* MainSleepVc.m */,
+			);
+			path = MainSleepVc;
+			sourceTree = "<group>";
+		};
+		12BBD32F2ABD7592002908CF /* MainActivityVc */ = {
+			isa = PBXGroup;
+			children = (
+				9525AD432848BD7800EEE73D /* MainActivityVc.h */,
+				9525AD442848BD7900EEE73D /* MainActivityVc.m */,
+			);
+			path = MainActivityVc;
+			sourceTree = "<group>";
+		};
+		12BBD3302ABD759A002908CF /* MainSettingVc */ = {
+			isa = PBXGroup;
+			children = (
+				9525AD462848BD8500EEE73D /* MainSettingVc.h */,
+				9525AD472848BD8500EEE73D /* MainSettingVc.m */,
+			);
+			path = MainSettingVc;
+			sourceTree = "<group>";
+		};
+		12BBD3312ABD75A2002908CF /* MeasureDataListVc */ = {
+			isa = PBXGroup;
+			children = (
+				12BBD3392ABD99DA002908CF /* MeasureDataListVc.h */,
+				12BBD33A2ABD99DA002908CF /* MeasureDataListVc.m */,
+			);
+			path = MeasureDataListVc;
+			sourceTree = "<group>";
+		};
+		12BBD3322ABD75AA002908CF /* MainReadinessVc */ = {
+			isa = PBXGroup;
+			children = (
+				121078242A92680400CF469E /* MainReadinessVc.h */,
+				121078252A92680400CF469E /* MainReadinessVc.m */,
+			);
+			path = MainReadinessVc;
+			sourceTree = "<group>";
+		};
+		12BBD3332ABD75B1002908CF /* SetGoalVC */ = {
+			isa = PBXGroup;
+			children = (
+				12F20B212AA0B84700EAF96D /* SetGoalVC.h */,
+				12F20B222AA0B84700EAF96D /* SetGoalVC.m */,
+			);
+			path = SetGoalVC;
+			sourceTree = "<group>";
+		};
+		12BBD3342ABD75BB002908CF /* HMTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				9525AD492848BE0000EEE73D /* HMTabbarController.h */,
+				9525AD4A2848BE0000EEE73D /* HMTabbarController.m */,
+			);
+			path = HMTabbarController;
+			sourceTree = "<group>";
+		};
+		12BBD3352ABD75C4002908CF /* BasicCalendaVc */ = {
+			isa = PBXGroup;
+			children = (
+				9587021B2873E5A9007544D7 /* BasicCalendaVc.h */,
+				9587021A2873E5A9007544D7 /* BasicCalendaVc.m */,
+			);
+			path = BasicCalendaVc;
+			sourceTree = "<group>";
+		};
+		12BBD3362ABD75CC002908CF /* RealtimeMeasureVc */ = {
+			isa = PBXGroup;
+			children = (
+				958E555A29D69BB100CE3FBC /* RealtimeMeasureVc.h */,
+				958E555B29D69BB100CE3FBC /* RealtimeMeasureVc.m */,
+			);
+			path = RealtimeMeasureVc;
 			sourceTree = "<group>";
 		};
 		12F20B2D2AA5AA6300EAF96D /* Libs */ = {
@@ -406,10 +584,11 @@
 				950943562847688400FEEBF2 /* LocalizeTool.h */,
 				950943572847688400FEEBF2 /* LocalizeTool.m */,
 				950943542847681C00FEEBF2 /* ConfigModel.m */,
-				950943652847698600FEEBF2 /* LocalizeKeys.h */,
-				959B5583285D8F2F0023E1A0 /* Colors.h */,
 				95FD1CC4289A59BC0050CA14 /* NotificationNameHeader.h */,
 				9539329529C4603400478CBB /* SdkInnerHeader.h */,
+				12BBD3262ABD33A0002908CF /* constants.h */,
+				12BBD3272ABD33A0002908CF /* constants.m */,
+				12BBD3292ABD553A002908CF /* utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -609,8 +788,8 @@
 				95D001D82848A3F8008536A9 /* Category */,
 				95D001CC2848A237008536A9 /* VC */,
 				95094352284766C900FEEBF2 /* Utils */,
-				955D7B7528475E980003307B /* AppDelegate.h */,
-				955D7B7628475E980003307B /* AppDelegate.m */,
+				12BBD32D2ABD7573002908CF /* AppDelegate */,
+				12FA83042A991BBE00F7CCCA /* CareRingApp-Bridging-Header.h */,
 				955D7B8128475E9B0003307B /* Assets.xcassets */,
 				955D7B8328475E9B0003307B /* LaunchScreen.storyboard */,
 				955D7B8628475E9B0003307B /* Info.plist */,
@@ -695,6 +874,7 @@
 		95BE8CDC28B0CFB3007DB0BB /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				12BBD2FD2ABC514B002908CF /* Poppins */,
 				95BE8CDD28B0CFB3007DB0BB /* chargeTips.gif */,
 			);
 			path = Res;
@@ -715,18 +895,17 @@
 			isa = PBXGroup;
 			children = (
 				12F20B1D2A9E32D800EAF96D /* chartview.swift */,
+				12BBD3372ABD7D53002908CF /* healthInfoCell.swift */,
 				121078272A93947D00CF469E /* AboutReadiness */,
 				9542478828BDE54300F3B729 /* AboutOTA */,
-				950377E4288FC3F6003C2363 /* LTPHud.h */,
-				950377E3288FC3F6003C2363 /* LTPHud.m */,
+				12BBD32B2ABD7534002908CF /* LTPHud */,
 				951A44AB286AE8C200FA5F37 /* AboutSetting */,
 				9556CEF328645BC000D49350 /* AboutSleep */,
 				951A81A928587DCF00E952C4 /* AboutBind */,
 				953E0541285713C600AB27DE /* AboutReady */,
 				953E053A2856E5D200AB27DE /* AboutActivity */,
-				12FA83042A991BBE00F7CCCA /* CareRingApp-Bridging-Header.h */,
-				12F20B242AA0BFCF00EAF96D /* SleepGoalView.h */,
-				12F20B252AA0BFCF00EAF96D /* SleepGoalView.m */,
+				12BBD32C2ABD7543002908CF /* SleepGoalView */,
+				12F665662ABDC70B00F70F16 /* scoreCardCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -759,32 +938,24 @@
 		95D001CC2848A237008536A9 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				12BBD2FB2ABC3836002908CF /*  MainHomeController.swift */,
 				12F20B1E2A9E32D800EAF96D /* HRDipTrendVC.swift */,
-				958E555A29D69BB100CE3FBC /* RealtimeMeasureVc.h */,
-				958E555B29D69BB100CE3FBC /* RealtimeMeasureVc.m */,
+				12BBD3362ABD75CC002908CF /* RealtimeMeasureVc */,
 				958D89EE28F7E8730058B2BD /* AboutTrend */,
 				9542478728BDE52800F3B729 /* AboutOTA */,
-				9587021B2873E5A9007544D7 /* BasicCalendaVc.h */,
-				9587021A2873E5A9007544D7 /* BasicCalendaVc.m */,
+				12BBD3352ABD75C4002908CF /* BasicCalendaVc */,
 				95C154012869D4A5000F5B19 /* AboutSetting */,
 				951A819528583B0700E952C4 /* BindDevice */,
 				95C36B56284DFD9F00E4EFBE /* Account */,
-				9525AD492848BE0000EEE73D /* HMTabbarController.h */,
-				9525AD4A2848BE0000EEE73D /* HMTabbarController.m */,
+				12BBD3342ABD75BB002908CF /* HMTabbarController */,
 				95D001D42848A39D008536A9 /* SuperVC */,
 				95D001CD2848A237008536A9 /* privacy */,
-				9525AD402848BD6900EEE73D /* MainSleepVc.h */,
-				9525AD412848BD6900EEE73D /* MainSleepVc.m */,
-				9525AD432848BD7800EEE73D /* MainActivityVc.h */,
-				9525AD442848BD7900EEE73D /* MainActivityVc.m */,
-				9525AD462848BD8500EEE73D /* MainSettingVc.h */,
-				9525AD472848BD8500EEE73D /* MainSettingVc.m */,
-				95FB3BD32872CFE600D7C950 /* MeasureDataListVc.h */,
-				95FB3BD42872CFE600D7C950 /* MeasureDataListVc.m */,
-				121078242A92680400CF469E /* MainReadinessVc.h */,
-				121078252A92680400CF469E /* MainReadinessVc.m */,
-				12F20B212AA0B84700EAF96D /* SetGoalVC.h */,
-				12F20B222AA0B84700EAF96D /* SetGoalVC.m */,
+				12BBD32E2ABD7586002908CF /* MainSleepVc */,
+				12BBD32F2ABD7592002908CF /* MainActivityVc */,
+				12BBD3302ABD759A002908CF /* MainSettingVc */,
+				12BBD3312ABD75A2002908CF /* MeasureDataListVc */,
+				12BBD3322ABD75AA002908CF /* MainReadinessVc */,
+				12BBD3332ABD75B1002908CF /* SetGoalVC */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -904,10 +1075,28 @@
 			files = (
 				955D7B8528475E9B0003307B /* LaunchScreen.storyboard in Resources */,
 				95BE8CDE28B0CFB4007DB0BB /* chargeTips.gif in Resources */,
+				12BBD3122ABC514B002908CF /* Poppins-ExtraLightItalic.ttf in Resources */,
+				12BBD31D2ABC514B002908CF /* Poppins-Black.ttf in Resources */,
+				12BBD31A2ABC514B002908CF /* Poppins-Regular.ttf in Resources */,
+				12BBD3192ABC514B002908CF /* Poppins-BlackItalic.ttf in Resources */,
+				12BBD31B2ABC514B002908CF /* Poppins-LightItalic.ttf in Resources */,
+				12BBD3162ABC514B002908CF /* Poppins-SemiBoldItalic.ttf in Resources */,
+				12BBD31C2ABC514B002908CF /* Poppins-Bold.ttf in Resources */,
+				12BBD3212ABC514B002908CF /* Poppins-MediumItalic.ttf in Resources */,
+				12BBD31E2ABC514B002908CF /* Poppins-Thin.ttf in Resources */,
+				12BBD3152ABC514B002908CF /* Poppins-Medium.ttf in Resources */,
 				957044D72859E1A50083A41C /* InfoPlist.strings in Resources */,
 				9525AD532848C4AD00EEE73D /* Widges.xcassets in Resources */,
+				12BBD3102ABC514B002908CF /* Poppins-ExtraLight.ttf in Resources */,
 				9509435D2847692500FEEBF2 /* Localizable.strings in Resources */,
+				12BBD3172ABC514B002908CF /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				12BBD3142ABC514B002908CF /* Poppins-Light.ttf in Resources */,
+				12BBD3112ABC514B002908CF /* Poppins-ThinItalic.ttf in Resources */,
+				12BBD3202ABC514B002908CF /* Poppins-Italic.ttf in Resources */,
+				12BBD3182ABC514B002908CF /* Poppins-ExtraBold.ttf in Resources */,
+				12BBD3132ABC514B002908CF /* Poppins-BoldItalic.ttf in Resources */,
 				955D7B8228475E9B0003307B /* Assets.xcassets in Resources */,
+				12BBD31F2ABC514B002908CF /* Poppins-SemiBold.ttf in Resources */,
 				950943612847694E00FEEBF2 /* LocalizableTwo.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -974,18 +1163,20 @@
 				950377E8288FF302003C2363 /* NSNumber+formatString.m in Sources */,
 				951A81A128583BC200E952C4 /* BindSuccVc.m in Sources */,
 				9567FFCD2865B586001DD63D /* SleepObj.m in Sources */,
+				12BBD3282ABD33A0002908CF /* constants.m in Sources */,
 				95AA8E0628912049002AAD6E /* TailLableCell.m in Sources */,
 				95D327E12885444D008D3F1D /* SleepHrObj.m in Sources */,
-				95FB3BD52872CFE600D7C950 /* MeasureDataListVc.m in Sources */,
 				9525AD4B2848BE0000EEE73D /* HMTabbarController.m in Sources */,
 				958F23BD28C87D1300B6B1B2 /* OTAHelper.m in Sources */,
 				951A81AC28587DE400E952C4 /* DeviceCell.m in Sources */,
 				958D89F128F7E89C0058B2BD /* TrendCollectionVc.m in Sources */,
 				95F1D11C2893C96100BBE764 /* TextInfoView.m in Sources */,
+				12F665672ABDC70B00F70F16 /* scoreCardCell.swift in Sources */,
 				953734BA2A28394200FEB0F3 /* NapSleepTimeDrawView.m in Sources */,
 				95BA690429CC374B00D2A512 /* SRDeviceInfo+description.m in Sources */,
 				12F20B232AA0B84700EAF96D /* SetGoalVC.m in Sources */,
 				95BBD27B28B4C35500E80B9A /* NSString+Check.m in Sources */,
+				12BBD32A2ABD553A002908CF /* utils.swift in Sources */,
 				950943582847688400FEEBF2 /* LocalizeTool.m in Sources */,
 				958D89FA28F804890058B2BD /* TrendClcViewCell.m in Sources */,
 				953E054028570A1C00AB27DE /* ActivityCell.m in Sources */,
@@ -1005,6 +1196,7 @@
 				95315A77284F4B7500722026 /* DeviceCenter.m in Sources */,
 				9525AD422848BD6900EEE73D /* MainSleepVc.m in Sources */,
 				1210782A2A9394B500CF469E /* ReadinessHeaderView.m in Sources */,
+				12BBD2FC2ABC3836002908CF /*  MainHomeController.swift in Sources */,
 				9525AD452848BD7900EEE73D /* MainActivityVc.m in Sources */,
 				95B9505828E30B00001A068A /* ActivityLineCell.m in Sources */,
 				957044D4285986C60083A41C /* BarDrawView.m in Sources */,
@@ -1037,6 +1229,8 @@
 				95C45E3E289B626B000E0D41 /* BatteryView.m in Sources */,
 				95C154072869D4CF000F5B19 /* MydeviceVc.m in Sources */,
 				950377E2288FC222003C2363 /* UITableViewCell+Styles.m in Sources */,
+				12BBD3382ABD7D53002908CF /* healthInfoCell.swift in Sources */,
+				12BBD33B2ABD99DA002908CF /* MeasureDataListVc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1241,11 +1435,11 @@
 					"-DSQLCIPHER_CRYPTO_CC",
 					"-DNDEBUG",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lin.CareRingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lin.CareRingAp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "CareRingApp/Views/CareRingApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CareRingApp/CareRingApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1300,11 +1494,11 @@
 					"-DSQLCIPHER_CRYPTO_CC",
 					"-DNDEBUG",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lin.CareRingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lin.CareRingAp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "CareRingApp/Views/CareRingApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CareRingApp/CareRingApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

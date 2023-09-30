@@ -302,6 +302,7 @@ PODS:
   - QMUIKit/QMUIResources (4.4.3)
   - QMUIKit/QMUIWeakObjectContainer (4.4.3)
   - RESegmentedControl (0.5.4)
+  - SnapKit (5.6.0)
   - Toast (4.0.0)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
@@ -316,6 +317,7 @@ DEPENDENCIES:
   - MJRefresh
   - QMUIKit (~> 4.4.3)
   - RESegmentedControl
+  - SnapKit (~> 5.6)
   - Toast
   - YYKit (~> 1.0.9)
 
@@ -329,6 +331,7 @@ SPEC REPOS:
     - MJRefresh
     - QMUIKit
     - RESegmentedControl
+    - SnapKit
     - Toast
     - YYKit
 
@@ -341,9 +344,10 @@ SPEC CHECKSUMS:
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   QMUIKit: 5da6e59d5d312681ee45706af42fd3af7b4f55eb
   RESegmentedControl: 393063d6b6ffceb6aea85c00772977f3da2d5c53
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 98bb12eef50190322e1b1a707b8cb48ffd5c0bfa
+PODFILE CHECKSUM: edbca8ee73a4c481de454e4329af763509bb35e5
 
 COCOAPODS: 1.12.1

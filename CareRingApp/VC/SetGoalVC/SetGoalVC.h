@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LocalizeKeys.h"
+#import "constants.h"
 #import "ConfigModel.h"
 #import "NAVTemplateViewController.h"
 

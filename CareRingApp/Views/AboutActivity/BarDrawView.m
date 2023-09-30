@@ -6,7 +6,7 @@
 //  主页的柱状图
 
 #import "BarDrawView.h"
-#import "Colors.h"
+#import "constants.h"
 #import "ConfigModel.h"
 const int X_LABEL_SHOW_SEP = 6; //每隔6个显示
 const CGFloat Y_MARGIN_BOTTOM = 25; // 距离底部

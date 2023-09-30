@@ -6,7 +6,7 @@
 //  就绪和睡眠的折线图
 
 #import "SleepDrawLineView.h"
-#import "Colors.h"
+#import "constants.h"
 
 
 

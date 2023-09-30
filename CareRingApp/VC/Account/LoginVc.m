@@ -120,7 +120,7 @@
 
 -(void)loginFunction:(UIButton *)btn {
    
-    // go to active new device
+//     go to active new device
     BindeTipsVc *vc = [BindeTipsVc new];
     [self.navigationController pushViewController:vc animated:YES];
 //    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
@@ -199,6 +199,7 @@
 {
     
     // 选中设备 准备进入连接流程
+    
     [DeviceCenter instance].bindDevice = self.deviceArray[indexPath.row];
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     

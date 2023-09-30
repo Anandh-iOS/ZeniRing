@@ -96,7 +96,7 @@
     // NOTI_NAME_ISImperialUint_CAHNGE
     // 睡眠期间的体温差 查询完毕
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(notifySleepTemperature:) name:NOTI_NAME_SLEEP_TEMPERATURE_QUERY_READY object:nil];
-    
+    [[DeviceCenter instance] bindCurrentDevice];
     _sleepGoal = @0;
     [self makeReadinessContri];
 }
@@ -116,6 +116,8 @@
     
     self.date = [NSDate date];
     [[DeviceCenter instance] querySleep:self.date];
+    
+    
     
     
 }
